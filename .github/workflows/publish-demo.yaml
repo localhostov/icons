@@ -35,7 +35,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build
-        run: ./gradlew :composeApp:wasmJsBrowserDistribution
+        run: ./gradlew :composeApp:wasmJsBrowserDistribution -DXmx8G
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
