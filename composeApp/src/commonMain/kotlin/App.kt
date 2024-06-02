@@ -64,7 +64,7 @@ fun App() {
 
     val toaster = rememberToasterState()
 
-    var isRoundedIcons by remember { mutableStateOf(false) }
+    var isRoundedIcons by remember { mutableStateOf(true) }
     var mode by remember { mutableStateOf(IconMode.Outline) }
     var query by remember { mutableStateOf("") }
     val icons = remember(mode, query, isRoundedIcons) {
@@ -86,6 +86,9 @@ fun App() {
             }
         }
 
+        icons
+    }
+    val filteredIcons = remember(query, icons) {
         icons.fastFilter {
             it.name.contains(query, ignoreCase = true)
         }
@@ -160,27 +163,21 @@ fun App() {
                         query = query,
                         mode = mode,
                         onChangeMode = { mode = it },
-                        isNotFound = icons.isEmpty(),
+                        isNotFound = filteredIcons.isEmpty(),
                         isRoundedIcons = isRoundedIcons,
                         onChangeRoundedIcons = { isRoundedIcons = it }
                     )
                 }
 
                 items(
-                    items = icons,
+                    items = filteredIcons,
                     key = { it.name }
                 ) {
                     Box(
                         contentAlignment = Alignment.Center,
-                        modifier = Modifier
+                        modifier = iconBoxModifier
+                            .clickable { copyIcon(it) }
                             .animateItemPlacement()
-                            .requiredSize(36.dp)
-                            .clip(RoundedCornerShape(6.dp))
-                            .background(iconCardColor)
-                            .clickable {
-                                copyIcon(it)
-                            }
-                            .pointerHoverIcon(PointerIcon.Hand)
                     ) {
                         Icon(
                             painter = rememberVectorPainter(it),
@@ -197,3 +194,9 @@ fun App() {
 
 val iconColor = Color(0xffffffff)
 val iconCardColor = Color(0xff2d2d2d)
+
+private val iconBoxModifier = Modifier
+    .requiredSize(36.dp)
+    .clip(RoundedCornerShape(6.dp))
+    .background(iconCardColor)
+    .pointerHoverIcon(PointerIcon.Hand)
