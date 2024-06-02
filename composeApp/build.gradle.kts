@@ -99,8 +99,6 @@ android {
     }
 
     dependencies {
-        implementation(projects.rounded)
-
         debugImplementation(compose.uiTooling)
     }
 }
