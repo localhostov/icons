@@ -3,7 +3,7 @@
 </p>
 
 # Icons
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/lol.hostov.icons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/lol.hostov.icons)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/lol.hostov.icons/rounded/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/lol.hostov.icons)
 
 This is a Jetpack Multiplatform icons pack with 498 straight and rounded icons.
 
