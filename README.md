@@ -1,19 +1,38 @@
-This is a Kotlin Multiplatform project targeting Android, Web, Desktop.
+<p align="middle">
+    <img src="./images/banner.png" width="99%" />
+</p>
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+# Icons
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/lol.hostov.icons/l/badge.svg)](https://maven-badges.herokuapp.com/maven-central/lol.hostov.icons)
 
+This is a Jetpack Multiplatform icons pack with 498 straight and rounded icons.
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+### Install:
 
-**Note:** Compose/Web is Experimental and may be changed at any time. Use it only for evaluation purposes.
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+```
+# for rounded icons pack
+icons = { module = "lol.hostov.icons:rounded", version = "1.0.0" }
 
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+# for straight icons pack
+icons = { module = "lol.hostov.icons:straight", version = "1.0.0" }
+```
+
+### Usage example:
+```
+// import me.localx.icons.rounded.Icons
+// import me.localx.icons.rounded.outline.Check
+
+Icon(
+    painter = rememberVectorPainter(Icons.Outline.Check) 
+    contentDescription = null,
+    modifier = Modifier.size(56.dp),
+    tint = Color.Red
+)
+```
+
+For more icon examples see the <a href="https://localhostov.github.io/icons/">website</a>
+
+### Source
+Uicons by <a href="https://flaticon.com/uicons">Flaticon</a>
+
+Figma: https://www.figma.com/community/file/1269054621208767211/250-icon-pack
