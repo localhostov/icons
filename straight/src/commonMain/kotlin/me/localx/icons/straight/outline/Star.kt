@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,37 +16,33 @@ public val Icons.Outline.Star: ImageVector
         if (_star != null) {
             return _star!!
         }
-        _star = Builder(name = "Star", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _star = Builder(name = "Star", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(19.4672f, 23.3152f)
-                    lineTo(12.0002f, 17.8272f)
-                    lineTo(4.5332f, 23.3152f)
-                    lineTo(7.4002f, 14.4522f)
-                    lineTo(-0.0628f, 8.9992f)
-                    horizontalLineTo(9.1512f)
-                    lineTo(12.0002f, 0.1212f)
-                    lineTo(14.8492f, 8.9992f)
-                    horizontalLineTo(24.0622f)
-                    lineTo(16.6002f, 14.4522f)
-                    lineTo(19.4672f, 23.3152f)
-                    close()
-                    moveTo(12.0002f, 15.3452f)
-                    lineTo(15.6582f, 18.0342f)
-                    lineTo(14.2582f, 13.6902f)
-                    lineTo(17.9372f, 10.9992f)
-                    horizontalLineTo(13.3902f)
-                    lineTo(12.0002f, 6.6681f)
-                    lineTo(10.6102f, 10.9992f)
-                    horizontalLineTo(6.0622f)
-                    lineTo(9.7452f, 13.6902f)
-                    lineTo(8.3452f, 18.0342f)
-                    lineTo(12.0002f, 15.3452f)
-                    close()
-                }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(19.467f, 23.316f)
+                lineTo(12.0f, 17.828f)
+                lineTo(4.533f, 23.316f)
+                lineTo(7.4f, 14.453f)
+                lineTo(-0.063f, 9.0f)
+                horizontalLineTo(9.151f)
+                lineTo(12.0f, 0.122f)
+                lineTo(14.849f, 9.0f)
+                horizontalLineToRelative(9.213f)
+                lineTo(16.6f, 14.453f)
+                close()
+                moveTo(12.0f, 15.346f)
+                lineToRelative(3.658f, 2.689f)
+                lineToRelative(-1.4f, -4.344f)
+                lineTo(17.937f, 11.0f)
+                horizontalLineTo(13.39f)
+                lineTo(12.0f, 6.669f)
+                lineTo(10.61f, 11.0f)
+                horizontalLineTo(6.062f)
+                lineToRelative(3.683f, 2.691f)
+                lineToRelative(-1.4f, 4.344f)
+                close()
             }
         }
         .build()

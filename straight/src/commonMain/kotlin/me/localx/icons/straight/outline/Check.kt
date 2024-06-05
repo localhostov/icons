@@ -16,24 +16,21 @@ public val Icons.Outline.Check: ImageVector
         if (_check != null) {
             return _check!!
         }
-        _check = Builder(name = "Check", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _check = Builder(name = "Check", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(7.8002f, 20.5299f)
-                curveTo(7.4063f, 20.5306f, 7.0162f, 20.4535f, 6.6522f, 20.303f)
-                curveTo(6.2882f, 20.1525f, 5.9575f, 19.9315f, 5.6792f, 19.6529f)
-                lineTo(0.0862f, 14.0609f)
-                lineTo(1.5002f, 12.6459f)
-                lineTo(7.0932f, 18.2389f)
-                curveTo(7.2807f, 18.4263f, 7.535f, 18.5316f, 7.8002f, 18.5316f)
-                curveTo(8.0653f, 18.5316f, 8.3196f, 18.4263f, 8.5072f, 18.2389f)
-                lineTo(22.5002f, 4.2459f)
-                lineTo(23.9142f, 5.6599f)
-                lineTo(9.9212f, 19.6529f)
-                curveTo(9.6428f, 19.9315f, 9.3122f, 20.1525f, 8.9482f, 20.303f)
-                curveTo(8.5842f, 20.4535f, 8.1941f, 20.5306f, 7.8002f, 20.5299f)
+                moveTo(7.8f, 20.53f)
+                arcToRelative(2.99f, 2.99f, 0.0f, false, true, -2.121f, -0.877f)
+                lineTo(0.086f, 14.061f)
+                lineTo(1.5f, 12.646f)
+                lineToRelative(5.593f, 5.593f)
+                arcToRelative(1.0f, 1.0f, 0.0f, false, false, 1.414f, 0.0f)
+                lineTo(22.5f, 4.246f)
+                lineTo(23.914f, 5.66f)
+                lineTo(9.921f, 19.653f)
+                arcTo(2.99f, 2.99f, 0.0f, false, true, 7.8f, 20.53f)
                 close()
             }
         }

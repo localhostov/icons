@@ -16,20 +16,18 @@ public val Icons.Outline.AngleSmallRight: ImageVector
         if (_angleSmallRight != null) {
             return _angleSmallRight!!
         }
-        _angleSmallRight = Builder(name = "AngleSmallRight", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _angleSmallRight = Builder(name = "AngleSmallRight", defaultWidth = 512.0.dp, defaultHeight
+                = 512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(10.8111f, 18.707f)
-                lineTo(9.4002f, 17.293f)
-                lineTo(14.6891f, 12.0f)
-                lineTo(9.4002f, 6.707f)
-                lineTo(10.8151f, 5.293f)
-                lineTo(16.1001f, 10.586f)
-                curveTo(16.4751f, 10.961f, 16.6857f, 11.4696f, 16.6857f, 12.0f)
-                curveTo(16.6857f, 12.5303f, 16.4751f, 13.0389f, 16.1001f, 13.414f)
-                lineTo(10.8111f, 18.707f)
+                moveTo(10.811f, 18.707f)
+                lineTo(9.4f, 17.293f)
+                lineTo(14.689f, 12.0f)
+                lineTo(9.4f, 6.707f)
+                lineToRelative(1.415f, -1.414f)
+                lineTo(16.1f, 10.586f)
+                arcToRelative(2.0f, 2.0f, 0.0f, false, true, 0.0f, 2.828f)
                 close()
             }
         }

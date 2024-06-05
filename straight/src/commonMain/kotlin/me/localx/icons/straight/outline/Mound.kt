@@ -1,0 +1,46 @@
+package me.localx.icons.straight.outline
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
+import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.ImageVector.Builder
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+import me.localx.icons.straight.Icons
+
+public val Icons.Outline.Mound: ImageVector
+    get() {
+        if (_mound != null) {
+            return _mound!!
+        }
+        _mound = Builder(name = "Mound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(17.323f, 10.135f)
+                curveToRelative(-1.087f, -1.966f, -3.077f, -3.14f, -5.323f, -3.14f)
+                reflectiveCurveToRelative(-4.236f, 1.174f, -5.322f, 3.14f)
+                lineTo(0.0f, 22.218f)
+                verticalLineToRelative(1.782f)
+                horizontalLineToRelative(24.0f)
+                verticalLineToRelative(-1.782f)
+                lineToRelative(-6.677f, -12.083f)
+                close()
+                moveTo(2.406f, 22.0f)
+                lineToRelative(6.022f, -10.897f)
+                curveToRelative(0.729f, -1.32f, 2.064f, -2.107f, 3.572f, -2.107f)
+                reflectiveCurveToRelative(2.843f, 0.788f, 3.572f, 2.107f)
+                lineToRelative(6.022f, 10.897f)
+                horizontalLineTo(2.406f)
+                close()
+            }
+        }
+        .build()
+        return _mound!!
+    }
+
+private var _mound: ImageVector? = null

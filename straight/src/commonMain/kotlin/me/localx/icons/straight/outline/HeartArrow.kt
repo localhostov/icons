@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,53 +16,44 @@ public val Icons.Outline.HeartArrow: ImageVector
         if (_heartArrow != null) {
             return _heartArrow!!
         }
-        _heartArrow = Builder(name = "HeartArrow", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(22.0f, 18.0f)
-                    verticalLineTo(20.586f)
-                    lineTo(18.94f, 17.526f)
-                    curveTo(21.063f, 15.281f, 23.0f, 12.534f, 23.0f, 9.95f)
-                    curveTo(23.0555f, 8.4327f, 22.5082f, 6.9552f, 21.4776f, 5.8403f)
-                    curveTo(20.447f, 4.7254f, 19.0169f, 4.0637f, 17.5f, 4.0f)
-                    curveTo(16.6125f, 4.0471f, 15.7471f, 4.2936f, 14.968f, 4.7212f)
-                    curveTo(14.1889f, 5.1488f, 13.5162f, 5.7466f, 13.0f, 6.47f)
-                    curveTo(12.4838f, 5.7465f, 11.8112f, 5.1487f, 11.0321f, 4.7211f)
-                    curveTo(10.253f, 4.2935f, 9.3875f, 4.047f, 8.5f, 4.0f)
-                    curveTo(7.6422f, 4.0019f, 6.7986f, 4.2196f, 6.047f, 4.633f)
-                    lineTo(1.414f, 0.0f)
-                    lineTo(0.0f, 1.414f)
-                    lineTo(4.484f, 5.9f)
-                    curveTo(3.5195f, 7.0283f, 2.9928f, 8.4657f, 3.0f, 9.95f)
-                    curveTo(3.0f, 15.35f, 11.458f, 21.497f, 12.422f, 22.18f)
-                    lineTo(13.0f, 22.589f)
-                    lineTo(13.578f, 22.18f)
-                    curveTo(14.9595f, 21.1827f, 16.2765f, 20.0988f, 17.521f, 18.935f)
-                    lineTo(20.586f, 22.0f)
-                    horizontalLineTo(18.0f)
-                    verticalLineTo(24.0f)
-                    horizontalLineTo(22.0f)
-                    curveTo(22.5304f, 24.0f, 23.0391f, 23.7893f, 23.4142f, 23.4142f)
-                    curveTo(23.7893f, 23.0391f, 24.0f, 22.5304f, 24.0f, 22.0f)
-                    verticalLineTo(18.0f)
-                    horizontalLineTo(22.0f)
-                    close()
-                    moveTo(13.0f, 20.129f)
-                    curveTo(9.042f, 17.2f, 5.0f, 12.915f, 5.0f, 9.95f)
-                    curveTo(4.9452f, 8.9633f, 5.2821f, 7.9948f, 5.9375f, 7.2551f)
-                    curveTo(6.5929f, 6.5154f, 7.5138f, 6.0644f, 8.5f, 6.0f)
-                    curveTo(10.7f, 6.0f, 12.093f, 8.7f, 12.105f, 8.72f)
-                    lineTo(13.0f, 10.492f)
-                    lineTo(13.9f, 8.723f)
-                    curveTo(13.907f, 8.7f, 15.3f, 6.0f, 17.5f, 6.0f)
-                    curveTo(18.4862f, 6.0644f, 19.4071f, 6.5154f, 20.0625f, 7.2551f)
-                    curveTo(20.7179f, 7.9948f, 21.0548f, 8.9633f, 21.0f, 9.95f)
-                    curveTo(21.0f, 12.914f, 16.957f, 17.2f, 13.0f, 20.129f)
-                    close()
-                }
+        _heartArrow = Builder(name = "HeartArrow", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(22.0f, 18.0f)
+                verticalLineToRelative(2.586f)
+                lineToRelative(-3.06f, -3.06f)
+                curveTo(21.063f, 15.281f, 23.0f, 12.534f, 23.0f, 9.95f)
+                arcTo(5.745f, 5.745f, 0.0f, false, false, 17.5f, 4.0f)
+                arcTo(5.913f, 5.913f, 0.0f, false, false, 13.0f, 6.47f)
+                arcTo(5.912f, 5.912f, 0.0f, false, false, 8.5f, 4.0f)
+                arcToRelative(5.113f, 5.113f, 0.0f, false, false, -2.453f, 0.633f)
+                lineTo(1.414f, 0.0f)
+                lineTo(0.0f, 1.414f)
+                lineTo(4.484f, 5.9f)
+                arcTo(6.187f, 6.187f, 0.0f, false, false, 3.0f, 9.95f)
+                curveToRelative(0.0f, 5.4f, 8.458f, 11.547f, 9.422f, 12.23f)
+                lineToRelative(0.578f, 0.409f)
+                lineToRelative(0.578f, -0.409f)
+                arcToRelative(40.353f, 40.353f, 0.0f, false, false, 3.943f, -3.245f)
+                lineTo(20.586f, 22.0f)
+                lineTo(18.0f, 22.0f)
+                verticalLineToRelative(2.0f)
+                horizontalLineToRelative(4.0f)
+                arcToRelative(2.0f, 2.0f, 0.0f, false, false, 2.0f, -2.0f)
+                lineTo(24.0f, 18.0f)
+                close()
+                moveTo(13.0f, 20.129f)
+                curveTo(9.042f, 17.2f, 5.0f, 12.915f, 5.0f, 9.95f)
+                arcTo(3.75f, 3.75f, 0.0f, false, true, 8.5f, 6.0f)
+                curveToRelative(2.2f, 0.0f, 3.593f, 2.7f, 3.605f, 2.72f)
+                lineTo(13.0f, 10.492f)
+                lineToRelative(0.9f, -1.769f)
+                curveTo(13.907f, 8.7f, 15.3f, 6.0f, 17.5f, 6.0f)
+                arcTo(3.75f, 3.75f, 0.0f, false, true, 21.0f, 9.95f)
+                curveTo(21.0f, 12.914f, 16.957f, 17.2f, 13.0f, 20.129f)
+                close()
             }
         }
         .build()

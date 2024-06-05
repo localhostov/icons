@@ -1,0 +1,69 @@
+package me.localx.icons.straight.outline
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
+import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.ImageVector.Builder
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+import me.localx.icons.straight.Icons
+
+public val Icons.Outline.WalletArrow: ImageVector
+    get() {
+        if (_walletArrow != null) {
+            return _walletArrow!!
+        }
+        _walletArrow = Builder(name = "WalletArrow", defaultWidth = 24.0.dp, defaultHeight =
+                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(18.5f, 14.5f)
+                curveToRelative(0.828f, 0.0f, 1.5f, 0.672f, 1.5f, 1.5f)
+                reflectiveCurveToRelative(-0.672f, 1.5f, -1.5f, 1.5f)
+                reflectiveCurveToRelative(-1.5f, -0.672f, -1.5f, -1.5f)
+                reflectiveCurveToRelative(0.672f, -1.5f, 1.5f, -1.5f)
+                close()
+                moveTo(22.0f, 8.0f)
+                verticalLineToRelative(14.0f)
+                lineTo(3.5f, 22.0f)
+                curveToRelative(-0.827f, 0.0f, -1.5f, -0.673f, -1.5f, -1.5f)
+                verticalLineToRelative(-10.684f)
+                curveToRelative(0.314f, 0.112f, 0.648f, 0.184f, 1.0f, 0.184f)
+                horizontalLineToRelative(13.0f)
+                verticalLineToRelative(-2.0f)
+                lineTo(3.0f, 8.0f)
+                curveToRelative(-0.552f, 0.0f, -1.0f, -0.449f, -1.0f, -1.0f)
+                reflectiveCurveToRelative(0.448f, -1.0f, 1.0f, -1.0f)
+                horizontalLineToRelative(10.0f)
+                verticalLineToRelative(-2.0f)
+                lineTo(3.0f, 4.0f)
+                curveToRelative(-1.483f, 0.0f, -3.0f, 1.0f, -3.0f, 3.0f)
+                verticalLineToRelative(13.5f)
+                curveToRelative(0.0f, 1.93f, 1.57f, 3.5f, 3.5f, 3.5f)
+                horizontalLineToRelative(20.5f)
+                lineTo(24.0f, 8.0f)
+                horizontalLineToRelative(-2.0f)
+                close()
+                moveTo(18.0f, 2.941f)
+                verticalLineToRelative(7.059f)
+                horizontalLineToRelative(2.0f)
+                lineTo(20.0f, 2.973f)
+                lineToRelative(1.764f, 1.764f)
+                lineToRelative(1.414f, -1.414f)
+                lineToRelative(-2.707f, -2.708f)
+                curveToRelative(-0.821f, -0.819f, -2.154f, -0.818f, -2.974f, 0.0f)
+                lineToRelative(-2.69f, 2.691f)
+                lineToRelative(1.414f, 1.414f)
+                lineToRelative(1.779f, -1.779f)
+                close()
+            }
+        }
+        .build()
+        return _walletArrow!!
+    }
+
+private var _walletArrow: ImageVector? = null

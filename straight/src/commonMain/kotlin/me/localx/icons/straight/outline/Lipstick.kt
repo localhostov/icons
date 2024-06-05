@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,53 +16,42 @@ public val Icons.Outline.Lipstick: ImageVector
         if (_lipstick != null) {
             return _lipstick!!
         }
-        _lipstick = Builder(name = "Lipstick", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _lipstick = Builder(name = "Lipstick", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(17.0002f, 13.0004f)
-                    verticalLineTo(9.0004f)
-                    horizontalLineTo(16.0002f)
-                    verticalLineTo(2.0004f)
-                    curveTo(16.0001f, 1.6595f, 15.9128f, 1.3242f, 15.7467f, 1.0265f)
-                    curveTo(15.5806f, 0.7288f, 15.3412f, 0.4785f, 15.0511f, 0.2994f)
-                    curveTo(14.761f, 0.1202f, 14.43f, 0.0182f, 14.0894f, 0.003f)
-                    curveTo(13.7488f, -0.0122f, 13.41f, 0.0598f, 13.1052f, 0.2124f)
-                    lineTo(9.6581f, 1.9364f)
-                    curveTo(9.1587f, 2.184f, 8.7386f, 2.5666f, 8.4456f, 3.0409f)
-                    curveTo(8.1525f, 3.5151f, 7.9982f, 4.0619f, 8.0001f, 4.6194f)
-                    verticalLineTo(9.0004f)
-                    horizontalLineTo(7.0002f)
-                    verticalLineTo(13.0004f)
-                    horizontalLineTo(5.0002f)
-                    verticalLineTo(24.0004f)
-                    horizontalLineTo(19.0002f)
-                    verticalLineTo(13.0004f)
-                    horizontalLineTo(17.0002f)
-                    close()
-                    moveTo(10.0002f, 4.6194f)
-                    curveTo(10.0003f, 4.4338f, 10.052f, 4.2518f, 10.1497f, 4.0939f)
-                    curveTo(10.2474f, 3.936f, 10.3871f, 3.8084f, 10.5532f, 3.7254f)
-                    lineTo(14.0002f, 2.0004f)
-                    verticalLineTo(9.0004f)
-                    horizontalLineTo(10.0002f)
-                    verticalLineTo(4.6194f)
-                    close()
-                    moveTo(9.0001f, 11.0004f)
-                    horizontalLineTo(15.0002f)
-                    verticalLineTo(13.0004f)
-                    horizontalLineTo(9.0001f)
-                    verticalLineTo(11.0004f)
-                    close()
-                    moveTo(17.0002f, 22.0004f)
-                    horizontalLineTo(7.0002f)
-                    verticalLineTo(15.0004f)
-                    horizontalLineTo(17.0002f)
-                    verticalLineTo(22.0004f)
-                    close()
-                }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(17.0f, 13.0f)
+                verticalLineToRelative(-4.0f)
+                horizontalLineToRelative(-1.0f)
+                verticalLineToRelative(-7.0f)
+                arcToRelative(2.0f, 2.0f, 0.0f, false, false, -2.895f, -1.788f)
+                lineToRelative(-3.447f, 1.724f)
+                arcToRelative(2.983f, 2.983f, 0.0f, false, false, -1.658f, 2.683f)
+                verticalLineToRelative(4.381f)
+                horizontalLineToRelative(-1.0f)
+                verticalLineToRelative(4.0f)
+                horizontalLineToRelative(-2.0f)
+                verticalLineToRelative(11.0f)
+                horizontalLineToRelative(14.0f)
+                verticalLineToRelative(-11.0f)
+                close()
+                moveTo(10.0f, 4.619f)
+                arcToRelative(1.0f, 1.0f, 0.0f, false, true, 0.553f, -0.894f)
+                lineToRelative(3.447f, -1.725f)
+                verticalLineToRelative(7.0f)
+                horizontalLineToRelative(-4.0f)
+                close()
+                moveTo(9.0f, 11.0f)
+                horizontalLineToRelative(6.0f)
+                verticalLineToRelative(2.0f)
+                horizontalLineToRelative(-6.0f)
+                close()
+                moveTo(17.0f, 22.0f)
+                horizontalLineToRelative(-10.0f)
+                verticalLineToRelative(-7.0f)
+                horizontalLineToRelative(10.0f)
+                close()
             }
         }
         .build()

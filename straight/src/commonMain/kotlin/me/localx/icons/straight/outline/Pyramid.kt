@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,29 +16,24 @@ public val Icons.Outline.Pyramid: ImageVector
         if (_pyramid != null) {
             return _pyramid!!
         }
-        _pyramid = Builder(name = "Pyramid", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _pyramid = Builder(name = "Pyramid", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(12.0f, 2.0108f)
-                    curveTo(12.057f, 2.0108f, 12.065f, 2.0278f, 12.077f, 2.0548f)
-                    lineTo(20.925f, 22.0008f)
-                    horizontalLineTo(3.075f)
-                    lineTo(11.919f, 2.0628f)
-                    curveTo(11.935f, 2.0278f, 11.943f, 2.0108f, 12.0f, 2.0108f)
-                    close()
-                    moveTo(12.0f, 0.0108f)
-                    curveTo(11.5975f, 0.0083f, 11.2031f, 0.1237f, 10.8654f, 0.3429f)
-                    curveTo(10.5278f, 0.562f, 10.2617f, 0.8752f, 10.1f, 1.2438f)
-                    lineTo(0.0f, 24.0008f)
-                    horizontalLineTo(24.0f)
-                    lineTo(13.905f, 1.2438f)
-                    curveTo(13.743f, 0.8744f, 13.4761f, 0.5606f, 13.1375f, 0.3415f)
-                    curveTo(12.7988f, 0.1223f, 12.4034f, 0.0073f, 12.0f, 0.0108f)
-                    close()
-                }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(12.0f, 2.01f)
+                curveToRelative(0.057f, 0.0f, 0.065f, 0.017f, 0.077f, 0.044f)
+                lineTo(20.925f, 22.0f)
+                horizontalLineTo(3.075f)
+                lineTo(11.919f, 2.062f)
+                curveToRelative(0.016f, -0.035f, 0.024f, -0.052f, 0.081f, -0.052f)
+                moveToRelative(0.0f, -2.0f)
+                arcToRelative(2.061f, 2.061f, 0.0f, false, false, -1.9f, 1.233f)
+                lineTo(0.0f, 24.0f)
+                horizontalLineTo(24.0f)
+                lineTo(13.905f, 1.243f)
+                arcTo(2.061f, 2.061f, 0.0f, false, false, 12.0f, 0.01f)
+                close()
             }
         }
         .build()

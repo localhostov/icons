@@ -16,20 +16,18 @@ public val Icons.Outline.AngleSmallUp: ImageVector
         if (_angleSmallUp != null) {
             return _angleSmallUp!!
         }
-        _angleSmallUp = Builder(name = "AngleSmallUp", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _angleSmallUp = Builder(name = "AngleSmallUp", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(17.2933f, 15.207f)
-                lineTo(12.0003f, 9.914f)
-                lineTo(6.7073f, 15.207f)
-                lineTo(5.2933f, 13.793f)
-                lineTo(10.5863f, 8.5f)
-                curveTo(10.9614f, 8.1251f, 11.47f, 7.9144f, 12.0003f, 7.9144f)
-                curveTo(12.5307f, 7.9144f, 13.0393f, 8.1251f, 13.4143f, 8.5f)
-                lineTo(18.7073f, 13.793f)
-                lineTo(17.2933f, 15.207f)
+                moveTo(17.293f, 15.207f)
+                lineTo(12.0f, 9.914f)
+                lineTo(6.707f, 15.207f)
+                lineTo(5.293f, 13.793f)
+                lineTo(10.586f, 8.5f)
+                arcToRelative(2.0f, 2.0f, 0.0f, false, true, 2.828f, 0.0f)
+                lineToRelative(5.293f, 5.293f)
                 close()
             }
         }

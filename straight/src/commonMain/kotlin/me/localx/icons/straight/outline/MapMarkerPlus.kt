@@ -16,41 +16,42 @@ public val Icons.Outline.MapMarkerPlus: ImageVector
         if (_mapMarkerPlus != null) {
             return _mapMarkerPlus!!
         }
-        _mapMarkerPlus = Builder(name = "MapMarkerPlus", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _mapMarkerPlus = Builder(name = "MapMarkerPlus", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(11.9842f, 23.9946f)
-                lineTo(19.0467f, 17.0869f)
-                curveTo(22.9644f, 13.2035f, 22.9921f, 6.8795f, 19.1087f, 2.9619f)
-                curveTo(15.2253f, -0.9558f, 8.9013f, -0.9836f, 4.9837f, 2.8998f)
-                curveTo(4.9629f, 2.9204f, 4.9423f, 2.9411f, 4.9217f, 2.9619f)
-                curveTo(1.0212f, 6.8625f, 1.0212f, 13.1865f, 4.9218f, 17.087f)
-                curveTo(4.9245f, 17.0897f, 4.9271f, 17.0923f, 4.9297f, 17.0949f)
-                lineTo(11.9842f, 23.9946f)
+                moveTo(255.668f, 511.885f)
+                lineToRelative(150.667f, -147.364f)
+                curveToRelative(83.577f, -82.846f, 84.169f, -217.758f, 1.323f, -301.334f)
+                reflectiveCurveToRelative(-217.758f, -84.169f, -301.334f, -1.323f)
+                curveToRelative(-0.443f, 0.439f, -0.884f, 0.88f, -1.323f, 1.323f)
+                curveToRelative(-83.211f, 83.213f, -83.21f, 218.126f, 0.003f, 301.337f)
+                curveToRelative(0.056f, 0.056f, 0.112f, 0.112f, 0.168f, 0.168f)
+                lineTo(255.668f, 511.885f)
                 close()
-                moveTo(6.334f, 4.3742f)
-                curveTo(9.4523f, 1.2514f, 14.5117f, 1.2478f, 17.6344f, 4.3662f)
-                curveTo(20.7571f, 7.4845f, 20.7608f, 12.5439f, 17.6424f, 15.6666f)
-                lineTo(11.9842f, 21.1999f)
-                lineTo(6.334f, 15.6746f)
-                curveTo(3.2135f, 12.5542f, 3.2133f, 7.495f, 6.3337f, 4.3744f)
-                curveTo(6.3338f, 4.3744f, 6.3339f, 4.3742f, 6.334f, 4.3742f)
+                moveTo(135.13f, 93.316f)
+                curveToRelative(66.524f, -66.618f, 174.458f, -66.695f, 241.076f, -0.17f)
+                reflectiveCurveToRelative(66.695f, 174.458f, 0.17f, 241.076f)
+                lineTo(255.668f, 452.266f)
+                lineTo(135.13f, 334.392f)
+                curveToRelative(-66.571f, -66.568f, -66.574f, -174.498f, -0.006f, -241.07f)
+                curveTo(135.126f, 93.32f, 135.128f, 93.318f, 135.13f, 93.316f)
+                lineTo(135.13f, 93.316f)
                 close()
-                moveTo(10.9854f, 11.0232f)
-                horizontalLineTo(7.989f)
-                verticalLineTo(9.0256f)
-                horizontalLineTo(10.9854f)
-                verticalLineTo(6.0292f)
-                horizontalLineTo(12.983f)
-                verticalLineTo(9.0256f)
-                horizontalLineTo(15.9794f)
-                verticalLineTo(11.0232f)
-                horizontalLineTo(12.983f)
-                verticalLineTo(14.0196f)
-                horizontalLineTo(10.9854f)
-                verticalLineTo(11.0232f)
+                moveTo(234.36f, 235.162f)
+                horizontalLineToRelative(-63.923f)
+                verticalLineToRelative(-42.616f)
+                horizontalLineToRelative(63.923f)
+                verticalLineToRelative(-63.923f)
+                horizontalLineToRelative(42.615f)
+                verticalLineToRelative(63.923f)
+                horizontalLineToRelative(63.923f)
+                verticalLineToRelative(42.616f)
+                horizontalLineToRelative(-63.923f)
+                verticalLineToRelative(63.923f)
+                horizontalLineTo(234.36f)
+                verticalLineTo(235.162f)
                 close()
             }
         }

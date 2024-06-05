@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -20,51 +19,49 @@ public val Icons.Outline.Shuffle: ImageVector
         if (_shuffle != null) {
             return _shuffle!!
         }
-        _shuffle = Builder(name = "Shuffle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(20.1222f, 13.293f)
-                    lineTo(18.7082f, 14.707f)
-                    lineTo(21.0002f, 17.0f)
-                    horizontalLineTo(20.6182f)
-                    curveTo(17.2342f, 17.0f, 15.0822f, 15.468f, 13.1722f, 13.492f)
-                    lineTo(12.8722f, 13.84f)
-                    curveTo(12.5442f, 14.22f, 12.2062f, 14.611f, 11.8542f, 15.004f)
-                    curveTo(14.0543f, 17.5514f, 17.2563f, 19.0122f, 20.6223f, 19.004f)
-                    horizontalLineTo(21.0002f)
-                    lineTo(18.7072f, 21.297f)
-                    lineTo(20.1212f, 22.711f)
-                    lineTo(23.4142f, 19.4179f)
-                    curveTo(24.195f, 18.637f, 24.195f, 17.371f, 23.4142f, 16.5899f)
-                    lineTo(20.1222f, 13.293f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(20.619f, 6.9999f)
-                    horizontalLineTo(21.0f)
-                    lineTo(18.708f, 9.2929f)
-                    lineTo(20.122f, 10.7069f)
-                    lineTo(23.415f, 7.4139f)
-                    curveTo(24.1958f, 6.6329f, 24.1958f, 5.3669f, 23.415f, 4.5859f)
-                    lineTo(20.122f, 1.2929f)
-                    lineTo(18.708f, 2.7068f)
-                    lineTo(21.0f, 5.0f)
-                    horizontalLineTo(20.618f)
-                    curveTo(15.661f, 5.0f, 12.951f, 7.67f, 10.492f, 10.478f)
-                    curveTo(8.063f, 7.7349f, 5.143f, 5.0f, -0.04f, 5.0f)
-                    verticalLineTo(7.0f)
-                    curveTo(4.424f, 7.0f, 6.833f, 9.336f, 9.169f, 12.0f)
-                    curveTo(6.833f, 14.6639f, 4.424f, 17.0f, -0.04f, 17.0f)
-                    verticalLineTo(19.0f)
-                    curveTo(5.768f, 19.0f, 8.736f, 15.564f, 11.36f, 12.534f)
-                    curveTo(13.814f, 9.6879f, 16.137f, 6.9999f, 20.619f, 6.9999f)
-                    close()
-                }
+        _shuffle = Builder(name = "Shuffle", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(429.269f, 283.584f)
+                lineToRelative(-30.165f, 30.165f)
+                lineTo(448.0f, 362.667f)
+                horizontalLineToRelative(-8.149f)
+                curveToRelative(-72.192f, 0.0f, -118.101f, -32.683f, -158.848f, -74.837f)
+                lineToRelative(-6.4f, 7.424f)
+                curveToRelative(-6.997f, 8.107f, -14.208f, 16.448f, -21.717f, 24.832f)
+                curveToRelative(46.934f, 54.345f, 115.244f, 85.509f, 187.051f, 85.333f)
+                horizontalLineTo(448.0f)
+                lineToRelative(-48.917f, 48.917f)
+                lineToRelative(30.165f, 30.165f)
+                lineToRelative(70.251f, -70.251f)
+                curveToRelative(16.656f, -16.661f, 16.656f, -43.669f, 0.0f, -60.331f)
+                lineTo(429.269f, 283.584f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(439.872f, 149.333f)
+                horizontalLineTo(448.0f)
+                lineToRelative(-48.896f, 48.917f)
+                lineToRelative(30.165f, 30.165f)
+                lineToRelative(70.251f, -70.251f)
+                curveToRelative(16.656f, -16.661f, 16.656f, -43.669f, 0.0f, -60.331f)
+                lineToRelative(-70.251f, -70.251f)
+                lineToRelative(-30.165f, 30.165f)
+                lineTo(448.0f, 106.667f)
+                horizontalLineToRelative(-8.149f)
+                curveToRelative(-105.749f, 0.0f, -163.563f, 56.96f, -216.021f, 116.864f)
+                curveTo(172.011f, 165.013f, 109.717f, 106.667f, -0.853f, 106.667f)
+                verticalLineToRelative(42.667f)
+                curveToRelative(95.232f, 0.0f, 146.624f, 49.835f, 196.459f, 106.667f)
+                curveTo(145.771f, 312.832f, 94.379f, 362.667f, -0.853f, 362.667f)
+                verticalLineToRelative(42.667f)
+                curveToRelative(123.904f, 0.0f, 187.221f, -73.301f, 243.2f, -137.941f)
+                curveTo(294.699f, 206.677f, 344.256f, 149.333f, 439.872f, 149.333f)
+                close()
             }
         }
         .build()

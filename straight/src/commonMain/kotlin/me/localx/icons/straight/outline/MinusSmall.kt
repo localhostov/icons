@@ -16,16 +16,15 @@ public val Icons.Outline.MinusSmall: ImageVector
         if (_minusSmall != null) {
             return _minusSmall!!
         }
-        _minusSmall = Builder(name = "MinusSmall", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _minusSmall = Builder(name = "MinusSmall", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(18.0f, 10.9997f)
-                horizontalLineTo(6.0f)
-                verticalLineTo(12.9997f)
-                horizontalLineTo(18.0f)
-                verticalLineTo(10.9997f)
+                moveTo(6.0f, 11.0f)
+                horizontalLineToRelative(12.0f)
+                verticalLineToRelative(2.0f)
+                horizontalLineToRelative(-12.0f)
                 close()
             }
         }

@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -20,49 +19,40 @@ public val Icons.Outline.CreditCard: ImageVector
         if (_creditCard != null) {
             return _creditCard!!
         }
-        _creditCard = Builder(name = "CreditCard", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(5.4999f, 17.0001f)
-                    curveTo(6.3283f, 17.0001f, 6.9999f, 16.3285f, 6.9999f, 15.5001f)
-                    curveTo(6.9999f, 14.6717f, 6.3283f, 14.0001f, 5.4999f, 14.0001f)
-                    curveTo(4.6715f, 14.0001f, 3.9999f, 14.6717f, 3.9999f, 15.5001f)
-                    curveTo(3.9999f, 16.3285f, 4.6715f, 17.0001f, 5.4999f, 17.0001f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(21.0f, 3.0f)
-                    horizontalLineTo(3.0f)
-                    curveTo(2.2043f, 3.0f, 1.4413f, 3.3161f, 0.8787f, 3.8787f)
-                    curveTo(0.3161f, 4.4413f, 0.0f, 5.2043f, 0.0f, 6.0f)
-                    lineTo(0.0f, 21.0f)
-                    horizontalLineTo(24.0f)
-                    verticalLineTo(6.0f)
-                    curveTo(24.0f, 5.2043f, 23.6839f, 4.4413f, 23.1213f, 3.8787f)
-                    curveTo(22.5587f, 3.3161f, 21.7956f, 3.0f, 21.0f, 3.0f)
-                    close()
-                    moveTo(3.0f, 5.0f)
-                    horizontalLineTo(21.0f)
-                    curveTo(21.2652f, 5.0f, 21.5196f, 5.1054f, 21.7071f, 5.2929f)
-                    curveTo(21.8946f, 5.4804f, 22.0f, 5.7348f, 22.0f, 6.0f)
-                    verticalLineTo(8.0f)
-                    horizontalLineTo(2.0f)
-                    verticalLineTo(6.0f)
-                    curveTo(2.0f, 5.7348f, 2.1054f, 5.4804f, 2.2929f, 5.2929f)
-                    curveTo(2.4804f, 5.1054f, 2.7348f, 5.0f, 3.0f, 5.0f)
-                    close()
-                    moveTo(2.0f, 19.0f)
-                    verticalLineTo(10.0f)
-                    horizontalLineTo(22.0f)
-                    verticalLineTo(19.0f)
-                    horizontalLineTo(2.0f)
-                    close()
-                }
+        _creditCard = Builder(name = "CreditCard", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(5.5f, 15.5f)
+                moveToRelative(-1.5f, 0.0f)
+                arcToRelative(1.5f, 1.5f, 0.0f, true, true, 3.0f, 0.0f)
+                arcToRelative(1.5f, 1.5f, 0.0f, true, true, -3.0f, 0.0f)
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(21.0f, 3.0f)
+                horizontalLineTo(3.0f)
+                arcTo(3.0f, 3.0f, 0.0f, false, false, 0.0f, 6.0f)
+                verticalLineTo(21.0f)
+                horizontalLineTo(24.0f)
+                verticalLineTo(6.0f)
+                arcTo(3.0f, 3.0f, 0.0f, false, false, 21.0f, 3.0f)
+                close()
+                moveTo(3.0f, 5.0f)
+                horizontalLineTo(21.0f)
+                arcToRelative(1.0f, 1.0f, 0.0f, false, true, 1.0f, 1.0f)
+                verticalLineTo(8.0f)
+                horizontalLineTo(2.0f)
+                verticalLineTo(6.0f)
+                arcTo(1.0f, 1.0f, 0.0f, false, true, 3.0f, 5.0f)
+                close()
+                moveTo(2.0f, 19.0f)
+                verticalLineTo(10.0f)
+                horizontalLineTo(22.0f)
+                verticalLineToRelative(9.0f)
+                close()
             }
         }
         .build()

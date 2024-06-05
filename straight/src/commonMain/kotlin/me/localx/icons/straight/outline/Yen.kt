@@ -16,35 +16,34 @@ public val Icons.Outline.Yen: ImageVector
         if (_yen != null) {
             return _yen!!
         }
-        _yen = Builder(name = "Yen", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _yen = Builder(name = "Yen", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(21.2081f, 0.3897f)
-                lineTo(12.0001f, 12.3597f)
-                lineTo(2.7921f, 0.3897f)
-                lineTo(1.2081f, 1.6097f)
-                lineTo(10.7381f, 13.9997f)
-                horizontalLineTo(5.0001f)
-                verticalLineTo(15.9997f)
-                horizontalLineTo(11.0001f)
-                verticalLineTo(17.9997f)
-                horizontalLineTo(5.0001f)
-                verticalLineTo(19.9997f)
-                horizontalLineTo(11.0001f)
-                verticalLineTo(23.9997f)
-                horizontalLineTo(13.0001f)
-                verticalLineTo(19.9997f)
-                horizontalLineTo(19.0001f)
-                verticalLineTo(17.9997f)
-                horizontalLineTo(13.0001f)
-                verticalLineTo(15.9997f)
-                horizontalLineTo(19.0001f)
-                verticalLineTo(13.9997f)
-                horizontalLineTo(13.2621f)
-                lineTo(22.7921f, 1.6097f)
-                lineTo(21.2081f, 0.3897f)
+                moveToRelative(21.208f, 0.39f)
+                lineToRelative(-9.208f, 11.97f)
+                lineToRelative(-9.208f, -11.97f)
+                lineToRelative(-1.584f, 1.22f)
+                lineToRelative(9.53f, 12.39f)
+                horizontalLineToRelative(-5.738f)
+                verticalLineToRelative(2.0f)
+                horizontalLineToRelative(6.0f)
+                verticalLineToRelative(2.0f)
+                horizontalLineToRelative(-6.0f)
+                verticalLineToRelative(2.0f)
+                horizontalLineToRelative(6.0f)
+                verticalLineToRelative(4.0f)
+                horizontalLineToRelative(2.0f)
+                verticalLineToRelative(-4.0f)
+                horizontalLineToRelative(6.0f)
+                verticalLineToRelative(-2.0f)
+                horizontalLineToRelative(-6.0f)
+                verticalLineToRelative(-2.0f)
+                horizontalLineToRelative(6.0f)
+                verticalLineToRelative(-2.0f)
+                horizontalLineToRelative(-5.738f)
+                lineToRelative(9.53f, -12.39f)
                 close()
             }
         }
