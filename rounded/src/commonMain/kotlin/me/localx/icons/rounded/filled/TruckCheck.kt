@@ -1,0 +1,80 @@
+package me.localx.icons.rounded.filled
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
+import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.ImageVector.Builder
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+import me.localx.icons.rounded.Icons
+
+public val Icons.Filled.TruckCheck: ImageVector
+    get() {
+        if (_truckCheck != null) {
+            return _truckCheck!!
+        }
+        _truckCheck = Builder(name = "TruckCheck", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(8.942f, 20.0f)
+                curveToRelative(0.034f, 0.162f, 0.058f, 0.328f, 0.058f, 0.5f)
+                curveToRelative(0.0f, 1.381f, -1.119f, 2.5f, -2.5f, 2.5f)
+                reflectiveCurveToRelative(-2.5f, -1.119f, -2.5f, -2.5f)
+                curveToRelative(0.0f, -0.172f, 0.024f, -0.338f, 0.058f, -0.5f)
+                horizontalLineToRelative(4.885f)
+                close()
+                moveTo(4.0f, 18.0f)
+                curveToRelative(-2.209f, 0.0f, -4.0f, -1.791f, -4.0f, -4.0f)
+                lineTo(0.0f, 6.0f)
+                curveTo(0.0f, 3.239f, 2.239f, 1.0f, 5.0f, 1.0f)
+                horizontalLineToRelative(5.0f)
+                curveToRelative(2.761f, 0.0f, 5.0f, 2.239f, 5.0f, 5.0f)
+                verticalLineToRelative(12.0f)
+                lineTo(4.0f, 18.0f)
+                close()
+                moveTo(3.293f, 10.808f)
+                lineToRelative(1.402f, 1.402f)
+                curveToRelative(0.562f, 0.562f, 1.3f, 0.843f, 2.039f, 0.843f)
+                reflectiveCurveToRelative(1.485f, -0.284f, 2.054f, -0.852f)
+                lineToRelative(2.928f, -3.003f)
+                curveToRelative(0.386f, -0.396f, 0.378f, -1.029f, -0.018f, -1.415f)
+                curveToRelative(-0.394f, -0.384f, -1.028f, -0.377f, -1.414f, 0.018f)
+                lineToRelative(-2.919f, 2.995f)
+                curveToRelative(-0.346f, 0.346f, -0.91f, 0.346f, -1.256f, 0.0f)
+                lineToRelative(-1.402f, -1.402f)
+                curveToRelative(-0.391f, -0.391f, -1.023f, -0.391f, -1.414f, 0.0f)
+                reflectiveCurveToRelative(-0.391f, 1.023f, 0.0f, 1.414f)
+                close()
+                moveTo(17.0f, 18.0f)
+                horizontalLineToRelative(3.0f)
+                curveToRelative(2.209f, 0.0f, 4.0f, -1.791f, 4.0f, -4.0f)
+                verticalLineToRelative(-1.0f)
+                horizontalLineToRelative(-7.0f)
+                verticalLineToRelative(5.0f)
+                close()
+                moveTo(19.0f, 5.0f)
+                horizontalLineToRelative(-2.0f)
+                verticalLineToRelative(6.0f)
+                horizontalLineToRelative(7.0f)
+                verticalLineToRelative(-1.0f)
+                curveToRelative(0.0f, -2.761f, -2.239f, -5.0f, -5.0f, -5.0f)
+                close()
+                moveTo(15.058f, 20.0f)
+                curveToRelative(-0.034f, 0.162f, -0.058f, 0.328f, -0.058f, 0.5f)
+                curveToRelative(0.0f, 1.381f, 1.119f, 2.5f, 2.5f, 2.5f)
+                reflectiveCurveToRelative(2.5f, -1.119f, 2.5f, -2.5f)
+                curveToRelative(0.0f, -0.172f, -0.024f, -0.338f, -0.058f, -0.5f)
+                horizontalLineToRelative(-4.885f)
+                close()
+            }
+        }
+        .build()
+        return _truckCheck!!
+    }
+
+private var _truckCheck: ImageVector? = null

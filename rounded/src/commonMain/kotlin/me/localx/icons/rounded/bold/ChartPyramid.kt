@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,47 +16,46 @@ public val Icons.Bold.ChartPyramid: ImageVector
         if (_chartPyramid != null) {
             return _chartPyramid!!
         }
-        _chartPyramid = Builder(name = "ChartPyramid", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(23.4991f, 17.6724f)
-                    lineTo(15.9229f, 2.4302f)
-                    curveTo(14.847f, 0.2639f, 12.2188f, -0.62f, 10.0525f, 0.4559f)
-                    curveTo(9.1966f, 0.8809f, 8.5033f, 1.5743f, 8.0782f, 2.4302f)
-                    lineTo(0.502f, 17.6724f)
-                    curveTo(-0.5745f, 19.839f, 0.3092f, 22.468f, 2.4757f, 23.5445f)
-                    curveTo(3.0815f, 23.8455f, 3.7489f, 24.0021f, 4.4254f, 24.002f)
-                    horizontalLineTo(19.5758f)
-                    curveTo(21.995f, 24.0023f, 23.9564f, 22.0413f, 23.9567f, 19.622f)
-                    curveTo(23.9568f, 18.9456f, 23.8001f, 18.2783f, 23.4991f, 17.6724f)
-                    close()
-                    moveTo(18.5877f, 14.5206f)
-                    horizontalLineTo(5.4134f)
-                    lineTo(7.3976f, 10.5284f)
-                    horizontalLineTo(16.6055f)
-                    lineTo(18.5877f, 14.5206f)
-                    close()
-                    moveTo(12.0005f, 2.9931f)
-                    curveTo(12.5285f, 2.9873f, 13.0124f, 3.2871f, 13.2421f, 3.7626f)
-                    lineTo(15.1165f, 7.5342f)
-                    horizontalLineTo(8.8846f)
-                    lineTo(10.759f, 3.7626f)
-                    curveTo(10.9891f, 3.2875f, 11.4727f, 2.9878f, 12.0005f, 2.9931f)
-                    close()
-                    moveTo(20.7544f, 20.3512f)
-                    curveTo(20.5043f, 20.762f, 20.0568f, 21.0114f, 19.5757f, 21.0079f)
-                    horizontalLineTo(4.4254f)
-                    curveTo(3.6597f, 21.0079f, 3.039f, 20.3873f, 3.039f, 19.6217f)
-                    curveTo(3.039f, 19.4076f, 3.0886f, 19.1965f, 3.1838f, 19.0048f)
-                    lineTo(3.9243f, 17.5147f)
-                    horizontalLineTo(20.0768f)
-                    lineTo(20.8173f, 19.0048f)
-                    curveTo(21.0352f, 19.4333f, 21.0113f, 19.9449f, 20.7544f, 20.3512f)
-                    close()
-                }
+        _chartPyramid = Builder(name = "ChartPyramid", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(501.313f, 377.013f)
+                lineTo(339.687f, 51.845f)
+                curveTo(316.735f, 5.632f, 260.666f, -13.225f, 214.452f, 9.727f)
+                curveToRelative(-18.259f, 9.068f, -33.05f, 23.86f, -42.119f, 42.119f)
+                lineTo(10.708f, 377.013f)
+                curveToRelative(-22.966f, 46.22f, -4.114f, 102.305f, 42.105f, 125.271f)
+                curveToRelative(12.924f, 6.422f, 27.161f, 9.763f, 41.593f, 9.761f)
+                horizontalLineToRelative(323.209f)
+                curveToRelative(51.611f, 0.005f, 93.454f, -41.829f, 93.459f, -93.44f)
+                curveTo(511.076f, 404.174f, 507.734f, 389.938f, 501.313f, 377.013f)
+                close()
+                moveTo(396.536f, 309.774f)
+                horizontalLineTo(115.485f)
+                lineToRelative(42.328f, -85.167f)
+                horizontalLineTo(354.25f)
+                lineTo(396.536f, 309.774f)
+                close()
+                moveTo(256.01f, 63.854f)
+                curveToRelative(11.264f, -0.124f, 21.586f, 6.273f, 26.487f, 16.416f)
+                lineToRelative(39.986f, 80.462f)
+                horizontalLineTo(189.537f)
+                lineToRelative(39.986f, -80.462f)
+                curveTo(234.433f, 70.135f, 244.749f, 63.741f, 256.01f, 63.854f)
+                close()
+                moveTo(442.76f, 434.16f)
+                curveToRelative(-5.337f, 8.765f, -14.884f, 14.085f, -25.146f, 14.01f)
+                horizontalLineTo(94.406f)
+                curveToRelative(-16.333f, 0.001f, -29.575f, -13.24f, -29.575f, -29.573f)
+                curveToRelative(0.0f, -4.566f, 1.057f, -9.07f, 3.088f, -13.159f)
+                lineToRelative(15.798f, -31.789f)
+                horizontalLineToRelative(344.586f)
+                lineToRelative(15.798f, 31.789f)
+                curveTo(448.749f, 414.579f, 448.24f, 425.492f, 442.76f, 434.16f)
+                lineTo(442.76f, 434.16f)
+                close()
             }
         }
         .build()

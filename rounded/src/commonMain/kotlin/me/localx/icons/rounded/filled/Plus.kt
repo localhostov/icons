@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,31 +16,29 @@ public val Icons.Filled.Plus: ImageVector
         if (_plus != null) {
             return _plus!!
         }
-        _plus = Builder(name = "Plus", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(23.0f, 11.0f)
-                    horizontalLineTo(13.0f)
-                    verticalLineTo(1.0f)
-                    curveTo(13.0f, 0.4477f, 12.5523f, 0.0f, 12.0f, 0.0f)
-                    curveTo(11.4477f, 0.0f, 11.0f, 0.4477f, 11.0f, 1.0f)
-                    verticalLineTo(11.0f)
-                    horizontalLineTo(1.0f)
-                    curveTo(0.4477f, 11.0f, 0.0f, 11.4477f, 0.0f, 12.0f)
-                    curveTo(0.0f, 12.5523f, 0.4477f, 13.0f, 1.0f, 13.0f)
-                    horizontalLineTo(11.0f)
-                    verticalLineTo(23.0f)
-                    curveTo(11.0f, 23.5522f, 11.4477f, 24.0f, 12.0f, 24.0f)
-                    curveTo(12.5522f, 24.0f, 12.9999f, 23.5522f, 12.9999f, 23.0f)
-                    verticalLineTo(13.0f)
-                    horizontalLineTo(22.9999f)
-                    curveTo(23.5522f, 13.0f, 23.9999f, 12.5523f, 23.9999f, 12.0f)
-                    curveTo(24.0f, 11.4477f, 23.5523f, 11.0f, 23.0f, 11.0f)
-                    close()
-                }
+        _plus = Builder(name = "Plus", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(490.667f, 234.667f)
+                horizontalLineTo(277.333f)
+                verticalLineTo(21.333f)
+                curveTo(277.333f, 9.551f, 267.782f, 0.0f, 256.0f, 0.0f)
+                curveToRelative(-11.782f, 0.0f, -21.333f, 9.551f, -21.333f, 21.333f)
+                verticalLineToRelative(213.333f)
+                horizontalLineTo(21.333f)
+                curveTo(9.551f, 234.667f, 0.0f, 244.218f, 0.0f, 256.0f)
+                curveToRelative(0.0f, 11.782f, 9.551f, 21.333f, 21.333f, 21.333f)
+                horizontalLineToRelative(213.333f)
+                verticalLineToRelative(213.333f)
+                curveToRelative(0.0f, 11.782f, 9.551f, 21.333f, 21.333f, 21.333f)
+                curveToRelative(11.782f, 0.0f, 21.333f, -9.551f, 21.333f, -21.333f)
+                verticalLineTo(277.333f)
+                horizontalLineToRelative(213.333f)
+                curveToRelative(11.782f, 0.0f, 21.333f, -9.551f, 21.333f, -21.333f)
+                curveTo(512.0f, 244.218f, 502.449f, 234.667f, 490.667f, 234.667f)
+                close()
             }
         }
         .build()

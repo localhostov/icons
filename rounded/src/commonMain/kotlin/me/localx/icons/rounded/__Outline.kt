@@ -516,6 +516,6 @@ public val Icons.Outline.allIconsList: ____KtList<ImageVector>
         ExchangeCryptocurrency, ConvertShapes, SourceDocumentAlt, SourceDocument, SkinArrow,
         CalculatorMathTax, CalendarEventTax, ClockTimeTracking, MeasuringTape, General, Talent,
         BinBottles, DashboardPanel, InternetSpeedWifi, ToiletsPortable, ArrowUpToArc, FileCloud,
-        InsertButtonCircle)
+        InsertButtonCircle).sortedBy { it.name }
     return __Outline!!
   }

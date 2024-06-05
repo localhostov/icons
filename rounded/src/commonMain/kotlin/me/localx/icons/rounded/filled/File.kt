@@ -19,36 +19,36 @@ public val Icons.Filled.File: ImageVector
         if (_file != null) {
             return _file!!
         }
-        _file = Builder(name = "File", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _file = Builder(name = "File", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(15.0f, 8.0001f)
-                horizontalLineTo(21.54f)
-                curveTo(21.1909f, 7.0749f, 20.6485f, 6.2349f, 19.949f, 5.5361f)
-                lineTo(16.465f, 2.0501f)
-                curveTo(15.7653f, 1.3514f, 14.9251f, 0.8094f, 14.0f, 0.4601f)
-                verticalLineTo(7.0001f)
-                curveTo(14.0f, 7.5523f, 14.4477f, 8.0001f, 15.0f, 8.0001f)
+                moveTo(320.0f, 170.667f)
+                horizontalLineToRelative(139.52f)
+                curveToRelative(-7.448f, -19.736f, -19.019f, -37.656f, -33.941f, -52.565f)
+                lineToRelative(-74.325f, -74.368f)
+                curveToRelative(-14.927f, -14.905f, -32.852f, -26.468f, -52.587f, -33.92f)
+                verticalLineToRelative(139.52f)
+                curveTo(298.667f, 161.115f, 308.218f, 170.667f, 320.0f, 170.667f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(21.976f, 10.0f)
-                horizontalLineTo(15.0f)
-                curveTo(13.3431f, 10.0f, 12.0f, 8.6568f, 12.0f, 7.0f)
-                verticalLineTo(0.024f)
-                curveTo(11.839f, 0.013f, 11.678f, 0.0f, 11.515f, 0.0f)
-                horizontalLineTo(7.0f)
-                curveTo(4.2399f, 0.0033f, 2.0033f, 2.24f, 2.0f, 5.0f)
-                verticalLineTo(19.0f)
-                curveTo(2.0033f, 21.76f, 4.2399f, 23.9967f, 7.0f, 24.0f)
-                horizontalLineTo(17.0f)
-                curveTo(19.76f, 23.9967f, 21.9966f, 21.76f, 22.0f, 19.0f)
-                verticalLineTo(10.485f)
-                curveTo(22.0f, 10.322f, 21.987f, 10.161f, 21.976f, 10.0f)
+                moveTo(468.821f, 213.333f)
+                horizontalLineTo(320.0f)
+                curveToRelative(-35.346f, 0.0f, -64.0f, -28.654f, -64.0f, -64.0f)
+                verticalLineTo(0.512f)
+                curveTo(252.565f, 0.277f, 249.131f, 0.0f, 245.653f, 0.0f)
+                horizontalLineToRelative(-96.32f)
+                curveTo(90.452f, 0.071f, 42.737f, 47.786f, 42.667f, 106.667f)
+                verticalLineToRelative(298.667f)
+                curveTo(42.737f, 464.214f, 90.452f, 511.93f, 149.333f, 512.0f)
+                horizontalLineToRelative(213.333f)
+                curveToRelative(58.881f, -0.07f, 106.596f, -47.786f, 106.667f, -106.667f)
+                verticalLineTo(223.68f)
+                curveTo(469.333f, 220.203f, 469.056f, 216.768f, 468.821f, 213.333f)
                 close()
             }
         }

@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,43 +16,42 @@ public val Icons.Bold.Home: ImageVector
         if (_home != null) {
             return _home!!
         }
-        _home = Builder(name = "Home", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(22.9747f, 8.6951f)
-                    lineTo(15.8887f, 1.6092f)
-                    curveTo(13.7393f, -0.5348f, 10.2602f, -0.5348f, 8.1107f, 1.6092f)
-                    lineTo(1.0247f, 8.6951f)
-                    curveTo(0.3663f, 9.3501f, -0.0028f, 10.2413f, -3.0E-4f, 11.1701f)
-                    verticalLineTo(21.5481f)
-                    curveTo(0.0019f, 22.9027f, 1.1001f, 24.0f, 2.4548f, 24.0011f)
-                    horizontalLineTo(21.5447f)
-                    curveTo(22.8993f, 24.0f, 23.9975f, 22.9027f, 23.9997f, 21.5481f)
-                    verticalLineTo(11.1701f)
-                    curveTo(24.0023f, 10.2413f, 23.6332f, 9.3501f, 22.9747f, 8.6951f)
-                    close()
-                    moveTo(20.9997f, 21.0011f)
-                    horizontalLineTo(15.9997f)
-                    verticalLineTo(17.8191f)
-                    curveTo(15.9997f, 15.7105f, 14.2903f, 14.0011f, 12.1817f, 14.0011f)
-                    horizontalLineTo(11.8177f)
-                    curveTo(9.7091f, 14.0011f, 7.9997f, 15.7105f, 7.9997f, 17.8191f)
-                    verticalLineTo(21.0011f)
-                    horizontalLineTo(2.9997f)
-                    verticalLineTo(11.1701f)
-                    curveTo(3.0001f, 11.0375f, 3.0525f, 10.9104f, 3.1458f, 10.8161f)
-                    lineTo(10.2317f, 3.7301f)
-                    curveTo(11.2079f, 2.7537f, 12.7908f, 2.7535f, 13.7673f, 3.7297f)
-                    curveTo(13.7674f, 3.7298f, 13.7676f, 3.73f, 13.7677f, 3.7301f)
-                    lineTo(20.8537f, 10.8161f)
-                    curveTo(20.947f, 10.9104f, 20.9994f, 11.0375f, 20.9997f, 11.1701f)
-                    verticalLineTo(21.0011f)
-                    horizontalLineTo(20.9997f)
-                    close()
-                }
+        _home = Builder(name = "Home", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.001f, viewportHeight = 512.001f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(490.134f, 185.472f)
+                lineTo(338.966f, 34.304f)
+                curveToRelative(-45.855f, -45.737f, -120.076f, -45.737f, -165.931f, 0.0f)
+                lineTo(21.867f, 185.472f)
+                curveTo(7.819f, 199.445f, -0.055f, 218.457f, 0.0f, 238.272f)
+                verticalLineToRelative(221.397f)
+                curveTo(0.047f, 488.568f, 23.475f, 511.976f, 52.374f, 512.0f)
+                horizontalLineToRelative(407.253f)
+                curveToRelative(28.899f, -0.023f, 52.326f, -23.432f, 52.373f, -52.331f)
+                verticalLineTo(238.272f)
+                curveTo(512.056f, 218.457f, 504.182f, 199.445f, 490.134f, 185.472f)
+                close()
+                moveTo(448.0f, 448.0f)
+                horizontalLineTo(341.334f)
+                verticalLineToRelative(-67.883f)
+                curveToRelative(0.0f, -44.984f, -36.467f, -81.451f, -81.451f, -81.451f)
+                curveToRelative(0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+                horizontalLineToRelative(-7.765f)
+                curveToRelative(-44.984f, 0.0f, -81.451f, 36.467f, -81.451f, 81.451f)
+                lineToRelative(0.0f, 0.0f)
+                verticalLineTo(448.0f)
+                horizontalLineTo(64.0f)
+                verticalLineTo(238.272f)
+                curveToRelative(0.007f, -2.829f, 1.125f, -5.541f, 3.115f, -7.552f)
+                lineTo(218.283f, 79.552f)
+                curveToRelative(20.825f, -20.831f, 54.594f, -20.835f, 75.425f, -0.01f)
+                curveToRelative(0.003f, 0.003f, 0.007f, 0.007f, 0.01f, 0.01f)
+                lineTo(444.886f, 230.72f)
+                curveToRelative(1.989f, 2.011f, 3.108f, 4.723f, 3.115f, 7.552f)
+                verticalLineTo(448.0f)
+                close()
             }
         }
         .build()

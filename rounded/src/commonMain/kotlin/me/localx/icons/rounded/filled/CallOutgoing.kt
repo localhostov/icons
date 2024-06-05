@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,58 +16,37 @@ public val Icons.Filled.CallOutgoing: ImageVector
         if (_callOutgoing != null) {
             return _callOutgoing!!
         }
-        _callOutgoing = Builder(name = "CallOutgoing", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(23.9999f, 1.9999f)
-                    verticalLineTo(5.9998f)
-                    curveTo(23.9999f, 6.2651f, 23.8945f, 6.5194f, 23.707f, 6.707f)
-                    curveTo(23.5194f, 6.8945f, 23.2651f, 6.9998f, 22.9999f, 6.9998f)
-                    curveTo(22.7346f, 6.9998f, 22.4803f, 6.8945f, 22.2927f, 6.707f)
-                    curveTo(22.1052f, 6.5194f, 21.9999f, 6.2651f, 21.9999f, 5.9998f)
-                    verticalLineTo(3.4388f)
-                    lineTo(16.6999f, 8.7099f)
-                    curveTo(16.61f, 8.8153f, 16.4991f, 8.9008f, 16.3744f, 8.9612f)
-                    curveTo(16.2497f, 9.0215f, 16.1138f, 9.0552f, 15.9754f, 9.0603f)
-                    curveTo(15.837f, 9.0653f, 15.699f, 9.0416f, 15.5702f, 8.9905f)
-                    curveTo(15.4414f, 8.9394f, 15.3247f, 8.8621f, 15.2274f, 8.7635f)
-                    curveTo(15.13f, 8.665f, 15.0543f, 8.5472f, 15.0048f, 8.4178f)
-                    curveTo(14.9554f, 8.2884f, 14.9334f, 8.1501f, 14.9402f, 8.0118f)
-                    curveTo(14.947f, 7.8734f, 14.9825f, 7.7379f, 15.0444f, 7.614f)
-                    curveTo(15.1063f, 7.4901f, 15.1933f, 7.3804f, 15.2999f, 7.2919f)
-                    lineTo(20.6099f, 1.9999f)
-                    horizontalLineTo(17.9999f)
-                    curveTo(17.7346f, 1.9999f, 17.4803f, 1.8945f, 17.2927f, 1.707f)
-                    curveTo(17.1052f, 1.5194f, 16.9999f, 1.2651f, 16.9999f, 0.9998f)
-                    curveTo(16.9999f, 0.7346f, 17.1052f, 0.4803f, 17.2927f, 0.2927f)
-                    curveTo(17.4803f, 0.1052f, 17.7346f, -2.0E-4f, 17.9999f, -2.0E-4f)
-                    horizontalLineTo(21.9999f)
-                    curveTo(22.5303f, -2.0E-4f, 23.039f, 0.2106f, 23.4141f, 0.5856f)
-                    curveTo(23.7891f, 0.9607f, 23.9999f, 1.4694f, 23.9999f, 1.9999f)
-                    close()
-                    moveTo(20.6549f, 14.8558f)
-                    curveTo(20.0775f, 14.3065f, 19.3106f, 14.0006f, 18.5137f, 14.0017f)
-                    curveTo(17.7167f, 14.0028f, 16.9507f, 14.3109f, 16.3749f, 14.8618f)
-                    lineTo(14.4689f, 16.4678f)
-                    curveTo(12.9129f, 15.8241f, 11.4996f, 14.8792f, 10.31f, 13.6875f)
-                    curveTo(9.1203f, 12.4959f, 8.1779f, 11.0809f, 7.5369f, 9.5239f)
-                    lineTo(9.1369f, 7.6238f)
-                    curveTo(9.6878f, 7.048f, 9.9959f, 6.2821f, 9.997f, 5.4851f)
-                    curveTo(9.9981f, 4.688f, 9.6922f, 3.9213f, 9.1428f, 3.3438f)
-                    curveTo(9.1428f, 3.3438f, 7.2909f, 0.9388f, 7.2609f, 0.9068f)
-                    curveTo(6.6898f, 0.3327f, 5.916f, 0.0061f, 5.1063f, -0.0025f)
-                    curveTo(4.2966f, -0.0111f, 3.5159f, 0.299f, 2.9328f, 0.8608f)
-                    lineTo(1.7838f, 1.8608f)
-                    curveTo(-5.9361f, 10.0698f, 13.9839f, 29.9988f, 22.1839f, 22.1608f)
-                    lineTo(23.0959f, 21.1118f)
-                    curveTo(23.6754f, 20.5307f, 24.0008f, 19.7435f, 24.0008f, 18.9228f)
-                    curveTo(24.0008f, 18.1022f, 23.6754f, 17.315f, 23.0959f, 16.7338f)
-                    curveTo(23.0629f, 16.7078f, 20.6549f, 14.8558f, 20.6549f, 14.8558f)
-                    close()
-                }
+        _callOutgoing = Builder(name = "CallOutgoing", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(24.0f, 2.0f)
+                verticalLineTo(6.0f)
+                arcToRelative(1.0f, 1.0f, 0.0f, false, true, -2.0f, 0.0f)
+                verticalLineTo(3.439f)
+                lineTo(16.7f, 8.71f)
+                arcTo(1.0f, 1.0f, 0.0f, true, true, 15.3f, 7.292f)
+                lineTo(20.61f, 2.0f)
+                horizontalLineTo(18.0f)
+                arcToRelative(1.0f, 1.0f, 0.0f, false, true, 0.0f, -2.0f)
+                horizontalLineToRelative(4.0f)
+                arcTo(2.0f, 2.0f, 0.0f, false, true, 24.0f, 2.0f)
+                close()
+                moveTo(20.655f, 14.856f)
+                arcToRelative(3.1f, 3.1f, 0.0f, false, false, -4.28f, 0.006f)
+                lineToRelative(-1.906f, 1.606f)
+                arcTo(12.781f, 12.781f, 0.0f, false, true, 7.537f, 9.524f)
+                lineToRelative(1.6f, -1.9f)
+                arcToRelative(3.1f, 3.1f, 0.0f, false, false, 0.006f, -4.28f)
+                reflectiveCurveTo(7.291f, 0.939f, 7.261f, 0.907f)
+                arcTo(3.085f, 3.085f, 0.0f, false, false, 2.933f, 0.861f)
+                lineToRelative(-1.149f, 1.0f)
+                curveToRelative(-7.72f, 8.209f, 12.2f, 28.138f, 20.4f, 20.3f)
+                lineToRelative(0.912f, -1.049f)
+                arcToRelative(3.1f, 3.1f, 0.0f, false, false, 0.0f, -4.378f)
+                curveTo(23.063f, 16.708f, 20.655f, 14.856f, 20.655f, 14.856f)
+                close()
             }
         }
         .build()

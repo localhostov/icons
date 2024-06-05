@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,33 +16,31 @@ public val Icons.Filled.Exclamation: ImageVector
         if (_exclamation != null) {
             return _exclamation!!
         }
-        _exclamation = Builder(name = "Exclamation", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(12.0f, 24.0f)
-                    curveTo(18.6274f, 24.0f, 24.0f, 18.6274f, 24.0f, 12.0f)
-                    curveTo(24.0f, 5.3726f, 18.6274f, 0.0f, 12.0f, 0.0f)
-                    curveTo(5.3726f, 0.0f, 0.0f, 5.3726f, 0.0f, 12.0f)
-                    curveTo(0.0072f, 18.6245f, 5.3755f, 23.9928f, 12.0f, 24.0f)
-                    close()
-                    moveTo(11.0f, 6.0f)
-                    curveTo(11.0f, 5.4477f, 11.4477f, 5.0f, 12.0f, 5.0f)
-                    curveTo(12.5523f, 5.0f, 13.0f, 5.4477f, 13.0f, 6.0f)
-                    verticalLineTo(14.0f)
-                    curveTo(13.0f, 14.5523f, 12.5523f, 15.0f, 12.0f, 15.0f)
-                    curveTo(11.4477f, 15.0f, 11.0f, 14.5523f, 11.0f, 14.0f)
-                    verticalLineTo(6.0f)
-                    close()
-                    moveTo(12.0f, 18.0f)
-                    curveTo(12.5523f, 18.0f, 13.0f, 18.4477f, 13.0f, 19.0f)
-                    curveTo(13.0f, 19.5523f, 12.5523f, 20.0f, 12.0f, 20.0f)
-                    curveTo(11.4477f, 20.0f, 11.0f, 19.5523f, 11.0f, 19.0f)
-                    curveTo(11.0f, 18.4477f, 11.4477f, 18.0f, 12.0f, 18.0f)
-                    close()
-                }
+        _exclamation = Builder(name = "Exclamation", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(256.0f, 512.0f)
+                curveToRelative(141.385f, 0.0f, 256.0f, -114.615f, 256.0f, -256.0f)
+                reflectiveCurveTo(397.385f, 0.0f, 256.0f, 0.0f)
+                reflectiveCurveTo(0.0f, 114.615f, 0.0f, 256.0f)
+                curveTo(0.153f, 397.322f, 114.678f, 511.847f, 256.0f, 512.0f)
+                close()
+                moveTo(234.667f, 128.0f)
+                curveToRelative(0.0f, -11.782f, 9.551f, -21.333f, 21.333f, -21.333f)
+                curveToRelative(11.782f, 0.0f, 21.333f, 9.551f, 21.333f, 21.333f)
+                verticalLineToRelative(170.667f)
+                curveToRelative(0.0f, 11.782f, -9.551f, 21.333f, -21.333f, 21.333f)
+                curveToRelative(-11.782f, 0.0f, -21.333f, -9.551f, -21.333f, -21.333f)
+                verticalLineTo(128.0f)
+                close()
+                moveTo(256.0f, 384.0f)
+                curveToRelative(11.782f, 0.0f, 21.333f, 9.551f, 21.333f, 21.333f)
+                reflectiveCurveToRelative(-9.551f, 21.333f, -21.333f, 21.333f)
+                curveToRelative(-11.782f, 0.0f, -21.333f, -9.551f, -21.333f, -21.333f)
+                reflectiveCurveTo(244.218f, 384.0f, 256.0f, 384.0f)
+                close()
             }
         }
         .build()

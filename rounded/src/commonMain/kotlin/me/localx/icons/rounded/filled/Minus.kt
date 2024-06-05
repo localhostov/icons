@@ -16,18 +16,18 @@ public val Icons.Filled.Minus: ImageVector
         if (_minus != null) {
             return _minus!!
         }
-        _minus = Builder(name = "Minus", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _minus = Builder(name = "Minus", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(23.0f, 11.0f)
-                horizontalLineTo(1.0f)
-                curveTo(0.4477f, 11.0f, 0.0f, 11.4477f, 0.0f, 12.0f)
-                curveTo(0.0f, 12.5523f, 0.4477f, 13.0f, 1.0f, 13.0f)
-                horizontalLineTo(23.0f)
-                curveTo(23.5522f, 13.0f, 24.0f, 12.5523f, 24.0f, 12.0f)
-                curveTo(24.0f, 11.4477f, 23.5523f, 11.0f, 23.0f, 11.0f)
+                moveTo(490.667f, 234.667f)
+                horizontalLineTo(21.333f)
+                curveTo(9.551f, 234.667f, 0.0f, 244.218f, 0.0f, 256.0f)
+                curveToRelative(0.0f, 11.782f, 9.551f, 21.333f, 21.333f, 21.333f)
+                horizontalLineToRelative(469.333f)
+                curveToRelative(11.782f, 0.0f, 21.333f, -9.551f, 21.333f, -21.333f)
+                curveTo(512.0f, 244.218f, 502.449f, 234.667f, 490.667f, 234.667f)
                 close()
             }
         }

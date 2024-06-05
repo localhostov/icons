@@ -19,37 +19,31 @@ public val Icons.Filled.MenuDots: ImageVector
         if (_menuDots != null) {
             return _menuDots!!
         }
-        _menuDots = Builder(name = "MenuDots", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _menuDots = Builder(name = "MenuDots", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(2.0f, 14.0f)
-                curveTo(3.1046f, 14.0f, 4.0f, 13.1046f, 4.0f, 12.0f)
-                curveTo(4.0f, 10.8954f, 3.1046f, 10.0f, 2.0f, 10.0f)
-                curveTo(0.8954f, 10.0f, 0.0f, 10.8954f, 0.0f, 12.0f)
-                curveTo(0.0f, 13.1046f, 0.8954f, 14.0f, 2.0f, 14.0f)
-                close()
+                moveTo(42.667f, 256.0f)
+                moveToRelative(-42.667f, 0.0f)
+                arcToRelative(42.667f, 42.667f, 0.0f, true, true, 85.334f, 0.0f)
+                arcToRelative(42.667f, 42.667f, 0.0f, true, true, -85.334f, 0.0f)
             }
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(12.0f, 14.0f)
-                curveTo(13.1046f, 14.0f, 14.0f, 13.1046f, 14.0f, 12.0f)
-                curveTo(14.0f, 10.8954f, 13.1046f, 10.0f, 12.0f, 10.0f)
-                curveTo(10.8954f, 10.0f, 10.0f, 10.8954f, 10.0f, 12.0f)
-                curveTo(10.0f, 13.1046f, 10.8954f, 14.0f, 12.0f, 14.0f)
-                close()
+                moveTo(256.0f, 256.0f)
+                moveToRelative(-42.667f, 0.0f)
+                arcToRelative(42.667f, 42.667f, 0.0f, true, true, 85.334f, 0.0f)
+                arcToRelative(42.667f, 42.667f, 0.0f, true, true, -85.334f, 0.0f)
             }
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(22.0f, 14.0f)
-                curveTo(23.1046f, 14.0f, 24.0f, 13.1046f, 24.0f, 12.0f)
-                curveTo(24.0f, 10.8954f, 23.1046f, 10.0f, 22.0f, 10.0f)
-                curveTo(20.8954f, 10.0f, 19.9999f, 10.8954f, 19.9999f, 12.0f)
-                curveTo(19.9999f, 13.1046f, 20.8954f, 14.0f, 22.0f, 14.0f)
-                close()
+                moveTo(469.333f, 256.0f)
+                moveToRelative(-42.667f, 0.0f)
+                arcToRelative(42.667f, 42.667f, 0.0f, true, true, 85.334f, 0.0f)
+                arcToRelative(42.667f, 42.667f, 0.0f, true, true, -85.334f, 0.0f)
             }
         }
         .build()

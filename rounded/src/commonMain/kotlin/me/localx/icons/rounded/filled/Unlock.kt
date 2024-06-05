@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,39 +16,37 @@ public val Icons.Filled.Unlock: ImageVector
         if (_unlock != null) {
             return _unlock!!
         }
-        _unlock = Builder(name = "Unlock", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(16.9993f, 8.0022f)
-                    horizontalLineTo(7.0009f)
-                    verticalLineTo(7.0023f)
-                    curveTo(7.0001f, 4.2414f, 9.2377f, 2.0025f, 11.9987f, 2.0017f)
-                    curveTo(13.8179f, 2.0012f, 15.4937f, 2.989f, 16.3744f, 4.5807f)
-                    curveTo(16.6425f, 5.0636f, 17.2513f, 5.2378f, 17.7342f, 4.9697f)
-                    curveTo(18.2171f, 4.7016f, 18.3913f, 4.0928f, 18.1232f, 3.6099f)
-                    curveTo(16.2509f, 0.2282f, 11.9916f, -0.9953f, 8.6099f, 0.877f)
-                    curveTo(6.3823f, 2.1103f, 5.0003f, 4.4562f, 5.0011f, 7.0024f)
-                    verticalLineTo(8.4262f)
-                    curveTo(3.1814f, 9.2204f, 2.0042f, 11.0161f, 2.0016f, 13.0015f)
-                    verticalLineTo(19.0006f)
-                    curveTo(2.0049f, 21.7602f, 4.2412f, 23.9965f, 7.0009f, 23.9999f)
-                    horizontalLineTo(16.9993f)
-                    curveTo(19.759f, 23.9966f, 21.9953f, 21.7602f, 21.9986f, 19.0006f)
-                    verticalLineTo(13.0015f)
-                    curveTo(21.9953f, 10.2418f, 19.759f, 8.0055f, 16.9993f, 8.0022f)
-                    close()
-                    moveTo(12.9999f, 17.0008f)
-                    curveTo(12.9999f, 17.553f, 12.5523f, 18.0007f, 12.0001f, 18.0007f)
-                    curveTo(11.4479f, 18.0007f, 11.0003f, 17.553f, 11.0003f, 17.0008f)
-                    verticalLineTo(15.0011f)
-                    curveTo(11.0003f, 14.4489f, 11.4479f, 14.0013f, 12.0001f, 14.0013f)
-                    curveTo(12.5523f, 14.0013f, 12.9999f, 14.4489f, 12.9999f, 15.0011f)
-                    verticalLineTo(17.0008f)
-                    close()
-                }
+        _unlock = Builder(name = "Unlock", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.077f, viewportHeight = 512.077f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(362.705f, 170.744f)
+                horizontalLineTo(149.372f)
+                verticalLineToRelative(-21.333f)
+                curveToRelative(-0.016f, -58.91f, 47.727f, -106.68f, 106.637f, -106.696f)
+                curveToRelative(38.815f, -0.011f, 74.572f, 21.064f, 93.363f, 55.027f)
+                curveToRelative(5.72f, 10.303f, 18.71f, 14.019f, 29.013f, 8.299f)
+                curveToRelative(10.303f, -5.72f, 14.019f, -18.71f, 8.299f, -29.013f)
+                curveToRelative(-39.949f, -72.153f, -130.826f, -98.26f, -202.98f, -58.311f)
+                curveToRelative(-47.529f, 26.315f, -77.017f, 76.367f, -76.999f, 130.695f)
+                verticalLineToRelative(30.379f)
+                curveToRelative(-38.826f, 16.945f, -63.944f, 55.259f, -64.0f, 97.621f)
+                verticalLineToRelative(128.0f)
+                curveToRelative(0.071f, 58.881f, 47.786f, 106.596f, 106.667f, 106.667f)
+                horizontalLineToRelative(213.333f)
+                curveToRelative(58.881f, -0.07f, 106.596f, -47.786f, 106.667f, -106.667f)
+                verticalLineToRelative(-128.0f)
+                curveTo(469.301f, 218.529f, 421.586f, 170.814f, 362.705f, 170.744f)
+                close()
+                moveTo(277.372f, 362.744f)
+                curveToRelative(0.0f, 11.782f, -9.551f, 21.333f, -21.333f, 21.333f)
+                reflectiveCurveToRelative(-21.333f, -9.551f, -21.333f, -21.333f)
+                verticalLineToRelative(-42.667f)
+                curveToRelative(0.0f, -11.782f, 9.551f, -21.333f, 21.333f, -21.333f)
+                reflectiveCurveToRelative(21.333f, 9.551f, 21.333f, 21.333f)
+                verticalLineTo(362.744f)
+                close()
             }
         }
         .build()

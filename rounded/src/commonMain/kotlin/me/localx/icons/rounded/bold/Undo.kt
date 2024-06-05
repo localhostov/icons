@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,44 +16,43 @@ public val Icons.Bold.Undo: ImageVector
         if (_undo != null) {
             return _undo!!
         }
-        _undo = Builder(name = "Undo", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(21.0001f, 21.9492f)
-                    curveTo(21.0001f, 19.464f, 18.9854f, 17.4492f, 16.5001f, 17.4492f)
-                    horizontalLineTo(10.8321f)
-                    verticalLineTo(19.1292f)
-                    curveTo(10.8298f, 20.352f, 9.8366f, 21.3413f, 8.6139f, 21.339f)
-                    curveTo(8.002f, 21.3378f, 7.4179f, 21.0834f, 7.0002f, 20.6362f)
-                    lineTo(0.7781f, 13.9413f)
-                    curveTo(-0.259f, 12.8153f, -0.259f, 11.0822f, 0.7781f, 9.9563f)
-                    lineTo(7.0001f, 3.2613f)
-                    curveTo(7.8318f, 2.3649f, 9.2326f, 2.3125f, 10.129f, 3.1441f)
-                    curveTo(10.5808f, 3.5633f, 10.8374f, 4.1519f, 10.8371f, 4.7682f)
-                    verticalLineTo(6.4492f)
-                    horizontalLineTo(14.5001f)
-                    curveTo(19.7443f, 6.4553f, 23.9941f, 10.7051f, 24.0001f, 15.9492f)
-                    verticalLineTo(21.9492f)
-                    curveTo(24.0001f, 22.7777f, 23.3285f, 23.4492f, 22.5001f, 23.4492f)
-                    curveTo(21.6717f, 23.4492f, 21.0001f, 22.7777f, 21.0001f, 21.9492f)
-                    close()
-                    moveTo(21.0001f, 15.9492f)
-                    curveTo(20.9957f, 12.3612f, 18.0882f, 9.4536f, 14.5001f, 9.4492f)
-                    horizontalLineTo(9.3321f)
-                    curveTo(8.5037f, 9.4492f, 7.8321f, 8.7776f, 7.8321f, 7.9492f)
-                    verticalLineTo(6.7492f)
-                    lineTo(2.9771f, 11.9003f)
-                    lineTo(7.8321f, 17.1283f)
-                    verticalLineTo(15.9493f)
-                    curveTo(7.8321f, 15.1209f, 8.5037f, 14.4493f, 9.3321f, 14.4493f)
-                    horizontalLineTo(16.5001f)
-                    curveTo(18.1237f, 14.4473f, 19.7036f, 14.9749f, 21.0001f, 15.9523f)
-                    verticalLineTo(15.9492f)
-                    close()
-                }
+        _undo = Builder(name = "Undo", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(448.0f, 468.245f)
+                curveToRelative(0.0f, -53.019f, -42.981f, -96.0f, -96.0f, -96.0f)
+                horizontalLineTo(231.083f)
+                verticalLineToRelative(35.84f)
+                curveToRelative(-0.05f, 26.085f, -21.237f, 47.191f, -47.322f, 47.141f)
+                curveToRelative(-13.054f, -0.025f, -25.516f, -5.452f, -34.427f, -14.992f)
+                lineTo(16.597f, 297.408f)
+                curveToRelative(-22.124f, -24.02f, -22.124f, -60.994f, 0.0f, -85.013f)
+                lineTo(149.333f, 69.568f)
+                curveToRelative(17.742f, -19.122f, 47.627f, -20.241f, 66.749f, -2.499f)
+                curveToRelative(9.639f, 8.943f, 15.113f, 21.499f, 15.107f, 34.648f)
+                verticalLineToRelative(35.861f)
+                horizontalLineToRelative(78.144f)
+                curveTo(421.209f, 137.708f, 511.871f, 228.369f, 512.0f, 340.245f)
+                verticalLineToRelative(128.0f)
+                curveToRelative(0.0f, 17.673f, -14.327f, 32.0f, -32.0f, 32.0f)
+                reflectiveCurveTo(448.0f, 485.918f, 448.0f, 468.245f)
+                close()
+                moveTo(448.0f, 340.245f)
+                lineTo(448.0f, 340.245f)
+                curveToRelative(-0.094f, -76.544f, -62.122f, -138.573f, -138.667f, -138.667f)
+                horizontalLineTo(199.083f)
+                curveToRelative(-17.673f, 0.0f, -32.0f, -14.327f, -32.0f, -32.0f)
+                verticalLineToRelative(-25.6f)
+                lineTo(63.509f, 253.867f)
+                lineToRelative(103.573f, 111.531f)
+                verticalLineToRelative(-25.152f)
+                curveToRelative(0.0f, -17.673f, 14.327f, -32.0f, 32.0f, -32.0f)
+                horizontalLineTo(352.0f)
+                curveToRelative(34.637f, -0.043f, 68.342f, 11.214f, 96.0f, 32.064f)
+                verticalLineTo(340.245f)
+                close()
             }
         }
         .build()

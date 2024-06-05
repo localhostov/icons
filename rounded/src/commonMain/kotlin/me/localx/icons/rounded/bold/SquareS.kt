@@ -1,0 +1,74 @@
+package me.localx.icons.rounded.bold
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
+import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.ImageVector.Builder
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+import me.localx.icons.rounded.Icons
+
+public val Icons.Bold.SquareS: ImageVector
+    get() {
+        if (_squareS != null) {
+            return _squareS!!
+        }
+        _squareS = Builder(name = "SquareS", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(18.5f, 0.0f)
+                lineTo(5.5f, 0.0f)
+                curveTo(2.467f, 0.0f, 0.0f, 2.468f, 0.0f, 5.5f)
+                verticalLineToRelative(13.0f)
+                curveToRelative(0.0f, 3.032f, 2.467f, 5.5f, 5.5f, 5.5f)
+                horizontalLineToRelative(13.0f)
+                curveToRelative(3.033f, 0.0f, 5.5f, -2.468f, 5.5f, -5.5f)
+                lineTo(24.0f, 5.5f)
+                curveToRelative(0.0f, -3.032f, -2.467f, -5.5f, -5.5f, -5.5f)
+                close()
+                moveTo(21.0f, 18.5f)
+                curveToRelative(0.0f, 1.379f, -1.122f, 2.5f, -2.5f, 2.5f)
+                lineTo(5.5f, 21.0f)
+                curveToRelative(-1.378f, 0.0f, -2.5f, -1.121f, -2.5f, -2.5f)
+                lineTo(3.0f, 5.5f)
+                curveToRelative(0.0f, -1.379f, 1.122f, -2.5f, 2.5f, -2.5f)
+                horizontalLineToRelative(13.0f)
+                curveToRelative(1.378f, 0.0f, 2.5f, 1.121f, 2.5f, 2.5f)
+                verticalLineToRelative(13.0f)
+                close()
+                moveTo(18.0f, 15.093f)
+                curveToRelative(0.0f, 2.154f, -1.753f, 3.907f, -3.907f, 3.907f)
+                horizontalLineToRelative(-4.22f)
+                curveToRelative(-1.912f, 0.0f, -3.531f, -1.366f, -3.852f, -3.248f)
+                curveToRelative(-0.139f, -0.816f, 0.41f, -1.592f, 1.227f, -1.73f)
+                curveToRelative(0.817f, -0.138f, 1.592f, 0.409f, 1.73f, 1.227f)
+                curveToRelative(0.074f, 0.436f, 0.451f, 0.752f, 0.895f, 0.752f)
+                horizontalLineToRelative(4.22f)
+                curveToRelative(0.5f, 0.0f, 0.907f, -0.407f, 0.907f, -0.907f)
+                curveToRelative(0.0f, -0.402f, -0.27f, -0.761f, -0.657f, -0.872f)
+                lineToRelative(-5.505f, -1.562f)
+                curveToRelative(-1.671f, -0.476f, -2.838f, -2.02f, -2.838f, -3.756f)
+                curveToRelative(0.0f, -2.152f, 1.751f, -3.903f, 3.903f, -3.903f)
+                horizontalLineToRelative(4.224f)
+                curveToRelative(1.912f, 0.0f, 3.531f, 1.366f, 3.852f, 3.248f)
+                curveToRelative(0.139f, 0.816f, -0.41f, 1.592f, -1.227f, 1.73f)
+                curveToRelative(-0.813f, 0.144f, -1.591f, -0.409f, -1.73f, -1.227f)
+                curveToRelative(-0.074f, -0.436f, -0.451f, -0.752f, -0.895f, -0.752f)
+                horizontalLineToRelative(-4.224f)
+                curveToRelative(-0.498f, 0.0f, -0.903f, 0.405f, -0.903f, 0.903f)
+                curveToRelative(0.0f, 0.402f, 0.271f, 0.76f, 0.657f, 0.87f)
+                lineToRelative(5.51f, 1.562f)
+                curveToRelative(1.67f, 0.481f, 2.833f, 2.025f, 2.833f, 3.757f)
+                close()
+            }
+        }
+        .build()
+        return _squareS!!
+    }
+
+private var _squareS: ImageVector? = null

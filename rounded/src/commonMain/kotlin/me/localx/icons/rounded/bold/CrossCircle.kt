@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -20,49 +19,48 @@ public val Icons.Bold.CrossCircle: ImageVector
         if (_crossCircle != null) {
             return _crossCircle!!
         }
-        _crossCircle = Builder(name = "CrossCircle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(16.061f, 7.9389f)
-                    curveTo(15.4754f, 7.353f, 14.5257f, 7.3527f, 13.9397f, 7.9383f)
-                    curveTo(13.9395f, 7.9385f, 13.9392f, 7.9388f, 13.939f, 7.9389f)
-                    lineTo(12.0f, 9.879f)
-                    lineTo(10.061f, 7.9389f)
-                    curveTo(9.475f, 7.353f, 8.525f, 7.353f, 7.9391f, 7.9389f)
-                    curveTo(7.3531f, 8.5249f, 7.3531f, 9.475f, 7.9391f, 10.0609f)
-                    lineTo(9.879f, 12.0f)
-                    lineTo(7.939f, 13.9389f)
-                    curveTo(7.353f, 14.5249f, 7.353f, 15.475f, 7.939f, 16.0609f)
-                    curveTo(8.525f, 16.6469f, 9.475f, 16.6469f, 10.061f, 16.0609f)
-                    lineTo(12.0f, 14.121f)
-                    lineTo(13.939f, 16.061f)
-                    curveTo(14.525f, 16.647f, 15.475f, 16.647f, 16.061f, 16.061f)
-                    curveTo(16.647f, 15.475f, 16.647f, 14.5249f, 16.061f, 13.939f)
-                    lineTo(14.121f, 12.0f)
-                    lineTo(16.061f, 10.061f)
-                    curveTo(16.647f, 9.4754f, 16.6473f, 8.5256f, 16.0617f, 7.9397f)
-                    curveTo(16.0614f, 7.9394f, 16.0613f, 7.9392f, 16.061f, 7.9389f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(12.0f, 0.0f)
-                    curveTo(5.3726f, 0.0f, 0.0f, 5.3726f, 0.0f, 12.0f)
-                    curveTo(0.0f, 18.6274f, 5.3726f, 24.0f, 12.0f, 24.0f)
-                    curveTo(18.6274f, 24.0f, 24.0f, 18.6274f, 24.0f, 12.0f)
-                    curveTo(23.9928f, 5.3755f, 18.6245f, 0.0072f, 12.0f, 0.0f)
-                    close()
-                    moveTo(12.0f, 21.0f)
-                    curveTo(7.0294f, 21.0f, 3.0f, 16.9706f, 3.0f, 12.0f)
-                    curveTo(3.0f, 7.0294f, 7.0294f, 3.0f, 12.0f, 3.0f)
-                    curveTo(16.9706f, 3.0f, 21.0f, 7.0294f, 21.0f, 12.0f)
-                    curveTo(20.9945f, 16.9683f, 16.9683f, 20.9945f, 12.0f, 21.0f)
-                    close()
-                }
+        _crossCircle = Builder(name = "CrossCircle", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(342.635f, 169.365f)
+                curveToRelative(-12.493f, -12.501f, -32.754f, -12.507f, -45.255f, -0.014f)
+                curveToRelative(-0.005f, 0.005f, -0.01f, 0.01f, -0.015f, 0.014f)
+                lineTo(256.0f, 210.752f)
+                lineToRelative(-41.365f, -41.387f)
+                curveToRelative(-12.501f, -12.501f, -32.769f, -12.501f, -45.269f, 0.0f)
+                reflectiveCurveToRelative(-12.501f, 32.769f, 0.0f, 45.269f)
+                lineTo(210.752f, 256.0f)
+                lineToRelative(-41.387f, 41.365f)
+                curveToRelative(-12.501f, 12.501f, -12.501f, 32.769f, 0.0f, 45.269f)
+                curveToRelative(12.501f, 12.501f, 32.769f, 12.501f, 45.269f, 0.0f)
+                lineToRelative(0.0f, 0.0f)
+                lineTo(256.0f, 301.248f)
+                lineToRelative(41.365f, 41.387f)
+                curveToRelative(12.501f, 12.501f, 32.769f, 12.501f, 45.269f, 0.0f)
+                curveToRelative(12.501f, -12.501f, 12.501f, -32.769f, 0.0f, -45.269f)
+                lineTo(301.248f, 256.0f)
+                lineToRelative(41.387f, -41.365f)
+                curveToRelative(12.501f, -12.493f, 12.507f, -32.754f, 0.014f, -45.255f)
+                curveTo(342.644f, 169.375f, 342.64f, 169.37f, 342.635f, 169.365f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(256.0f, 0.0f)
+                curveTo(114.615f, 0.0f, 0.0f, 114.615f, 0.0f, 256.0f)
+                reflectiveCurveToRelative(114.615f, 256.0f, 256.0f, 256.0f)
+                reflectiveCurveToRelative(256.0f, -114.615f, 256.0f, -256.0f)
+                curveTo(511.847f, 114.678f, 397.322f, 0.153f, 256.0f, 0.0f)
+                close()
+                moveTo(256.0f, 448.0f)
+                curveToRelative(-106.039f, 0.0f, -192.0f, -85.961f, -192.0f, -192.0f)
+                reflectiveCurveTo(149.961f, 64.0f, 256.0f, 64.0f)
+                reflectiveCurveToRelative(192.0f, 85.961f, 192.0f, 192.0f)
+                curveTo(447.882f, 361.99f, 361.99f, 447.882f, 256.0f, 448.0f)
+                close()
             }
         }
         .build()

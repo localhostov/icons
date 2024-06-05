@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,56 +16,54 @@ public val Icons.Bold.GraduationCap: ImageVector
         if (_graduationCap != null) {
             return _graduationCap!!
         }
-        _graduationCap = Builder(name = "GraduationCap", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(21.9418f, 5.0364f)
-                    curveTo(21.9008f, 5.0124f, 14.7558f, 1.7145f, 14.7558f, 1.7145f)
-                    curveTo(13.04f, 0.7695f, 10.9597f, 0.7695f, 9.2438f, 1.7145f)
-                    curveTo(9.2438f, 1.7145f, 2.0999f, 5.0124f, 2.0579f, 5.0364f)
-                    curveTo(0.1447f, 6.0779f, -0.5619f, 8.473f, 0.4795f, 10.3861f)
-                    curveTo(0.8427f, 11.0533f, 1.3907f, 11.6013f, 2.0579f, 11.9645f)
-                    curveTo(2.0999f, 11.9885f, 4.9999f, 13.3285f, 4.9999f, 13.3285f)
-                    verticalLineTo(18.0555f)
-                    curveTo(5.0027f, 20.0915f, 6.3285f, 21.8894f, 8.2729f, 22.4935f)
-                    curveTo(9.4838f, 22.8433f, 10.7395f, 23.014f, 11.9999f, 23.0005f)
-                    curveTo(13.2603f, 23.014f, 14.5159f, 22.8433f, 15.7268f, 22.4935f)
-                    curveTo(17.6712f, 21.8893f, 18.997f, 20.0915f, 18.9998f, 18.0555f)
-                    verticalLineTo(13.3284f)
-                    lineTo(20.9998f, 12.4064f)
-                    verticalLineTo(19.5004f)
-                    curveTo(20.9998f, 20.3288f, 21.6714f, 21.0004f, 22.4998f, 21.0004f)
-                    curveTo(23.3282f, 21.0004f, 23.9998f, 20.3288f, 23.9998f, 19.5004f)
-                    verticalLineTo(8.4614f)
-                    curveTo(23.9602f, 6.9869f, 23.2555f, 5.6764f, 21.9418f, 5.0364f)
-                    close()
-                    moveTo(15.9998f, 18.0554f)
-                    curveTo(16.0035f, 18.77f, 15.5426f, 19.4042f, 14.8618f, 19.6214f)
-                    curveTo(12.987f, 20.1244f, 11.0127f, 20.1244f, 9.1378f, 19.6214f)
-                    curveTo(8.457f, 19.4042f, 7.9962f, 18.77f, 7.9998f, 18.0554f)
-                    verticalLineTo(14.7124f)
-                    lineTo(9.2438f, 15.2864f)
-                    curveTo(10.959f, 16.2338f, 13.0406f, 16.2338f, 14.7558f, 15.2864f)
-                    lineTo(15.9998f, 14.7124f)
-                    verticalLineTo(18.0554f)
-                    horizontalLineTo(15.9998f)
-                    close()
-                    moveTo(20.4848f, 9.3404f)
-                    curveTo(20.4848f, 9.3404f, 13.3558f, 12.6304f, 13.3158f, 12.6544f)
-                    curveTo(12.4998f, 13.1185f, 11.4997f, 13.1185f, 10.6838f, 12.6544f)
-                    curveTo(10.6438f, 12.6304f, 3.5148f, 9.3404f, 3.5148f, 9.3404f)
-                    curveTo(3.0509f, 9.1037f, 2.8666f, 8.5358f, 3.1033f, 8.0719f)
-                    curveTo(3.1936f, 7.8948f, 3.3377f, 7.7508f, 3.5148f, 7.6604f)
-                    curveTo(3.5148f, 7.6604f, 10.6438f, 4.3704f, 10.6838f, 4.3464f)
-                    curveTo(11.4997f, 3.8823f, 12.4998f, 3.8823f, 13.3158f, 4.3464f)
-                    curveTo(13.3558f, 4.3704f, 20.4848f, 7.6604f, 20.4848f, 7.6604f)
-                    curveTo(20.9487f, 7.8971f, 21.1329f, 8.465f, 20.8963f, 8.9289f)
-                    curveTo(20.8059f, 9.1061f, 20.6619f, 9.2501f, 20.4848f, 9.3404f)
-                    close()
-                }
+        _graduationCap = Builder(name = "GraduationCap", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(468.096f, 107.435f)
+                curveToRelative(-0.875f, -0.512f, -153.301f, -70.869f, -153.301f, -70.869f)
+                curveToRelative(-36.604f, -20.159f, -80.985f, -20.159f, -117.589f, 0.0f)
+                curveToRelative(0.0f, 0.0f, -152.405f, 70.357f, -153.301f, 70.869f)
+                curveToRelative(-40.813f, 22.217f, -55.888f, 73.314f, -33.671f, 114.127f)
+                curveToRelative(7.747f, 14.232f, 19.439f, 25.923f, 33.671f, 33.671f)
+                curveToRelative(0.896f, 0.512f, 62.763f, 29.099f, 62.763f, 29.099f)
+                verticalLineToRelative(100.843f)
+                curveToRelative(0.06f, 43.435f, 28.345f, 81.789f, 69.824f, 94.677f)
+                curveToRelative(25.834f, 7.462f, 52.621f, 11.105f, 79.509f, 10.816f)
+                curveToRelative(26.889f, 0.289f, 53.675f, -3.354f, 79.509f, -10.816f)
+                curveToRelative(41.479f, -12.889f, 69.764f, -51.243f, 69.824f, -94.677f)
+                verticalLineTo(284.331f)
+                lineTo(448.0f, 264.661f)
+                verticalLineTo(416.0f)
+                curveToRelative(0.0f, 17.673f, 14.327f, 32.0f, 32.0f, 32.0f)
+                reflectiveCurveToRelative(32.0f, -14.327f, 32.0f, -32.0f)
+                verticalLineTo(180.501f)
+                curveTo(511.154f, 149.044f, 496.121f, 121.088f, 468.096f, 107.435f)
+                close()
+                moveTo(341.333f, 385.173f)
+                curveToRelative(0.078f, 15.245f, -9.754f, 28.774f, -24.277f, 33.408f)
+                curveToRelative(-39.997f, 10.731f, -82.115f, 10.731f, -122.112f, 0.0f)
+                curveToRelative(-14.524f, -4.634f, -24.355f, -18.163f, -24.277f, -33.408f)
+                verticalLineToRelative(-71.317f)
+                lineToRelative(26.539f, 12.245f)
+                curveToRelative(36.591f, 20.212f, 80.998f, 20.212f, 117.589f, 0.0f)
+                lineToRelative(26.539f, -12.245f)
+                verticalLineTo(385.173f)
+                close()
+                moveTo(437.013f, 199.253f)
+                curveToRelative(0.0f, 0.0f, -152.085f, 70.187f, -152.939f, 70.699f)
+                curveToRelative(-17.407f, 9.9f, -38.742f, 9.9f, -56.149f, 0.0f)
+                curveToRelative(-0.853f, -0.512f, -152.939f, -70.699f, -152.939f, -70.699f)
+                curveToRelative(-9.897f, -5.049f, -13.827f, -17.165f, -8.778f, -27.062f)
+                curveToRelative(1.927f, -3.778f, 5.0f, -6.85f, 8.778f, -8.778f)
+                curveToRelative(0.0f, 0.0f, 152.085f, -70.187f, 152.939f, -70.699f)
+                curveToRelative(17.407f, -9.9f, 38.742f, -9.9f, 56.149f, 0.0f)
+                curveToRelative(0.853f, 0.512f, 152.939f, 70.699f, 152.939f, 70.699f)
+                curveToRelative(9.897f, 5.049f, 13.827f, 17.165f, 8.778f, 27.062f)
+                curveTo(443.864f, 194.254f, 440.791f, 197.326f, 437.013f, 199.253f)
+                lineTo(437.013f, 199.253f)
+                close()
             }
         }
         .build()

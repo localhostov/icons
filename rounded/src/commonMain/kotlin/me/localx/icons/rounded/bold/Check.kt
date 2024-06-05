@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,25 +16,25 @@ public val Icons.Bold.Check: ImageVector
         if (_check != null) {
             return _check!!
         }
-        _check = Builder(name = "Check", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(7.7492f, 20.6625f)
-                    curveTo(7.0679f, 20.6628f, 6.4146f, 20.392f, 5.9332f, 19.9099f)
-                    lineTo(0.4431f, 14.4217f)
-                    curveTo(-0.1477f, 13.8308f, -0.1477f, 12.8729f, 0.4431f, 12.282f)
-                    curveTo(1.034f, 11.6912f, 1.9919f, 11.6912f, 2.5828f, 12.282f)
-                    lineTo(7.7492f, 17.4483f)
-                    lineTo(21.4172f, 3.7803f)
-                    curveTo(22.0081f, 3.1896f, 22.966f, 3.1896f, 23.5569f, 3.7803f)
-                    curveTo(24.1477f, 4.3713f, 24.1477f, 5.3292f, 23.5569f, 5.9201f)
-                    lineTo(9.5651f, 19.9099f)
-                    curveTo(9.0838f, 20.392f, 8.4305f, 20.6628f, 7.7492f, 20.6625f)
-                    close()
-                }
+        _check = Builder(name = "Check", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 507.506f, viewportHeight = 507.506f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(163.865f, 436.934f)
+                curveToRelative(-14.406f, 0.006f, -28.222f, -5.72f, -38.4f, -15.915f)
+                lineTo(9.369f, 304.966f)
+                curveToRelative(-12.492f, -12.496f, -12.492f, -32.752f, 0.0f, -45.248f)
+                lineToRelative(0.0f, 0.0f)
+                curveToRelative(12.496f, -12.492f, 32.752f, -12.492f, 45.248f, 0.0f)
+                lineToRelative(109.248f, 109.248f)
+                lineTo(452.889f, 79.942f)
+                curveToRelative(12.496f, -12.492f, 32.752f, -12.492f, 45.248f, 0.0f)
+                lineToRelative(0.0f, 0.0f)
+                curveToRelative(12.492f, 12.496f, 12.492f, 32.752f, 0.0f, 45.248f)
+                lineTo(202.265f, 421.019f)
+                curveTo(192.087f, 431.214f, 178.271f, 436.94f, 163.865f, 436.934f)
+                close()
             }
         }
         .build()

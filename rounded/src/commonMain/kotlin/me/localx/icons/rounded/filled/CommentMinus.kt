@@ -1,0 +1,47 @@
+package me.localx.icons.rounded.filled
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
+import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.ImageVector.Builder
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+import me.localx.icons.rounded.Icons
+
+public val Icons.Filled.CommentMinus: ImageVector
+    get() {
+        if (_commentMinus != null) {
+            return _commentMinus!!
+        }
+        _commentMinus = Builder(name = "CommentMinus", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(12.836f, 0.029f)
+                curveToRelative(-3.469f, -0.235f, -6.875f, 1.036f, -9.328f, 3.492f)
+                reflectiveCurveTo(-0.211f, 9.378f, 0.03f, 12.854f)
+                curveToRelative(0.44f, 6.354f, 6.052f, 11.146f, 13.053f, 11.146f)
+                horizontalLineToRelative(5.917f)
+                curveToRelative(2.757f, 0.0f, 5.0f, -2.243f, 5.0f, -5.0f)
+                verticalLineToRelative(-6.66f)
+                curveTo(24.0f, 5.862f, 19.097f, 0.454f, 12.836f, 0.029f)
+                close()
+                moveTo(16.0f, 13.0f)
+                horizontalLineToRelative(-8.0f)
+                curveToRelative(-0.552f, 0.0f, -1.0f, -0.448f, -1.0f, -1.0f)
+                reflectiveCurveToRelative(0.448f, -1.0f, 1.0f, -1.0f)
+                horizontalLineToRelative(8.0f)
+                curveToRelative(0.553f, 0.0f, 1.0f, 0.448f, 1.0f, 1.0f)
+                reflectiveCurveToRelative(-0.447f, 1.0f, -1.0f, 1.0f)
+                close()
+            }
+        }
+        .build()
+        return _commentMinus!!
+    }
+
+private var _commentMinus: ImageVector? = null

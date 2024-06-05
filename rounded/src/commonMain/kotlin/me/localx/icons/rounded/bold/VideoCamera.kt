@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,64 +16,46 @@ public val Icons.Bold.VideoCamera: ImageVector
         if (_videoCamera != null) {
             return _videoCamera!!
         }
-        _videoCamera = Builder(name = "VideoCamera", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(22.412f, 8.7006f)
-                    curveTo(21.9924f, 8.5501f, 21.5415f, 8.5085f, 21.1015f, 8.5797f)
-                    curveTo(20.6615f, 8.6509f, 20.2467f, 8.8325f, 19.896f, 9.1076f)
-                    lineTo(18.811f, 9.9156f)
-                    curveTo(18.5494f, 8.964f, 18.029f, 8.1036f, 17.3077f, 7.4301f)
-                    curveTo(16.5863f, 6.7566f, 15.6923f, 6.2964f, 14.725f, 6.1006f)
-                    lineTo(10.146f, 1.5256f)
-                    curveTo(9.4898f, 0.8695f, 8.5999f, 0.5008f, 7.672f, 0.5006f)
-                    horizontalLineTo(1.5f)
-                    curveTo(1.1022f, 0.5006f, 0.7206f, 0.6586f, 0.4393f, 0.9399f)
-                    curveTo(0.158f, 1.2213f, 0.0f, 1.6028f, 0.0f, 2.0006f)
-                    horizontalLineTo(0.0f)
-                    curveTo(0.0f, 2.3984f, 0.158f, 2.78f, 0.4393f, 3.0613f)
-                    curveTo(0.7206f, 3.3426f, 1.1022f, 3.5006f, 1.5f, 3.5006f)
-                    horizontalLineTo(7.672f)
-                    curveTo(7.7377f, 3.5005f, 7.8028f, 3.5133f, 7.8635f, 3.5384f)
-                    curveTo(7.9243f, 3.5634f, 7.9795f, 3.6002f, 8.026f, 3.6466f)
-                    lineTo(10.38f, 6.0006f)
-                    horizontalLineTo(5.318f)
-                    curveTo(3.9076f, 6.0006f, 2.5549f, 6.5609f, 1.5576f, 7.5582f)
-                    curveTo(0.5603f, 8.5555f, 0.0f, 9.9082f, 0.0f, 11.3186f)
-                    lineTo(0.0f, 18.6826f)
-                    curveTo(0.0f, 19.381f, 0.1376f, 20.0725f, 0.4048f, 20.7177f)
-                    curveTo(0.6721f, 21.3629f, 1.0638f, 21.9492f, 1.5576f, 22.443f)
-                    curveTo(2.5549f, 23.4403f, 3.9076f, 24.0006f, 5.318f, 24.0006f)
-                    horizontalLineTo(13.682f)
-                    curveTo(14.8472f, 23.9991f, 15.9798f, 23.6156f, 16.9062f, 22.9088f)
-                    curveTo(17.8326f, 22.202f, 18.5017f, 21.211f, 18.811f, 20.0876f)
-                    lineTo(20.011f, 20.9786f)
-                    curveTo(20.4416f, 21.3015f, 20.9648f, 21.4769f, 21.503f, 21.4786f)
-                    curveTo(22.0295f, 21.4758f, 22.542f, 21.3087f, 22.969f, 21.0006f)
-                    curveTo(23.2987f, 20.7496f, 23.5641f, 20.4239f, 23.7434f, 20.0503f)
-                    curveTo(23.9226f, 19.6767f, 24.0106f, 19.2659f, 24.0f, 18.8516f)
-                    verticalLineTo(11.0276f)
-                    curveTo(24.0011f, 10.5248f, 23.85f, 10.0334f, 23.5666f, 9.6181f)
-                    curveTo(23.2831f, 9.2027f, 22.8806f, 8.8829f, 22.412f, 8.7006f)
-                    close()
-                    moveTo(16.0f, 18.6826f)
-                    curveTo(15.9992f, 19.2971f, 15.7547f, 19.8863f, 15.3202f, 20.3208f)
-                    curveTo(14.8857f, 20.7553f, 14.2965f, 20.9998f, 13.682f, 21.0006f)
-                    horizontalLineTo(5.318f)
-                    curveTo(4.7035f, 20.9998f, 4.1143f, 20.7553f, 3.6798f, 20.3208f)
-                    curveTo(3.2453f, 19.8863f, 3.0008f, 19.2971f, 3.0f, 18.6826f)
-                    verticalLineTo(11.3186f)
-                    curveTo(3.0008f, 10.7041f, 3.2453f, 10.115f, 3.6798f, 9.6804f)
-                    curveTo(4.1143f, 9.2459f, 4.7035f, 9.0014f, 5.318f, 9.0006f)
-                    horizontalLineTo(13.682f)
-                    curveTo(14.2965f, 9.0014f, 14.8857f, 9.2459f, 15.3202f, 9.6804f)
-                    curveTo(15.7547f, 10.115f, 15.9992f, 10.7041f, 16.0f, 11.3186f)
-                    verticalLineTo(18.6826f)
-                    close()
-                }
+        _videoCamera = Builder(name = "VideoCamera", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(22.412f, 8.7f)
+                arcToRelative(2.635f, 2.635f, 0.0f, false, false, -2.516f, 0.407f)
+                lineToRelative(-1.085f, 0.808f)
+                arcTo(5.335f, 5.335f, 0.0f, false, false, 14.725f, 6.1f)
+                lineTo(10.146f, 1.525f)
+                arcTo(3.5f, 3.5f, 0.0f, false, false, 7.672f, 0.5f)
+                horizontalLineTo(1.5f)
+                arcTo(1.5f, 1.5f, 0.0f, false, false, 0.0f, 2.0f)
+                horizontalLineTo(0.0f)
+                arcTo(1.5f, 1.5f, 0.0f, false, false, 1.5f, 3.5f)
+                horizontalLineTo(7.672f)
+                arcToRelative(0.5f, 0.5f, 0.0f, false, true, 0.354f, 0.146f)
+                lineTo(10.38f, 6.0f)
+                horizontalLineTo(5.318f)
+                arcTo(5.318f, 5.318f, 0.0f, false, false, 0.0f, 11.318f)
+                verticalLineToRelative(7.364f)
+                arcTo(5.318f, 5.318f, 0.0f, false, false, 5.318f, 24.0f)
+                horizontalLineToRelative(8.364f)
+                arcToRelative(5.327f, 5.327f, 0.0f, false, false, 5.129f, -3.913f)
+                lineToRelative(1.2f, 0.891f)
+                arcToRelative(2.5f, 2.5f, 0.0f, false, false, 1.492f, 0.5f)
+                arcTo(2.529f, 2.529f, 0.0f, false, false, 22.969f, 21.0f)
+                arcTo(2.617f, 2.617f, 0.0f, false, false, 24.0f, 18.851f)
+                verticalLineTo(11.027f)
+                arcTo(2.491f, 2.491f, 0.0f, false, false, 22.412f, 8.7f)
+                close()
+                moveTo(16.0f, 18.682f)
+                arcTo(2.321f, 2.321f, 0.0f, false, true, 13.682f, 21.0f)
+                horizontalLineTo(5.318f)
+                arcTo(2.321f, 2.321f, 0.0f, false, true, 3.0f, 18.682f)
+                verticalLineTo(11.318f)
+                arcTo(2.321f, 2.321f, 0.0f, false, true, 5.318f, 9.0f)
+                horizontalLineToRelative(8.364f)
+                arcTo(2.321f, 2.321f, 0.0f, false, true, 16.0f, 11.318f)
+                close()
             }
         }
         .build()

@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -20,51 +19,51 @@ public val Icons.Bold.Checkbox: ImageVector
         if (_checkbox != null) {
             return _checkbox!!
         }
-        _checkbox = Builder(name = "Checkbox", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(18.5f, 24.0f)
-                    horizontalLineTo(5.5f)
-                    curveTo(2.4638f, 23.9967f, 0.0033f, 21.5362f, 0.0f, 18.5f)
-                    verticalLineTo(5.5f)
-                    curveTo(0.0033f, 2.4638f, 2.4638f, 0.0033f, 5.5f, 0.0f)
-                    horizontalLineTo(18.5f)
-                    curveTo(21.5362f, 0.0033f, 23.9967f, 2.4638f, 24.0f, 5.5f)
-                    verticalLineTo(18.5f)
-                    curveTo(23.9967f, 21.5362f, 21.5362f, 23.9967f, 18.5f, 24.0f)
-                    close()
-                    moveTo(5.5f, 3.0f)
-                    curveTo(4.1193f, 3.0f, 3.0f, 4.1193f, 3.0f, 5.5f)
-                    verticalLineTo(18.5f)
-                    curveTo(3.0f, 19.8807f, 4.1193f, 21.0f, 5.5f, 21.0f)
-                    horizontalLineTo(18.5f)
-                    curveTo(19.8807f, 21.0f, 21.0f, 19.8807f, 21.0f, 18.5f)
-                    verticalLineTo(5.5f)
-                    curveTo(21.0f, 4.1193f, 19.8807f, 3.0f, 18.5f, 3.0f)
-                    horizontalLineTo(5.5f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(9.6671f, 17.7869f)
-                    curveTo(9.036f, 17.7873f, 8.4311f, 17.5353f, 7.9871f, 17.0869f)
-                    lineTo(5.0001f, 14.1049f)
-                    curveTo(4.4141f, 13.5193f, 4.4138f, 12.5696f, 4.9994f, 11.9836f)
-                    curveTo(4.9997f, 11.9834f, 4.9999f, 11.9831f, 5.0001f, 11.9829f)
-                    curveTo(5.5858f, 11.3973f, 6.5353f, 11.3973f, 7.1211f, 11.9829f)
-                    lineTo(9.6671f, 14.5279f)
-                    lineTo(16.8791f, 7.3159f)
-                    curveTo(17.4648f, 6.7303f, 18.4143f, 6.7303f, 19.0001f, 7.3159f)
-                    curveTo(19.5861f, 7.9015f, 19.5864f, 8.8512f, 19.0007f, 9.4372f)
-                    curveTo(19.0005f, 9.4375f, 19.0003f, 9.4377f, 19.0001f, 9.4379f)
-                    lineTo(11.3461f, 17.0919f)
-                    curveTo(10.9016f, 17.5384f, 10.2971f, 17.7887f, 9.6671f, 17.7869f)
-                    close()
-                }
+        _checkbox = Builder(name = "Checkbox", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(394.667f, 512.0f)
+                horizontalLineTo(117.333f)
+                curveTo(52.561f, 511.929f, 0.071f, 459.439f, 0.0f, 394.667f)
+                verticalLineTo(117.333f)
+                curveTo(0.071f, 52.561f, 52.561f, 0.071f, 117.333f, 0.0f)
+                horizontalLineToRelative(277.333f)
+                curveTo(459.439f, 0.071f, 511.929f, 52.561f, 512.0f, 117.333f)
+                verticalLineToRelative(277.333f)
+                curveTo(511.929f, 459.439f, 459.439f, 511.929f, 394.667f, 512.0f)
+                close()
+                moveTo(117.333f, 64.0f)
+                curveTo(87.878f, 64.0f, 64.0f, 87.878f, 64.0f, 117.333f)
+                verticalLineToRelative(277.333f)
+                curveTo(64.0f, 424.122f, 87.878f, 448.0f, 117.333f, 448.0f)
+                horizontalLineToRelative(277.333f)
+                curveTo(424.122f, 448.0f, 448.0f, 424.122f, 448.0f, 394.667f)
+                verticalLineTo(117.333f)
+                curveTo(448.0f, 87.878f, 424.122f, 64.0f, 394.667f, 64.0f)
+                horizontalLineTo(117.333f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(206.229f, 379.456f)
+                curveToRelative(-13.462f, 0.009f, -26.368f, -5.368f, -35.84f, -14.933f)
+                lineToRelative(-63.723f, -63.616f)
+                curveToRelative(-12.501f, -12.493f, -12.507f, -32.754f, -0.014f, -45.255f)
+                curveToRelative(0.005f, -0.005f, 0.01f, -0.01f, 0.014f, -0.015f)
+                lineToRelative(0.0f, 0.0f)
+                curveToRelative(12.496f, -12.492f, 32.752f, -12.492f, 45.248f, 0.0f)
+                lineToRelative(54.315f, 54.293f)
+                lineToRelative(153.856f, -153.856f)
+                curveToRelative(12.496f, -12.492f, 32.752f, -12.492f, 45.248f, 0.0f)
+                lineToRelative(0.0f, 0.0f)
+                curveToRelative(12.501f, 12.493f, 12.507f, 32.754f, 0.014f, 45.255f)
+                curveToRelative(-0.005f, 0.005f, -0.01f, 0.01f, -0.014f, 0.014f)
+                lineTo(242.048f, 364.629f)
+                curveTo(232.566f, 374.154f, 219.669f, 379.493f, 206.229f, 379.456f)
+                close()
             }
         }
         .build()

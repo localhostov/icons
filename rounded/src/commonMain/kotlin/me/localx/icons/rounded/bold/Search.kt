@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,30 +16,28 @@ public val Icons.Bold.Search: ImageVector
         if (_search != null) {
             return _search!!
         }
-        _search = Builder(name = "Search", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(23.5612f, 21.4454f)
-                    lineTo(18.9161f, 16.7983f)
-                    curveTo(22.3918f, 12.1535f, 21.4441f, 5.5705f, 16.7993f, 2.0948f)
-                    curveTo(12.1545f, -1.3809f, 5.5715f, -0.4332f, 2.0958f, 4.2116f)
-                    curveTo(-1.3799f, 8.8563f, -0.4322f, 15.4393f, 4.2126f, 18.9151f)
-                    curveTo(7.9436f, 21.7071f, 13.0682f, 21.7071f, 16.7993f, 18.9151f)
-                    lineTo(21.4464f, 23.5622f)
-                    curveTo(22.0304f, 24.1462f, 22.9772f, 24.1462f, 23.5612f, 23.5622f)
-                    curveTo(24.1452f, 22.9782f, 24.1452f, 22.0314f, 23.5612f, 21.4474f)
-                    lineTo(23.5612f, 21.4454f)
-                    close()
-                    moveTo(10.5447f, 18.0181f)
-                    curveTo(6.4166f, 18.0181f, 3.0702f, 14.6717f, 3.0702f, 10.5437f)
-                    curveTo(3.0702f, 6.4156f, 6.4166f, 3.0692f, 10.5447f, 3.0692f)
-                    curveTo(14.6727f, 3.0692f, 18.0191f, 6.4156f, 18.0191f, 10.5437f)
-                    curveTo(18.0147f, 14.6698f, 14.6709f, 18.0137f, 10.5447f, 18.0181f)
-                    close()
-                }
+        _search = Builder(name = "Search", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 513.749f, viewportHeight = 513.749f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(504.352f, 459.061f)
+                lineToRelative(-99.435f, -99.477f)
+                curveToRelative(74.402f, -99.427f, 54.115f, -240.344f, -45.312f, -314.746f)
+                reflectiveCurveTo(119.261f, -9.277f, 44.859f, 90.15f)
+                reflectiveCurveTo(-9.256f, 330.494f, 90.171f, 404.896f)
+                curveToRelative(79.868f, 59.766f, 189.565f, 59.766f, 269.434f, 0.0f)
+                lineToRelative(99.477f, 99.477f)
+                curveToRelative(12.501f, 12.501f, 32.769f, 12.501f, 45.269f, 0.0f)
+                curveToRelative(12.501f, -12.501f, 12.501f, -32.769f, 0.0f, -45.269f)
+                lineTo(504.352f, 459.061f)
+                close()
+                moveTo(225.717f, 385.696f)
+                curveToRelative(-88.366f, 0.0f, -160.0f, -71.634f, -160.0f, -160.0f)
+                reflectiveCurveToRelative(71.634f, -160.0f, 160.0f, -160.0f)
+                reflectiveCurveToRelative(160.0f, 71.634f, 160.0f, 160.0f)
+                curveTo(385.623f, 314.022f, 314.044f, 385.602f, 225.717f, 385.696f)
+                close()
             }
         }
         .build()

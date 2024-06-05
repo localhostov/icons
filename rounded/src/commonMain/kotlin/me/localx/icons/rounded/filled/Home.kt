@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -20,53 +19,51 @@ public val Icons.Filled.Home: ImageVector
         if (_home != null) {
             return _home!!
         }
-        _home = Builder(name = "Home", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(12.0f, 14.9918f)
-                    curveTo(10.3432f, 14.9918f, 9.0f, 16.335f, 9.0f, 17.9918f)
-                    verticalLineTo(23.9918f)
-                    horizontalLineTo(15.0f)
-                    verticalLineTo(17.9918f)
-                    curveTo(15.0f, 16.335f, 13.6568f, 14.9918f, 12.0f, 14.9918f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(17.0f, 17.9923f)
-                    verticalLineTo(23.9923f)
-                    horizontalLineTo(21.0f)
-                    curveTo(22.6568f, 23.9923f, 24.0f, 22.6491f, 24.0f, 20.9923f)
-                    verticalLineTo(11.8713f)
-                    curveTo(24.0002f, 11.3518f, 23.7983f, 10.8525f, 23.437f, 10.4793f)
-                    lineTo(14.939f, 1.2922f)
-                    curveTo(13.4396f, -0.3301f, 10.9089f, -0.4297f, 9.2865f, 1.0697f)
-                    curveTo(9.2095f, 1.141f, 9.1352f, 1.2152f, 9.064f, 1.2922f)
-                    lineTo(0.581f, 10.4763f)
-                    curveTo(0.2087f, 10.8511f, -1.0E-4f, 11.358f, 0.0f, 11.8863f)
-                    verticalLineTo(20.9923f)
-                    curveTo(0.0f, 22.6491f, 1.3432f, 23.9923f, 3.0f, 23.9923f)
-                    horizontalLineTo(7.0f)
-                    verticalLineTo(17.9923f)
-                    curveTo(7.0187f, 15.2654f, 9.2203f, 13.0387f, 11.8784f, 12.9746f)
-                    curveTo(14.6255f, 12.9083f, 16.9791f, 15.173f, 17.0f, 17.9923f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(12.0f, 14.9918f)
-                    curveTo(10.3432f, 14.9918f, 9.0f, 16.335f, 9.0f, 17.9918f)
-                    verticalLineTo(23.9918f)
-                    horizontalLineTo(15.0f)
-                    verticalLineTo(17.9918f)
-                    curveTo(15.0f, 16.335f, 13.6568f, 14.9918f, 12.0f, 14.9918f)
-                    close()
-                }
+        _home = Builder(name = "Home", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(256.0f, 319.841f)
+                curveToRelative(-35.346f, 0.0f, -64.0f, 28.654f, -64.0f, 64.0f)
+                verticalLineToRelative(128.0f)
+                horizontalLineToRelative(128.0f)
+                verticalLineToRelative(-128.0f)
+                curveTo(320.0f, 348.495f, 291.346f, 319.841f, 256.0f, 319.841f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(362.667f, 383.841f)
+                verticalLineToRelative(128.0f)
+                horizontalLineTo(448.0f)
+                curveToRelative(35.346f, 0.0f, 64.0f, -28.654f, 64.0f, -64.0f)
+                verticalLineTo(253.26f)
+                curveToRelative(0.005f, -11.083f, -4.302f, -21.733f, -12.011f, -29.696f)
+                lineToRelative(-181.29f, -195.99f)
+                curveToRelative(-31.988f, -34.61f, -85.976f, -36.735f, -120.586f, -4.747f)
+                curveToRelative(-1.644f, 1.52f, -3.228f, 3.103f, -4.747f, 4.747f)
+                lineTo(12.395f, 223.5f)
+                curveTo(4.453f, 231.496f, -0.003f, 242.31f, 0.0f, 253.58f)
+                verticalLineToRelative(194.261f)
+                curveToRelative(0.0f, 35.346f, 28.654f, 64.0f, 64.0f, 64.0f)
+                horizontalLineToRelative(85.333f)
+                verticalLineToRelative(-128.0f)
+                curveToRelative(0.399f, -58.172f, 47.366f, -105.676f, 104.073f, -107.044f)
+                curveTo(312.01f, 275.383f, 362.22f, 323.696f, 362.667f, 383.841f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(256.0f, 319.841f)
+                curveToRelative(-35.346f, 0.0f, -64.0f, 28.654f, -64.0f, 64.0f)
+                verticalLineToRelative(128.0f)
+                horizontalLineToRelative(128.0f)
+                verticalLineToRelative(-128.0f)
+                curveTo(320.0f, 348.495f, 291.346f, 319.841f, 256.0f, 319.841f)
+                close()
             }
         }
         .build()

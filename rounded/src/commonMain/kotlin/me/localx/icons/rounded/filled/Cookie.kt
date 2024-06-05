@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -20,61 +19,57 @@ public val Icons.Filled.Cookie: ImageVector
         if (_cookie != null) {
             return _cookie!!
         }
-        _cookie = Builder(name = "Cookie", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(18.5f, 3.0f)
-                    curveTo(19.3284f, 3.0f, 20.0f, 2.3284f, 20.0f, 1.5f)
-                    curveTo(20.0f, 0.6716f, 19.3284f, 0.0f, 18.5f, 0.0f)
-                    curveTo(17.6716f, 0.0f, 17.0f, 0.6716f, 17.0f, 1.5f)
-                    curveTo(17.0f, 2.3284f, 17.6716f, 3.0f, 18.5f, 3.0f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(21.5f, 8.0f)
-                    curveTo(22.3284f, 8.0f, 23.0f, 7.3284f, 23.0f, 6.5f)
-                    curveTo(23.0f, 5.6716f, 22.3284f, 5.0f, 21.5f, 5.0f)
-                    curveTo(20.6716f, 5.0f, 20.0f, 5.6716f, 20.0f, 6.5f)
-                    curveTo(20.0f, 7.3284f, 20.6716f, 8.0f, 21.5f, 8.0f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(23.943f, 10.854f)
-                    curveTo(23.8973f, 10.3771f, 23.5199f, 9.9997f, 23.043f, 9.954f)
-                    curveTo(18.2779f, 9.4949f, 14.5065f, 5.7232f, 14.048f, 0.958f)
-                    curveTo(14.0023f, 0.4811f, 13.6249f, 0.1037f, 13.148f, 0.058f)
-                    curveTo(12.769f, 0.021f, 12.387f, 0.0f, 12.0f, 0.0f)
-                    curveTo(5.3726f, 0.0f, 0.0f, 5.3726f, 0.0f, 12.0f)
-                    curveTo(0.0f, 18.6274f, 5.3726f, 24.0f, 12.0f, 24.0f)
-                    curveTo(18.6274f, 24.0f, 24.0f, 18.6274f, 24.0f, 12.0f)
-                    curveTo(24.0f, 11.613f, 23.979f, 11.231f, 23.943f, 10.854f)
-                    close()
-                    moveTo(14.5f, 16.0f)
-                    curveTo(13.6716f, 16.0f, 13.0f, 15.3284f, 13.0f, 14.5f)
-                    curveTo(13.0f, 13.6716f, 13.6716f, 13.0f, 14.5f, 13.0f)
-                    curveTo(15.3284f, 13.0f, 16.0f, 13.6716f, 16.0f, 14.5f)
-                    curveTo(16.0f, 15.3284f, 15.3284f, 16.0f, 14.5f, 16.0f)
-                    close()
-                    moveTo(9.5f, 11.0f)
-                    curveTo(8.6716f, 11.0f, 8.0f, 10.3284f, 8.0f, 9.5f)
-                    curveTo(8.0f, 8.6716f, 8.6716f, 8.0f, 9.5f, 8.0f)
-                    curveTo(10.3284f, 8.0f, 11.0f, 8.6716f, 11.0f, 9.5f)
-                    curveTo(11.0f, 10.3284f, 10.3284f, 11.0f, 9.5f, 11.0f)
-                    close()
-                    moveTo(11.0f, 14.5f)
-                    curveTo(11.0f, 15.3284f, 10.3284f, 16.0f, 9.5f, 16.0f)
-                    curveTo(8.6716f, 16.0f, 8.0f, 15.3284f, 8.0f, 14.5f)
-                    curveTo(8.0f, 13.6716f, 8.6716f, 13.0f, 9.5f, 13.0f)
-                    curveTo(10.3284f, 13.0f, 11.0f, 13.6716f, 11.0f, 14.5f)
-                    close()
-                }
+        _cookie = Builder(name = "Cookie", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(394.667f, 32.0f)
+                moveToRelative(-32.0f, 0.0f)
+                arcToRelative(32.0f, 32.0f, 0.0f, true, true, 64.0f, 0.0f)
+                arcToRelative(32.0f, 32.0f, 0.0f, true, true, -64.0f, 0.0f)
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(458.667f, 138.667f)
+                moveToRelative(-32.0f, 0.0f)
+                arcToRelative(32.0f, 32.0f, 0.0f, true, true, 64.0f, 0.0f)
+                arcToRelative(32.0f, 32.0f, 0.0f, true, true, -64.0f, 0.0f)
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(510.784f, 231.552f)
+                curveToRelative(-0.975f, -10.173f, -9.027f, -18.225f, -19.2f, -19.2f)
+                curveToRelative(-101.655f, -9.794f, -182.111f, -90.258f, -191.893f, -191.915f)
+                curveToRelative(-0.975f, -10.173f, -9.027f, -18.225f, -19.2f, -19.2f)
+                curveTo(272.405f, 0.448f, 264.256f, 0.0f, 256.0f, 0.0f)
+                curveTo(114.615f, 0.0f, 0.0f, 114.615f, 0.0f, 256.0f)
+                reflectiveCurveToRelative(114.615f, 256.0f, 256.0f, 256.0f)
+                reflectiveCurveToRelative(256.0f, -114.615f, 256.0f, -256.0f)
+                curveTo(512.0f, 247.744f, 511.552f, 239.595f, 510.784f, 231.552f)
+                close()
+                moveTo(309.333f, 341.333f)
+                curveToRelative(-17.673f, 0.0f, -32.0f, -14.327f, -32.0f, -32.0f)
+                reflectiveCurveToRelative(14.327f, -32.0f, 32.0f, -32.0f)
+                reflectiveCurveToRelative(32.0f, 14.327f, 32.0f, 32.0f)
+                reflectiveCurveTo(327.006f, 341.333f, 309.333f, 341.333f)
+                lineTo(309.333f, 341.333f)
+                close()
+                moveTo(202.667f, 234.667f)
+                curveToRelative(-17.673f, 0.0f, -32.0f, -14.327f, -32.0f, -32.0f)
+                reflectiveCurveToRelative(14.327f, -32.0f, 32.0f, -32.0f)
+                reflectiveCurveToRelative(32.0f, 14.327f, 32.0f, 32.0f)
+                reflectiveCurveTo(220.34f, 234.667f, 202.667f, 234.667f)
+                close()
+                moveTo(234.667f, 309.333f)
+                curveToRelative(0.0f, 17.673f, -14.327f, 32.0f, -32.0f, 32.0f)
+                reflectiveCurveToRelative(-32.0f, -14.327f, -32.0f, -32.0f)
+                reflectiveCurveToRelative(14.327f, -32.0f, 32.0f, -32.0f)
+                lineToRelative(0.0f, 0.0f)
+                curveTo(220.34f, 277.333f, 234.667f, 291.66f, 234.667f, 309.333f)
+                close()
             }
         }
         .build()

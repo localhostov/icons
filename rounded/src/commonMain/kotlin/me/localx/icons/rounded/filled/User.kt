@@ -19,27 +19,25 @@ public val Icons.Filled.User: ImageVector
         if (_user != null) {
             return _user!!
         }
-        _user = Builder(name = "User", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _user = Builder(name = "User", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(12.0f, 12.0f)
-                curveTo(15.3137f, 12.0f, 18.0f, 9.3137f, 18.0f, 6.0f)
-                curveTo(18.0f, 2.6863f, 15.3137f, 0.0f, 12.0f, 0.0f)
-                curveTo(8.6863f, 0.0f, 6.0f, 2.6863f, 6.0f, 6.0f)
-                curveTo(6.0f, 9.3137f, 8.6863f, 12.0f, 12.0f, 12.0f)
-                close()
+                moveTo(256.0f, 128.0f)
+                moveToRelative(-128.0f, 0.0f)
+                arcToRelative(128.0f, 128.0f, 0.0f, true, true, 256.0f, 0.0f)
+                arcToRelative(128.0f, 128.0f, 0.0f, true, true, -256.0f, 0.0f)
             }
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(12.0f, 13.9991f)
-                curveTo(7.0317f, 14.0046f, 3.0055f, 18.0308f, 3.0f, 22.9991f)
-                curveTo(3.0f, 23.5514f, 3.4477f, 23.9991f, 4.0f, 23.9991f)
-                horizontalLineTo(20.0f)
-                curveTo(20.5522f, 23.9991f, 21.0f, 23.5514f, 21.0f, 22.9991f)
-                curveTo(20.9945f, 18.0308f, 16.9683f, 14.0046f, 12.0f, 13.9991f)
+                moveTo(256.0f, 298.667f)
+                curveToRelative(-105.99f, 0.118f, -191.882f, 86.01f, -192.0f, 192.0f)
+                curveTo(64.0f, 502.449f, 73.551f, 512.0f, 85.333f, 512.0f)
+                horizontalLineToRelative(341.333f)
+                curveToRelative(11.782f, 0.0f, 21.333f, -9.551f, 21.333f, -21.333f)
+                curveTo(447.882f, 384.677f, 361.99f, 298.784f, 256.0f, 298.667f)
                 close()
             }
         }

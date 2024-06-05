@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,27 +16,26 @@ public val Icons.Bold.Spinner: ImageVector
         if (_spinner != null) {
             return _spinner!!
         }
-        _spinner = Builder(name = "Spinner", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(12.5661f, 24.0f)
-                    curveTo(5.9387f, 23.9982f, 0.5676f, 18.6242f, 0.5693f, 11.9968f)
-                    curveTo(0.5711f, 5.3694f, 5.9451f, -0.0018f, 12.5725f, 0.0f)
-                    curveTo(17.0987f, 0.0012f, 21.2392f, 2.5491f, 23.2801f, 6.589f)
-                    curveTo(23.6408f, 7.3348f, 23.3286f, 8.2317f, 22.5828f, 8.5924f)
-                    curveTo(21.8562f, 8.9438f, 20.9818f, 8.6573f, 20.6041f, 7.9439f)
-                    curveTo(18.3642f, 3.5067f, 12.9513f, 1.7254f, 8.5141f, 3.9652f)
-                    curveTo(4.0768f, 6.2051f, 2.2955f, 11.618f, 4.5353f, 16.0553f)
-                    curveTo(6.7752f, 20.4925f, 12.1881f, 22.2739f, 16.6254f, 20.034f)
-                    curveTo(18.3353f, 19.1709f, 19.7253f, 17.7846f, 20.5931f, 16.077f)
-                    curveTo(20.969f, 15.3385f, 21.8722f, 15.0446f, 22.6106f, 15.4205f)
-                    curveTo(23.349f, 15.7963f, 23.6429f, 16.6996f, 23.2671f, 17.438f)
-                    curveTo(21.2274f, 21.4723f, 17.0868f, 24.0114f, 12.5661f, 24.0f)
-                    close()
-                }
+        _spinner = Builder(name = "Spinner", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.001f, viewportHeight = 512.001f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(268.078f, 512.0f)
+                curveTo(126.693f, 511.962f, 12.108f, 397.316f, 12.146f, 255.932f)
+                reflectiveCurveTo(126.83f, -0.038f, 268.215f, 0.0f)
+                curveToRelative(96.559f, 0.026f, 184.888f, 54.38f, 228.428f, 140.565f)
+                curveToRelative(7.695f, 15.91f, 1.035f, 35.046f, -14.875f, 42.74f)
+                curveToRelative(-15.501f, 7.497f, -34.155f, 1.384f, -42.213f, -13.834f)
+                curveTo(391.771f, 74.81f, 276.296f, 36.808f, 181.634f, 84.592f)
+                reflectiveCurveTo(48.97f, 247.851f, 96.754f, 342.513f)
+                reflectiveCurveToRelative(163.259f, 132.664f, 257.921f, 84.88f)
+                curveToRelative(36.48f, -18.414f, 66.133f, -47.987f, 84.646f, -84.417f)
+                curveToRelative(8.018f, -15.753f, 27.287f, -22.023f, 43.04f, -14.005f)
+                curveToRelative(15.753f, 8.018f, 22.023f, 27.287f, 14.005f, 43.04f)
+                lineToRelative(0.0f, 0.0f)
+                curveTo(452.852f, 458.077f, 364.519f, 512.244f, 268.078f, 512.0f)
+                close()
             }
         }
         .build()

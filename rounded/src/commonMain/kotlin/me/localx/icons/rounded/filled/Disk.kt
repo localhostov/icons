@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -20,58 +19,54 @@ public val Icons.Filled.Disk: ImageVector
         if (_disk != null) {
             return _disk!!
         }
-        _disk = Builder(name = "Disk", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(12.0f, 16.0f)
-                    curveTo(13.1046f, 16.0f, 14.0f, 15.1046f, 14.0f, 14.0f)
-                    curveTo(14.0f, 12.8954f, 13.1046f, 12.0f, 12.0f, 12.0f)
-                    curveTo(10.8954f, 12.0f, 10.0f, 12.8954f, 10.0f, 14.0f)
-                    curveTo(10.0f, 15.1046f, 10.8954f, 16.0f, 12.0f, 16.0f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(22.536f, 4.122f)
-                    lineTo(19.878f, 1.464f)
-                    curveTo(19.612f, 1.2022f, 19.3175f, 0.9711f, 19.0f, 0.775f)
-                    verticalLineTo(3.0f)
-                    curveTo(18.9967f, 5.76f, 16.76f, 7.9967f, 14.0f, 8.0f)
-                    horizontalLineTo(10.0f)
-                    curveTo(7.2399f, 7.9967f, 5.0033f, 5.76f, 5.0f, 3.0f)
-                    verticalLineTo(0.0f)
-                    curveTo(2.24f, 0.0033f, 0.0033f, 2.24f, 0.0f, 5.0f)
-                    verticalLineTo(19.0f)
-                    curveTo(0.0033f, 21.7601f, 2.24f, 23.9967f, 5.0f, 24.0f)
-                    horizontalLineTo(19.0f)
-                    curveTo(21.76f, 23.9967f, 23.9967f, 21.7601f, 24.0f, 19.0f)
-                    verticalLineTo(7.657f)
-                    curveTo(24.0037f, 6.3304f, 23.4765f, 5.0575f, 22.536f, 4.122f)
-                    close()
-                    moveTo(12.0f, 18.0f)
-                    curveTo(9.7909f, 18.0f, 8.0f, 16.2091f, 8.0f, 14.0f)
-                    curveTo(8.0f, 11.7909f, 9.7909f, 10.0f, 12.0f, 10.0f)
-                    curveTo(14.2091f, 10.0f, 16.0f, 11.7909f, 16.0f, 14.0f)
-                    curveTo(16.0f, 16.2091f, 14.2091f, 18.0f, 12.0f, 18.0f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(10.0f, 6.0001f)
-                    horizontalLineTo(14.0f)
-                    curveTo(15.6568f, 6.0001f, 17.0f, 4.6569f, 17.0f, 3.0001f)
-                    verticalLineTo(0.0641f)
-                    curveTo(16.7826f, 0.0287f, 16.5631f, 0.0073f, 16.343f, 1.0E-4f)
-                    horizontalLineTo(7.0f)
-                    verticalLineTo(3.0001f)
-                    curveTo(7.0f, 4.6569f, 8.3432f, 6.0001f, 10.0f, 6.0001f)
-                    close()
-                }
+        _disk = Builder(name = "Disk", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(256.0f, 298.667f)
+                moveToRelative(-42.667f, 0.0f)
+                arcToRelative(42.667f, 42.667f, 0.0f, true, true, 85.334f, 0.0f)
+                arcToRelative(42.667f, 42.667f, 0.0f, true, true, -85.334f, 0.0f)
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(480.768f, 87.936f)
+                lineToRelative(-56.704f, -56.704f)
+                curveToRelative(-5.674f, -5.585f, -11.957f, -10.515f, -18.731f, -14.699f)
+                verticalLineTo(64.0f)
+                curveToRelative(-0.071f, 58.881f, -47.786f, 106.596f, -106.667f, 106.667f)
+                horizontalLineToRelative(-85.333f)
+                curveTo(154.452f, 170.596f, 106.737f, 122.881f, 106.667f, 64.0f)
+                verticalLineTo(0.0f)
+                curveTo(47.786f, 0.071f, 0.071f, 47.786f, 0.0f, 106.667f)
+                verticalLineToRelative(298.667f)
+                curveTo(0.071f, 464.215f, 47.786f, 511.93f, 106.667f, 512.0f)
+                horizontalLineToRelative(298.667f)
+                curveTo(464.214f, 511.93f, 511.93f, 464.215f, 512.0f, 405.334f)
+                verticalLineTo(163.35f)
+                curveTo(512.08f, 135.049f, 500.833f, 107.893f, 480.768f, 87.936f)
+                close()
+                moveTo(256.0f, 384.0f)
+                curveToRelative(-47.128f, 0.0f, -85.333f, -38.205f, -85.333f, -85.333f)
+                reflectiveCurveToRelative(38.205f, -85.333f, 85.333f, -85.333f)
+                reflectiveCurveToRelative(85.333f, 38.205f, 85.333f, 85.333f)
+                reflectiveCurveTo(303.128f, 384.0f, 256.0f, 384.0f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(213.333f, 128.0f)
+                horizontalLineToRelative(85.333f)
+                curveToRelative(35.346f, 0.0f, 64.0f, -28.654f, 64.0f, -64.0f)
+                verticalLineTo(1.366f)
+                curveToRelative(-4.638f, -0.756f, -9.32f, -1.212f, -14.016f, -1.365f)
+                horizontalLineTo(149.333f)
+                verticalLineToRelative(64.0f)
+                curveTo(149.333f, 99.346f, 177.987f, 128.0f, 213.333f, 128.0f)
+                close()
             }
         }
         .build()
