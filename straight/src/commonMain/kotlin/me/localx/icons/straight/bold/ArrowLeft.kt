@@ -16,23 +16,21 @@ public val Icons.Bold.ArrowLeft: ImageVector
         if (_arrowLeft != null) {
             return _arrowLeft!!
         }
-        _arrowLeft = Builder(name = "ArrowLeft", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _arrowLeft = Builder(name = "ArrowLeft", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(7.0649f, 7.7271f)
-                lineTo(4.2849f, 10.5071f)
-                lineTo(23.9998f, 10.5321f)
-                verticalLineTo(13.5321f)
-                lineTo(4.2999f, 13.5071f)
-                lineTo(7.0649f, 16.2711f)
-                lineTo(4.9439f, 18.3911f)
-                lineTo(1.0249f, 14.4741f)
-                curveTo(0.3687f, 13.8177f, 1.0E-4f, 12.9276f, 1.0E-4f, 11.9996f)
-                curveTo(1.0E-4f, 11.0715f, 0.3687f, 10.1814f, 1.0249f, 9.5251f)
-                lineTo(4.9439f, 5.6071f)
-                lineTo(7.0649f, 7.7271f)
+                moveTo(7.065f, 7.727f)
+                lineToRelative(-2.78f, 2.78f)
+                lineTo(24.0f, 10.532f)
+                lineToRelative(0.0f, 3.0f)
+                lineTo(4.3f, 13.507f)
+                lineToRelative(2.765f, 2.764f)
+                lineToRelative(-2.121f, 2.12f)
+                lineTo(1.025f, 14.474f)
+                arcToRelative(3.5f, 3.5f, 0.0f, false, true, 0.0f, -4.949f)
+                lineTo(4.944f, 5.607f)
                 close()
             }
         }

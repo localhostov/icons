@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,57 +16,46 @@ public val Icons.Bold.FlowerTulip: ImageVector
         if (_flowerTulip != null) {
             return _flowerTulip!!
         }
-        _flowerTulip = Builder(name = "FlowerTulip", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(22.8643f, 14.9234f)
-                    curveTo(21.2394f, 14.4342f, 19.5129f, 14.3908f, 17.8656f, 14.7977f)
-                    curveTo(16.2182f, 15.2047f, 14.7105f, 16.0469f, 13.5003f, 17.2364f)
-                    verticalLineTo(15.2874f)
-                    curveTo(14.953f, 14.9476f, 16.2484f, 14.1271f, 17.1764f, 12.9589f)
-                    curveTo(18.1045f, 11.7907f, 18.6108f, 10.3433f, 18.6133f, 8.8514f)
-                    curveTo(18.6133f, 6.4194f, 17.2443f, 3.7894f, 14.5453f, 1.0374f)
-                    curveTo(13.8647f, 0.3729f, 12.9514f, 0.001f, 12.0003f, 0.001f)
-                    curveTo(11.0492f, 0.001f, 10.1358f, 0.3729f, 9.4553f, 1.0374f)
-                    curveTo(6.7553f, 3.7904f, 5.3863f, 6.4204f, 5.3863f, 8.8514f)
-                    curveTo(5.3888f, 10.3435f, 5.8952f, 11.7909f, 6.8235f, 12.9591f)
-                    curveTo(7.7517f, 14.1273f, 9.0473f, 14.9478f, 10.5003f, 15.2874f)
-                    verticalLineTo(17.2364f)
-                    curveTo(9.2899f, 16.0472f, 7.7822f, 15.2051f, 6.1348f, 14.7982f)
-                    curveTo(4.4875f, 14.3913f, 2.7611f, 14.4345f, 1.1363f, 14.9234f)
-                    lineTo(3.0E-4f, 15.2064f)
-                    verticalLineTo(16.3784f)
-                    curveTo(-0.0413f, 17.3854f, 0.1429f, 18.389f, 0.5395f, 19.3156f)
-                    curveTo(0.9361f, 20.2421f, 1.535f, 21.0683f, 2.2923f, 21.7334f)
-                    curveTo(4.8493f, 23.9514f, 8.8743f, 24.0784f, 10.9293f, 23.9754f)
-                    horizontalLineTo(13.0623f)
-                    curveTo(17.3413f, 24.3514f, 24.1793f, 22.7094f, 24.0003f, 16.3754f)
-                    verticalLineTo(15.2064f)
-                    lineTo(22.8643f, 14.9234f)
-                    close()
-                    moveTo(4.2533f, 19.4634f)
-                    curveTo(3.6915f, 18.9776f, 3.3f, 18.3247f, 3.1363f, 17.6004f)
-                    curveTo(4.4467f, 17.4447f, 5.7736f, 17.6855f, 6.9458f, 18.2916f)
-                    curveTo(8.118f, 18.8976f, 9.0817f, 19.8412f, 9.7123f, 21.0004f)
-                    curveTo(7.9193f, 20.9734f, 5.6123f, 20.6454f, 4.2533f, 19.4634f)
-                    close()
-                    moveTo(8.3863f, 8.8514f)
-                    curveTo(8.5702f, 7.1605f, 9.3144f, 5.5796f, 10.5003f, 4.3604f)
-                    verticalLineTo(8.0004f)
-                    horizontalLineTo(13.5003f)
-                    verticalLineTo(4.3604f)
-                    curveTo(20.0703f, 11.7514f, 9.2003f, 15.8784f, 8.3863f, 8.8514f)
-                    close()
-                    moveTo(19.7473f, 19.4634f)
-                    curveTo(18.3883f, 20.6454f, 16.0803f, 20.9734f, 14.2883f, 21.0014f)
-                    curveTo(14.9313f, 19.8533f, 15.8972f, 18.9191f, 17.0661f, 18.3147f)
-                    curveTo(18.2351f, 17.7103f, 19.5557f, 17.4623f, 20.8643f, 17.6014f)
-                    curveTo(20.7003f, 18.3254f, 20.3089f, 18.9779f, 19.7473f, 19.4634f)
-                    close()
-                }
+        _flowerTulip = Builder(name = "FlowerTulip", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(22.864f, 14.923f)
+                arcTo(9.466f, 9.466f, 0.0f, false, false, 13.5f, 17.236f)
+                verticalLineTo(15.287f)
+                arcToRelative(6.621f, 6.621f, 0.0f, false, false, 5.113f, -6.436f)
+                curveToRelative(0.0f, -2.432f, -1.369f, -5.062f, -4.068f, -7.814f)
+                arcToRelative(3.643f, 3.643f, 0.0f, false, false, -5.09f, 0.0f)
+                curveTo(6.755f, 3.79f, 5.386f, 6.42f, 5.386f, 8.851f)
+                arcTo(6.621f, 6.621f, 0.0f, false, false, 10.5f, 15.287f)
+                verticalLineToRelative(1.949f)
+                arcToRelative(9.469f, 9.469f, 0.0f, false, false, -9.364f, -2.313f)
+                lineTo(0.0f, 15.206f)
+                verticalLineToRelative(1.172f)
+                arcToRelative(6.756f, 6.756f, 0.0f, false, false, 2.292f, 5.355f)
+                curveToRelative(2.557f, 2.218f, 6.582f, 2.345f, 8.637f, 2.242f)
+                horizontalLineToRelative(2.133f)
+                curveToRelative(4.279f, 0.376f, 11.117f, -1.266f, 10.938f, -7.6f)
+                verticalLineTo(15.206f)
+                close()
+                moveTo(4.253f, 19.463f)
+                arcTo(3.476f, 3.476f, 0.0f, false, true, 3.136f, 17.6f)
+                arcTo(6.6f, 6.6f, 0.0f, false, true, 9.712f, 21.0f)
+                curveTo(7.919f, 20.973f, 5.612f, 20.645f, 4.253f, 19.463f)
+                close()
+                moveTo(8.386f, 8.851f)
+                arcTo(7.624f, 7.624f, 0.0f, false, true, 10.5f, 4.36f)
+                verticalLineTo(8.0f)
+                horizontalLineToRelative(3.0f)
+                verticalLineTo(4.36f)
+                curveTo(20.07f, 11.751f, 9.2f, 15.878f, 8.386f, 8.851f)
+                close()
+                moveTo(19.747f, 19.463f)
+                curveToRelative(-1.359f, 1.182f, -3.667f, 1.51f, -5.459f, 1.538f)
+                arcToRelative(6.723f, 6.723f, 0.0f, false, true, 6.576f, -3.4f)
+                arcTo(3.476f, 3.476f, 0.0f, false, true, 19.747f, 19.463f)
+                close()
             }
         }
         .build()

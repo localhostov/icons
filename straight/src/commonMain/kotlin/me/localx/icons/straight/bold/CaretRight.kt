@@ -16,17 +16,15 @@ public val Icons.Bold.CaretRight: ImageVector
         if (_caretRight != null) {
             return _caretRight!!
         }
-        _caretRight = Builder(name = "CaretRight", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _caretRight = Builder(name = "CaretRight", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(9.7069f, 19.2931f)
-                verticalLineTo(5.2931f)
-                lineTo(15.9999f, 11.5861f)
-                curveTo(16.1874f, 11.7736f, 16.2927f, 12.0279f, 16.2927f, 12.2931f)
-                curveTo(16.2927f, 12.5583f, 16.1874f, 12.8126f, 15.9999f, 13.0001f)
-                lineTo(9.7069f, 19.2931f)
+                moveTo(9.707f, 19.293f)
+                verticalLineToRelative(-14.0f)
+                lineTo(16.0f, 11.586f)
+                arcTo(1.0f, 1.0f, 0.0f, false, true, 16.0f, 13.0f)
                 close()
             }
         }

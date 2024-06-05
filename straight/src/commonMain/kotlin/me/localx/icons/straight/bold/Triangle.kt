@@ -16,22 +16,22 @@ public val Icons.Bold.Triangle: ImageVector
         if (_triangle != null) {
             return _triangle!!
         }
-        _triangle = Builder(name = "Triangle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _triangle = Builder(name = "Triangle", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(24.0f, 21.0009f)
+                moveTo(512.0f, 448.0f)
                 horizontalLineTo(0.0f)
-                lineTo(9.816f, 4.0609f)
-                curveTo(10.517f, 2.8547f, 12.063f, 2.4451f, 13.2692f, 3.146f)
-                curveTo(13.6484f, 3.3664f, 13.9636f, 3.6817f, 14.184f, 4.0609f)
-                lineTo(24.0f, 21.0009f)
+                lineTo(209.408f, 86.613f)
+                curveToRelative(14.954f, -25.732f, 47.936f, -34.47f, 73.668f, -19.516f)
+                curveToRelative(8.089f, 4.701f, 14.815f, 11.427f, 19.516f, 19.516f)
+                lineTo(512.0f, 448.0f)
                 close()
-                moveTo(5.215f, 18.0009f)
-                horizontalLineTo(18.785f)
-                lineTo(12.0f, 6.2909f)
-                lineTo(5.215f, 18.0009f)
+                moveTo(111.253f, 384.0f)
+                horizontalLineToRelative(289.493f)
+                lineTo(256.0f, 134.187f)
+                lineTo(111.253f, 384.0f)
                 close()
             }
         }

@@ -16,22 +16,20 @@ public val Icons.Bold.Check: ImageVector
         if (_check != null) {
             return _check!!
         }
-        _check = Builder(name = "Check", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _check = Builder(name = "Check", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(7.8001f, 21.425f)
-                curveTo(7.4657f, 21.4251f, 7.1347f, 21.3593f, 6.8258f, 21.2313f)
-                curveTo(6.5169f, 21.1033f, 6.2363f, 20.9156f, 6.0001f, 20.679f)
-                lineTo(0.4391f, 15.121f)
-                lineTo(2.5611f, 13.0f)
-                lineTo(7.8001f, 18.239f)
-                lineTo(21.4391f, 4.6f)
-                lineTo(23.5611f, 6.721f)
-                lineTo(9.6001f, 20.679f)
-                curveTo(9.3639f, 20.9156f, 9.0833f, 21.1033f, 8.7744f, 21.2313f)
-                curveTo(8.4655f, 21.3593f, 8.1344f, 21.4251f, 7.8001f, 21.425f)
+                moveTo(7.8f, 21.425f)
+                arcTo(2.542f, 2.542f, 0.0f, false, true, 6.0f, 20.679f)
+                lineTo(0.439f, 15.121f)
+                lineTo(2.561f, 13.0f)
+                lineTo(7.8f, 18.239f)
+                lineTo(21.439f, 4.6f)
+                lineToRelative(2.122f, 2.121f)
+                lineTo(9.6f, 20.679f)
+                arcTo(2.542f, 2.542f, 0.0f, false, true, 7.8f, 21.425f)
                 close()
             }
         }

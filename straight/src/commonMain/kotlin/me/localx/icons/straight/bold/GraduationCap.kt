@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,50 +16,41 @@ public val Icons.Bold.GraduationCap: ImageVector
         if (_graduationCap != null) {
             return _graduationCap!!
         }
-        _graduationCap = Builder(name = "GraduationCap", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(14.12f, 1.6266f)
-                    curveTo(13.4886f, 1.2177f, 12.7523f, 1.0001f, 12.0f, 1.0001f)
-                    curveTo(11.2477f, 1.0001f, 10.5114f, 1.2177f, 9.88f, 1.6266f)
-                    lineTo(0.0f, 7.9997f)
-                    lineTo(5.0f, 11.2247f)
-                    verticalLineTo(20.0187f)
-                    lineTo(5.32f, 20.4267f)
-                    curveTo(5.527f, 20.6897f, 7.473f, 22.9997f, 12.0f, 22.9997f)
-                    curveTo(16.527f, 22.9997f, 18.473f, 20.6897f, 18.68f, 20.4267f)
-                    lineTo(19.0f, 20.0187f)
-                    verticalLineTo(11.2247f)
-                    lineTo(21.0f, 9.9347f)
-                    verticalLineTo(19.9997f)
-                    horizontalLineTo(24.0f)
-                    verticalLineTo(7.9997f)
-                    lineTo(14.12f, 1.6266f)
-                    close()
-                    moveTo(11.506f, 4.1476f)
-                    curveTo(11.6527f, 4.0513f, 11.8245f, 4.0f, 12.0f, 4.0f)
-                    curveTo(12.1755f, 4.0f, 12.3473f, 4.0513f, 12.494f, 4.1476f)
-                    lineTo(18.465f, 7.9997f)
-                    lineTo(12.494f, 11.8507f)
-                    curveTo(12.3476f, 11.9479f, 12.1757f, 11.9997f, 12.0f, 11.9997f)
-                    curveTo(11.8243f, 11.9997f, 11.6524f, 11.9479f, 11.506f, 11.8507f)
-                    lineTo(5.535f, 7.9997f)
-                    lineTo(11.506f, 4.1476f)
-                    close()
-                    moveTo(16.0f, 18.8577f)
-                    curveTo(14.8308f, 19.6725f, 13.4232f, 20.0744f, 12.0f, 19.9997f)
-                    curveTo(10.5772f, 20.0743f, 9.17f, 19.6736f, 8.0f, 18.8607f)
-                    verticalLineTo(13.1607f)
-                    lineTo(9.88f, 14.3737f)
-                    curveTo(10.5114f, 14.7826f, 11.2477f, 15.0002f, 12.0f, 15.0002f)
-                    curveTo(12.7523f, 15.0002f, 13.4886f, 14.7826f, 14.12f, 14.3737f)
-                    lineTo(16.0f, 13.1597f)
-                    verticalLineTo(18.8577f)
-                    close()
-                }
+        _graduationCap = Builder(name = "GraduationCap", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(14.12f, 1.627f)
+                arcToRelative(3.9f, 3.9f, 0.0f, false, false, -4.24f, 0.0f)
+                lineToRelative(-9.88f, 6.373f)
+                lineToRelative(5.0f, 3.225f)
+                verticalLineToRelative(8.794f)
+                lineToRelative(0.32f, 0.408f)
+                curveToRelative(0.207f, 0.263f, 2.153f, 2.573f, 6.68f, 2.573f)
+                reflectiveCurveToRelative(6.473f, -2.31f, 6.68f, -2.573f)
+                lineToRelative(0.32f, -0.408f)
+                verticalLineToRelative(-8.794f)
+                lineToRelative(2.0f, -1.29f)
+                verticalLineToRelative(10.065f)
+                horizontalLineToRelative(3.0f)
+                verticalLineToRelative(-12.0f)
+                close()
+                moveTo(11.506f, 4.148f)
+                arcToRelative(0.9f, 0.9f, 0.0f, false, true, 0.988f, 0.0f)
+                lineToRelative(5.971f, 3.852f)
+                lineToRelative(-5.971f, 3.851f)
+                arcToRelative(0.893f, 0.893f, 0.0f, false, true, -0.988f, 0.0f)
+                lineToRelative(-5.971f, -3.851f)
+                close()
+                moveTo(16.0f, 18.858f)
+                arcToRelative(6.408f, 6.408f, 0.0f, false, true, -4.0f, 1.142f)
+                arcToRelative(6.421f, 6.421f, 0.0f, false, true, -4.0f, -1.139f)
+                verticalLineToRelative(-5.7f)
+                lineToRelative(1.88f, 1.213f)
+                arcToRelative(3.9f, 3.9f, 0.0f, false, false, 4.24f, 0.0f)
+                lineToRelative(1.88f, -1.214f)
+                close()
             }
         }
         .build()

@@ -16,36 +16,29 @@ public val Icons.Bold.Forward: ImageVector
         if (_forward != null) {
             return _forward!!
         }
-        _forward = Builder(name = "Forward", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _forward = Builder(name = "Forward", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(1.0001f, 23.8001f)
-                verticalLineTo(0.2001f)
-                lineTo(9.0001f, 5.9111f)
-                verticalLineTo(0.3171f)
-                lineTo(22.1801f, 9.0581f)
-                curveTo(22.6047f, 9.3613f, 22.9508f, 9.7616f, 23.1895f, 10.2256f)
-                curveTo(23.4283f, 10.6895f, 23.5529f, 11.2038f, 23.5529f, 11.7256f)
-                curveTo(23.5529f, 12.2474f, 23.4283f, 12.7616f, 23.1895f, 13.2256f)
-                curveTo(22.9508f, 13.6895f, 22.6047f, 14.0898f, 22.1801f, 14.3931f)
-                lineTo(9.0001f, 23.8001f)
-                verticalLineTo(18.0891f)
-                lineTo(1.0001f, 23.8001f)
+                moveTo(1.0f, 23.8f)
+                verticalLineTo(0.2f)
+                lineTo(9.0f, 5.911f)
+                verticalLineTo(0.317f)
+                lineTo(22.18f, 9.058f)
+                arcToRelative(3.278f, 3.278f, 0.0f, false, true, 0.0f, 5.335f)
+                lineTo(9.0f, 23.8f)
+                verticalLineTo(18.089f)
                 close()
-                moveTo(12.0001f, 12.2601f)
-                verticalLineTo(17.9751f)
-                lineTo(20.4371f, 11.9521f)
-                curveTo(20.4734f, 11.9267f, 20.503f, 11.8929f, 20.5232f, 11.8535f)
-                curveTo(20.5434f, 11.8141f, 20.5537f, 11.7704f, 20.5531f, 11.7261f)
-                curveTo(20.5543f, 11.6846f, 20.5459f, 11.6435f, 20.5286f, 11.6058f)
-                curveTo(20.5112f, 11.5682f, 20.4854f, 11.535f, 20.4531f, 11.5091f)
-                lineTo(12.0001f, 5.9061f)
-                verticalLineTo(11.7401f)
-                lineTo(4.0001f, 6.0261f)
-                verticalLineTo(17.9741f)
-                lineTo(12.0001f, 12.2601f)
+                moveTo(12.0f, 12.26f)
+                verticalLineToRelative(5.715f)
+                lineToRelative(8.437f, -6.023f)
+                arcToRelative(0.271f, 0.271f, 0.0f, false, false, 0.116f, -0.226f)
+                arcToRelative(0.268f, 0.268f, 0.0f, false, false, -0.1f, -0.217f)
+                lineTo(12.0f, 5.906f)
+                verticalLineTo(11.74f)
+                lineTo(4.0f, 6.026f)
+                verticalLineTo(17.974f)
                 close()
             }
         }

@@ -16,25 +16,21 @@ public val Icons.Bold.ArrowSmallUp: ImageVector
         if (_arrowSmallUp != null) {
             return _arrowSmallUp!!
         }
-        _arrowSmallUp = Builder(name = "ArrowSmallUp", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _arrowSmallUp = Builder(name = "ArrowSmallUp", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(18.061f, 9.5251f)
-                lineTo(13.768f, 5.2321f)
-                curveTo(13.5358f, 4.9999f, 13.2602f, 4.8157f, 12.9568f, 4.69f)
-                curveTo(12.6535f, 4.5643f, 12.3283f, 4.4996f, 12.0f, 4.4996f)
-                curveTo(11.6716f, 4.4996f, 11.3465f, 4.5643f, 11.0431f, 4.69f)
-                curveTo(10.7397f, 4.8157f, 10.4641f, 4.9999f, 10.232f, 5.2321f)
-                lineTo(5.939f, 9.5251f)
-                lineTo(8.061f, 11.6461f)
-                lineTo(10.5f, 9.2071f)
-                verticalLineTo(19.0001f)
-                horizontalLineTo(13.5f)
-                verticalLineTo(9.2071f)
-                lineTo(15.939f, 11.6461f)
-                lineTo(18.061f, 9.5251f)
+                moveTo(18.061f, 9.525f)
+                lineTo(13.768f, 5.232f)
+                arcToRelative(2.5f, 2.5f, 0.0f, false, false, -3.536f, 0.0f)
+                lineTo(5.939f, 9.525f)
+                lineToRelative(2.122f, 2.121f)
+                lineTo(10.5f, 9.207f)
+                verticalLineTo(19.0f)
+                horizontalLineToRelative(3.0f)
+                verticalLineTo(9.207f)
+                lineToRelative(2.439f, 2.439f)
                 close()
             }
         }

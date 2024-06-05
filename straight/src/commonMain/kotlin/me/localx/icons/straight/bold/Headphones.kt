@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,59 +16,41 @@ public val Icons.Bold.Headphones: ImageVector
         if (_headphones != null) {
             return _headphones!!
         }
-        _headphones = Builder(name = "Headphones", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(21.0f, 11.5553f)
-                    verticalLineTo(9.9943f)
-                    curveTo(21.0f, 7.6073f, 20.0518f, 5.3181f, 18.364f, 3.6303f)
-                    curveTo(16.6761f, 1.9425f, 14.3869f, 0.9943f, 12.0f, 0.9943f)
-                    curveTo(9.6131f, 0.9943f, 7.3239f, 1.9425f, 5.636f, 3.6303f)
-                    curveTo(3.9482f, 5.3181f, 3.0f, 7.6073f, 3.0f, 9.9943f)
-                    verticalLineTo(11.5553f)
-                    curveTo(2.1036f, 11.988f, 1.347f, 12.664f, 0.8165f, 13.5062f)
-                    curveTo(0.286f, 14.3485f, 0.0031f, 15.3229f, 0.0f, 16.3183f)
-                    lineTo(0.0f, 16.6823f)
-                    curveTo(0.0016f, 18.0922f, 0.5624f, 19.4439f, 1.5594f, 20.4409f)
-                    curveTo(2.5563f, 21.4379f, 3.9081f, 21.9987f, 5.318f, 22.0003f)
-                    horizontalLineTo(8.0f)
-                    verticalLineTo(11.0003f)
-                    horizontalLineTo(6.0f)
-                    verticalLineTo(9.9943f)
-                    curveTo(6.0f, 8.403f, 6.6321f, 6.8768f, 7.7574f, 5.7516f)
-                    curveTo(8.8826f, 4.6264f, 10.4087f, 3.9943f, 12.0f, 3.9943f)
-                    curveTo(13.5913f, 3.9943f, 15.1174f, 4.6264f, 16.2426f, 5.7516f)
-                    curveTo(17.3679f, 6.8768f, 18.0f, 8.403f, 18.0f, 9.9943f)
-                    verticalLineTo(11.0003f)
-                    horizontalLineTo(16.0f)
-                    verticalLineTo(22.0003f)
-                    horizontalLineTo(18.682f)
-                    curveTo(20.0919f, 21.9987f, 21.4437f, 21.4379f, 22.4406f, 20.4409f)
-                    curveTo(23.4376f, 19.4439f, 23.9984f, 18.0922f, 24.0f, 16.6823f)
-                    verticalLineTo(16.3183f)
-                    curveTo(23.9969f, 15.3229f, 23.714f, 14.3485f, 23.1835f, 13.5062f)
-                    curveTo(22.653f, 12.664f, 21.8964f, 11.988f, 21.0f, 11.5553f)
-                    close()
-                    moveTo(5.0f, 18.9783f)
-                    curveTo(4.4452f, 18.9008f, 3.9371f, 18.6253f, 3.5696f, 18.2026f)
-                    curveTo(3.202f, 17.7798f, 2.9997f, 17.2384f, 3.0f, 16.6783f)
-                    verticalLineTo(16.3143f)
-                    curveTo(2.9997f, 15.7541f, 3.202f, 15.2127f, 3.5696f, 14.79f)
-                    curveTo(3.9371f, 14.3672f, 4.4452f, 14.0917f, 5.0f, 14.0143f)
-                    verticalLineTo(18.9783f)
-                    close()
-                    moveTo(21.0f, 16.6783f)
-                    curveTo(21.0003f, 17.2384f, 20.798f, 17.7798f, 20.4304f, 18.2026f)
-                    curveTo(20.0629f, 18.6253f, 19.5548f, 18.9008f, 19.0f, 18.9783f)
-                    verticalLineTo(14.0223f)
-                    curveTo(19.5548f, 14.0997f, 20.0629f, 14.3752f, 20.4304f, 14.798f)
-                    curveTo(20.798f, 15.2207f, 21.0003f, 15.7621f, 21.0f, 16.3223f)
-                    verticalLineTo(16.6783f)
-                    close()
-                }
+        _headphones = Builder(name = "Headphones", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(21.0f, 11.555f)
+                lineTo(21.0f, 9.994f)
+                arcToRelative(9.0f, 9.0f, 0.0f, false, false, -18.0f, 0.0f)
+                verticalLineToRelative(1.561f)
+                arcToRelative(5.307f, 5.307f, 0.0f, false, false, -3.0f, 4.763f)
+                verticalLineToRelative(0.364f)
+                arcTo(5.324f, 5.324f, 0.0f, false, false, 5.318f, 22.0f)
+                lineTo(8.0f, 22.0f)
+                lineTo(8.0f, 11.0f)
+                lineTo(6.0f, 11.0f)
+                lineTo(6.0f, 9.994f)
+                arcToRelative(6.0f, 6.0f, 0.0f, false, true, 12.0f, 0.0f)
+                lineTo(18.0f, 11.0f)
+                lineTo(16.0f, 11.0f)
+                lineTo(16.0f, 22.0f)
+                horizontalLineToRelative(2.682f)
+                arcTo(5.324f, 5.324f, 0.0f, false, false, 24.0f, 16.682f)
+                verticalLineToRelative(-0.364f)
+                arcTo(5.307f, 5.307f, 0.0f, false, false, 21.0f, 11.555f)
+                close()
+                moveTo(5.0f, 18.978f)
+                arcToRelative(2.321f, 2.321f, 0.0f, false, true, -2.0f, -2.3f)
+                verticalLineToRelative(-0.364f)
+                arcToRelative(2.321f, 2.321f, 0.0f, false, true, 2.0f, -2.3f)
+                close()
+                moveTo(21.0f, 16.678f)
+                arcToRelative(2.321f, 2.321f, 0.0f, false, true, -2.0f, 2.3f)
+                lineTo(19.0f, 14.022f)
+                arcToRelative(2.321f, 2.321f, 0.0f, false, true, 2.0f, 2.3f)
+                close()
             }
         }
         .build()

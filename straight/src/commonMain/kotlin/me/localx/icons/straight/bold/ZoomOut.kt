@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -20,38 +19,35 @@ public val Icons.Bold.ZoomOut: ImageVector
         if (_zoomOut != null) {
             return _zoomOut!!
         }
-        _zoomOut = Builder(name = "ZoomOut", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(15.0f, 9.0f)
-                    horizontalLineTo(6.0f)
-                    verticalLineTo(12.0f)
-                    horizontalLineTo(15.0f)
-                    verticalLineTo(9.0f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(18.9135f, 16.7981f)
-                    curveTo(22.386f, 12.1575f, 21.4391f, 5.5805f, 16.7985f, 2.108f)
-                    curveTo(12.1579f, -1.3645f, 5.5809f, -0.4176f, 2.1084f, 4.223f)
-                    curveTo(-1.3641f, 8.8637f, -0.4172f, 15.4406f, 4.2234f, 18.9131f)
-                    curveTo(7.9511f, 21.7025f, 13.0708f, 21.7025f, 16.7985f, 18.9131f)
-                    lineTo(21.877f, 23.9916f)
-                    lineTo(23.992f, 21.8806f)
-                    lineTo(18.9135f, 16.7981f)
-                    close()
-                    moveTo(10.5489f, 18.0169f)
-                    curveTo(6.4243f, 18.0169f, 3.0805f, 14.6732f, 3.0805f, 10.5485f)
-                    curveTo(3.0805f, 6.4239f, 6.4243f, 3.0801f, 10.5489f, 3.0801f)
-                    curveTo(14.6736f, 3.0801f, 18.0173f, 6.4239f, 18.0173f, 10.5485f)
-                    curveTo(18.0135f, 14.6716f, 14.672f, 18.0131f, 10.5489f, 18.0169f)
-                    close()
-                }
+        _zoomOut = Builder(name = "ZoomOut", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(128.0f, 192.0f)
+                horizontalLineToRelative(192.0f)
+                verticalLineToRelative(64.0f)
+                horizontalLineToRelative(-192.0f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(403.494f, 358.373f)
+                curveToRelative(74.08f, -99.0f, 53.879f, -239.309f, -45.121f, -313.389f)
+                reflectiveCurveTo(119.064f, -8.895f, 44.984f, 90.105f)
+                reflectiveCurveTo(-8.895f, 329.414f, 90.105f, 403.494f)
+                curveToRelative(79.523f, 59.506f, 188.745f, 59.506f, 268.268f, 0.0f)
+                lineToRelative(108.341f, 108.341f)
+                lineToRelative(45.121f, -45.036f)
+                lineTo(403.494f, 358.373f)
+                close()
+                moveTo(225.049f, 384.375f)
+                curveToRelative(-87.993f, 0.0f, -159.326f, -71.333f, -159.326f, -159.326f)
+                reflectiveCurveTo(137.056f, 65.723f, 225.049f, 65.723f)
+                reflectiveCurveToRelative(159.326f, 71.333f, 159.326f, 159.326f)
+                curveTo(384.293f, 313.008f, 313.008f, 384.293f, 225.049f, 384.375f)
+                close()
             }
         }
         .build()

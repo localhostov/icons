@@ -16,25 +16,21 @@ public val Icons.Bold.ArrowSmallLeft: ImageVector
         if (_arrowSmallLeft != null) {
             return _arrowSmallLeft!!
         }
-        _arrowSmallLeft = Builder(name = "ArrowSmallLeft", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _arrowSmallLeft = Builder(name = "ArrowSmallLeft", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(18.9999f, 10.5001f)
-                horizontalLineTo(10.2069f)
-                lineTo(12.6459f, 8.0611f)
-                lineTo(10.5249f, 5.9391f)
-                lineTo(6.2319f, 10.2321f)
-                curveTo(5.9997f, 10.4642f, 5.8155f, 10.7399f, 5.6898f, 11.0432f)
-                curveTo(5.5641f, 11.3466f, 5.4995f, 11.6717f, 5.4995f, 12.0001f)
-                curveTo(5.4995f, 12.3284f, 5.5641f, 12.6536f, 5.6898f, 12.9569f)
-                curveTo(5.8155f, 13.2603f, 5.9997f, 13.5359f, 6.2319f, 13.7681f)
-                lineTo(10.5249f, 18.0611f)
-                lineTo(12.6459f, 15.9391f)
-                lineTo(10.2069f, 13.5001f)
-                horizontalLineTo(18.9999f)
-                verticalLineTo(10.5001f)
+                moveTo(19.0f, 10.5f)
+                horizontalLineTo(10.207f)
+                lineToRelative(2.439f, -2.439f)
+                lineTo(10.525f, 5.939f)
+                lineTo(6.232f, 10.232f)
+                arcToRelative(2.5f, 2.5f, 0.0f, false, false, 0.0f, 3.536f)
+                lineToRelative(4.293f, 4.293f)
+                lineToRelative(2.121f, -2.122f)
+                lineTo(10.207f, 13.5f)
+                horizontalLineTo(19.0f)
                 close()
             }
         }

@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -20,39 +19,35 @@ public val Icons.Bold.TextCheck: ImageVector
         if (_textCheck != null) {
             return _textCheck!!
         }
-        _textCheck = Builder(name = "TextCheck", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _textCheck = Builder(name = "TextCheck", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(12.9998f, 24.1211f)
-                    lineTo(6.9388f, 18.0611f)
-                    lineTo(9.0608f, 15.9391f)
-                    lineTo(12.9998f, 19.8791f)
-                    lineTo(21.9388f, 10.9391f)
-                    lineTo(24.0608f, 13.0611f)
-                    lineTo(12.9998f, 24.1211f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(12.1461f, 15.0f)
-                    horizontalLineTo(15.5001f)
-                    lineTo(8.0001f, 0.0f)
-                    lineTo(0.5001f, 15.0f)
-                    horizontalLineTo(3.8541f)
-                    lineTo(4.8541f, 13.0f)
-                    horizontalLineTo(11.1461f)
-                    lineTo(12.1461f, 15.0f)
-                    close()
-                    moveTo(6.3541f, 10.0f)
-                    lineTo(8.0001f, 6.708f)
-                    lineTo(9.6461f, 10.0f)
-                    horizontalLineTo(6.3541f)
-                    close()
-                }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(13.0f, 24.121f)
+                lineToRelative(-6.061f, -6.06f)
+                lineToRelative(2.122f, -2.122f)
+                lineToRelative(3.939f, 3.94f)
+                lineToRelative(8.939f, -8.94f)
+                lineToRelative(2.122f, 2.122f)
+                lineToRelative(-11.061f, 11.06f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(12.146f, 15.0f)
+                horizontalLineTo(15.5f)
+                lineTo(8.0f, 0.0f)
+                lineTo(0.5f, 15.0f)
+                horizontalLineTo(3.854f)
+                lineToRelative(1.0f, -2.0f)
+                horizontalLineToRelative(6.292f)
+                close()
+                moveTo(6.354f, 10.0f)
+                lineTo(8.0f, 6.708f)
+                lineTo(9.646f, 10.0f)
+                close()
             }
         }
         .build()

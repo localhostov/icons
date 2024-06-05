@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,43 +16,42 @@ public val Icons.Bold.MapMarkerCross: ImageVector
         if (_mapMarkerCross != null) {
             return _mapMarkerCross!!
         }
-        _mapMarkerCross = Builder(name = "MapMarkerCross", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(8.1232f, 11.9261f)
-                    lineTo(10.059f, 9.9913f)
-                    lineTo(8.1232f, 8.0566f)
-                    lineTo(10.2406f, 5.9392f)
-                    lineTo(12.1753f, 7.875f)
-                    lineTo(14.1101f, 5.9393f)
-                    lineTo(16.2274f, 8.0566f)
-                    lineTo(14.2917f, 9.9914f)
-                    lineTo(16.2274f, 11.9262f)
-                    lineTo(14.1101f, 14.0435f)
-                    lineTo(12.1753f, 12.1077f)
-                    lineTo(10.2406f, 14.0435f)
-                    lineTo(8.1232f, 11.9261f)
-                    close()
-                    moveTo(5.0071f, 17.1267f)
-                    curveTo(1.0488f, 13.2926f, 0.9481f, 6.9756f, 4.7822f, 3.0173f)
-                    curveTo(8.6163f, -0.941f, 14.9332f, -1.0417f, 18.8915f, 2.7924f)
-                    curveTo(18.9642f, 2.8627f, 19.0357f, 2.9342f, 19.1061f, 3.0067f)
-                    curveTo(23.0028f, 6.9034f, 23.0028f, 13.221f, 19.1061f, 17.1177f)
-                    lineTo(12.0506f, 24.0186f)
-                    lineTo(5.0071f, 17.1267f)
-                    close()
-                    moveTo(5.0659f, 10.0602f)
-                    curveTo(5.0612f, 11.9136f, 5.7977f, 13.692f, 7.1115f, 14.9994f)
-                    lineTo(12.0507f, 19.8297f)
-                    lineTo(17.0008f, 14.9874f)
-                    curveTo(19.7223f, 12.2535f, 19.7122f, 7.8311f, 16.9783f, 5.1096f)
-                    curveTo(14.2444f, 2.3881f, 9.822f, 2.3982f, 7.1005f, 5.1321f)
-                    curveTo(5.7973f, 6.4412f, 5.0658f, 8.2131f, 5.0659f, 10.0602f)
-                    close()
-                }
+        _mapMarkerCross = Builder(name = "MapMarkerCross", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(173.298f, 254.423f)
+                lineToRelative(41.296f, -41.275f)
+                lineToRelative(-41.296f, -41.275f)
+                lineToRelative(45.17f, -45.17f)
+                lineTo(259.743f, 168.0f)
+                lineToRelative(41.275f, -41.296f)
+                lineToRelative(45.17f, 45.17f)
+                lineToRelative(-41.296f, 41.275f)
+                lineToRelative(41.296f, 41.275f)
+                lineToRelative(-45.17f, 45.17f)
+                lineToRelative(-41.275f, -41.296f)
+                lineToRelative(-41.275f, 41.296f)
+                lineTo(173.298f, 254.423f)
+                close()
+                moveTo(106.82f, 365.369f)
+                curveToRelative(-84.444f, -81.794f, -86.592f, -216.556f, -4.798f, -301.0f)
+                reflectiveCurveToRelative(216.556f, -86.592f, 301.0f, -4.798f)
+                curveToRelative(1.549f, 1.5f, 3.075f, 3.024f, 4.578f, 4.571f)
+                curveToRelative(83.128f, 83.129f, 83.128f, 217.906f, 0.0f, 301.035f)
+                lineTo(257.082f, 512.396f)
+                lineTo(106.82f, 365.369f)
+                close()
+                moveTo(108.076f, 214.617f)
+                curveToRelative(-0.102f, 39.54f, 15.61f, 77.479f, 43.638f, 105.369f)
+                lineToRelative(105.369f, 103.048f)
+                lineToRelative(105.603f, -103.304f)
+                curveToRelative(58.058f, -58.323f, 57.843f, -152.668f, -0.48f, -210.726f)
+                reflectiveCurveToRelative(-152.668f, -57.843f, -210.726f, 0.48f)
+                curveTo(123.679f, 137.411f, 108.073f, 175.213f, 108.076f, 214.617f)
+                lineTo(108.076f, 214.617f)
+                close()
             }
         }
         .build()

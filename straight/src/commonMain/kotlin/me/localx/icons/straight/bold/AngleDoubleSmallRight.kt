@@ -19,38 +19,32 @@ public val Icons.Bold.AngleDoubleSmallRight: ImageVector
         if (_angleDoubleSmallRight != null) {
             return _angleDoubleSmallRight!!
         }
-        _angleDoubleSmallRight = Builder(name = "AngleDoubleSmallRight", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _angleDoubleSmallRight = Builder(name = "AngleDoubleSmallRight", defaultWidth = 512.0.dp,
+                defaultHeight = 512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(19.4571f, 10.232f)
-                lineTo(14.1641f, 4.939f)
-                lineTo(12.0431f, 7.061f)
-                lineTo(16.9821f, 12.0f)
-                lineTo(12.0431f, 16.939f)
-                lineTo(14.1641f, 19.061f)
-                lineTo(19.4571f, 13.768f)
-                curveTo(19.6893f, 13.5358f, 19.8735f, 13.2602f, 19.9992f, 12.9568f)
-                curveTo(20.1249f, 12.6535f, 20.1896f, 12.3283f, 20.1896f, 12.0f)
-                curveTo(20.1896f, 11.6716f, 20.1249f, 11.3465f, 19.9992f, 11.0431f)
-                curveTo(19.8735f, 10.7397f, 19.6893f, 10.4641f, 19.4571f, 10.232f)
+                moveTo(19.457f, 10.232f)
+                lineTo(14.164f, 4.939f)
+                lineTo(12.043f, 7.061f)
+                lineTo(16.982f, 12.0f)
+                lineToRelative(-4.939f, 4.939f)
+                lineToRelative(2.121f, 2.122f)
+                lineToRelative(5.293f, -5.293f)
+                arcTo(2.5f, 2.5f, 0.0f, false, false, 19.457f, 10.232f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
                 moveTo(13.164f, 10.939f)
-                lineTo(7.164f, 4.939f)
+                lineToRelative(-6.0f, -6.0f)
                 lineTo(5.043f, 7.061f)
                 lineTo(9.982f, 12.0f)
                 lineTo(5.043f, 16.939f)
-                lineTo(7.164f, 19.061f)
-                lineTo(13.164f, 13.061f)
-                curveTo(13.3034f, 12.9217f, 13.414f, 12.7563f, 13.4894f, 12.5742f)
-                curveTo(13.5649f, 12.3922f, 13.6037f, 12.197f, 13.6037f, 12.0f)
-                curveTo(13.6037f, 11.8029f, 13.5649f, 11.6078f, 13.4894f, 11.4257f)
-                curveTo(13.414f, 11.2437f, 13.3034f, 11.0783f, 13.164f, 10.939f)
+                lineToRelative(2.121f, 2.122f)
+                lineToRelative(6.0f, -6.0f)
+                arcTo(1.5f, 1.5f, 0.0f, false, false, 13.164f, 10.939f)
                 close()
             }
         }

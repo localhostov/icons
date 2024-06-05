@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -20,39 +19,34 @@ public val Icons.Bold.Eye: ImageVector
         if (_eye != null) {
             return _eye!!
         }
-        _eye = Builder(name = "Eye", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(23.8f, 11.4783f)
-                    curveTo(23.67f, 11.1293f, 20.5f, 2.9403f, 12.0f, 2.9403f)
-                    curveTo(3.5f, 2.9403f, 0.326f, 11.1293f, 0.2f, 11.4783f)
-                    lineTo(0.0f, 12.0003f)
-                    lineTo(0.2f, 12.5223f)
-                    curveTo(0.33f, 12.8713f, 3.5f, 21.0603f, 12.0f, 21.0603f)
-                    curveTo(20.5f, 21.0603f, 23.674f, 12.8713f, 23.8f, 12.5223f)
-                    lineTo(24.0f, 12.0003f)
-                    lineTo(23.8f, 11.4783f)
-                    close()
-                    moveTo(12.0f, 18.0853f)
-                    curveTo(6.582f, 18.0853f, 3.959f, 13.5713f, 3.21f, 12.0003f)
-                    curveTo(3.961f, 10.4253f, 6.585f, 5.9153f, 12.0f, 5.9153f)
-                    curveTo(17.415f, 5.9153f, 20.038f, 10.4243f, 20.79f, 12.0003f)
-                    curveTo(20.038f, 13.5763f, 17.415f, 18.0853f, 12.0f, 18.0853f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(12.0001f, 15.9996f)
-                    curveTo(14.2092f, 15.9996f, 16.0001f, 14.2088f, 16.0001f, 11.9996f)
-                    curveTo(16.0001f, 9.7905f, 14.2092f, 7.9996f, 12.0001f, 7.9996f)
-                    curveTo(9.791f, 7.9996f, 8.0001f, 9.7905f, 8.0001f, 11.9996f)
-                    curveTo(8.0001f, 14.2088f, 9.791f, 15.9996f, 12.0001f, 15.9996f)
-                    close()
-                }
+        _eye = Builder(name = "Eye", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(23.8f, 11.478f)
+                curveToRelative(-0.13f, -0.349f, -3.3f, -8.538f, -11.8f, -8.538f)
+                reflectiveCurveTo(0.326f, 11.129f, 0.2f, 11.478f)
+                lineTo(0.0f, 12.0f)
+                lineToRelative(0.2f, 0.522f)
+                curveToRelative(0.13f, 0.349f, 3.3f, 8.538f, 11.8f, 8.538f)
+                reflectiveCurveToRelative(11.674f, -8.189f, 11.8f, -8.538f)
+                lineTo(24.0f, 12.0f)
+                close()
+                moveTo(12.0f, 18.085f)
+                curveToRelative(-5.418f, 0.0f, -8.041f, -4.514f, -8.79f, -6.085f)
+                curveTo(3.961f, 10.425f, 6.585f, 5.915f, 12.0f, 5.915f)
+                reflectiveCurveTo(20.038f, 10.424f, 20.79f, 12.0f)
+                curveTo(20.038f, 13.576f, 17.415f, 18.085f, 12.0f, 18.085f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(12.0f, 12.0f)
+                moveToRelative(-4.0f, 0.0f)
+                arcToRelative(4.0f, 4.0f, 0.0f, true, true, 8.0f, 0.0f)
+                arcToRelative(4.0f, 4.0f, 0.0f, true, true, -8.0f, 0.0f)
             }
         }
         .build()

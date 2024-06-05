@@ -16,32 +16,28 @@ public val Icons.Bold.Shield: ImageVector
         if (_shield != null) {
             return _shield!!
         }
-        _shield = Builder(name = "Shield", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _shield = Builder(name = "Shield", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(11.9219f, 23.9994f)
-                lineTo(11.3909f, 23.7624f)
-                curveTo(11.0069f, 23.5884f, 1.9999f, 19.4994f, 1.9999f, 11.9994f)
-                verticalLineTo(5.5244f)
-                curveTo(2.0f, 4.8947f, 2.1982f, 4.281f, 2.5665f, 3.7702f)
-                curveTo(2.9348f, 3.2594f, 3.4544f, 2.8774f, 4.0519f, 2.6784f)
-                lineTo(11.9999f, 0.0294f)
-                lineTo(19.9489f, 2.6794f)
-                curveTo(20.5465f, 2.8777f, 21.0664f, 3.2594f, 21.4346f, 3.7702f)
-                curveTo(21.8028f, 4.2809f, 22.0006f, 4.8948f, 21.9999f, 5.5244f)
-                verticalLineTo(11.9994f)
-                curveTo(21.9999f, 20.5384f, 12.8629f, 23.6814f, 12.4739f, 23.8114f)
-                lineTo(11.9219f, 23.9994f)
+                moveTo(11.922f, 24.0f)
+                lineToRelative(-0.531f, -0.237f)
+                curveTo(11.007f, 23.589f, 2.0f, 19.5f, 2.0f, 12.0f)
+                verticalLineTo(5.525f)
+                arcTo(3.0f, 3.0f, 0.0f, false, true, 4.052f, 2.679f)
+                lineTo(12.0f, 0.03f)
+                lineToRelative(7.949f, 2.65f)
+                arcTo(2.994f, 2.994f, 0.0f, false, true, 22.0f, 5.525f)
+                verticalLineTo(12.0f)
+                curveToRelative(0.0f, 8.539f, -9.137f, 11.682f, -9.526f, 11.812f)
                 close()
-                moveTo(11.9999f, 3.1914f)
-                lineTo(4.9999f, 5.5244f)
-                verticalLineTo(11.9994f)
-                curveTo(4.9999f, 16.6694f, 10.3439f, 19.8464f, 12.0769f, 20.7524f)
-                curveTo(13.8189f, 20.0254f, 18.9999f, 17.4074f, 18.9999f, 11.9994f)
-                verticalLineTo(5.5244f)
-                lineTo(11.9999f, 3.1914f)
+                moveTo(12.0f, 3.192f)
+                lineTo(5.0f, 5.525f)
+                verticalLineTo(12.0f)
+                curveToRelative(0.0f, 4.67f, 5.344f, 7.847f, 7.077f, 8.753f)
+                curveTo(13.819f, 20.026f, 19.0f, 17.408f, 19.0f, 12.0f)
+                verticalLineTo(5.525f)
                 close()
             }
         }

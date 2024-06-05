@@ -16,37 +16,30 @@ public val Icons.Bold.Rewind: ImageVector
         if (_rewind != null) {
             return _rewind!!
         }
-        _rewind = Builder(name = "Rewind", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _rewind = Builder(name = "Rewind", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(22.9998f, 23.7991f)
-                lineTo(14.9998f, 18.0851f)
-                verticalLineTo(23.7991f)
-                lineTo(1.8198f, 14.3921f)
-                curveTo(1.3952f, 14.0888f, 1.0491f, 13.6886f, 0.8104f, 13.2246f)
-                curveTo(0.5716f, 12.7607f, 0.447f, 12.2464f, 0.447f, 11.7246f)
-                curveTo(0.447f, 11.2028f, 0.5716f, 10.6885f, 0.8104f, 10.2246f)
-                curveTo(1.0491f, 9.7606f, 1.3952f, 9.3604f, 1.8198f, 9.0571f)
-                lineTo(1.8628f, 9.0281f)
-                lineTo(14.9998f, 0.3161f)
-                verticalLineTo(5.9101f)
-                lineTo(22.9998f, 0.1991f)
-                verticalLineTo(23.7991f)
+                moveTo(23.0f, 23.8f)
+                lineToRelative(-8.0f, -5.714f)
+                verticalLineTo(23.8f)
+                lineTo(1.82f, 14.393f)
+                arcToRelative(3.278f, 3.278f, 0.0f, false, true, 0.0f, -5.335f)
+                lineToRelative(0.043f, -0.029f)
+                lineTo(15.0f, 0.317f)
+                verticalLineTo(5.911f)
+                lineTo(23.0f, 0.2f)
                 close()
-                moveTo(3.5508f, 11.5081f)
-                curveTo(3.5185f, 11.5341f, 3.4927f, 11.5672f, 3.4753f, 11.6048f)
-                curveTo(3.458f, 11.6425f, 3.4496f, 11.6837f, 3.4508f, 11.7251f)
-                curveTo(3.4502f, 11.7694f, 3.4605f, 11.8131f, 3.4807f, 11.8525f)
-                curveTo(3.5009f, 11.8919f, 3.5305f, 11.9258f, 3.5668f, 11.9511f)
-                lineTo(11.9998f, 17.9741f)
-                verticalLineTo(12.2591f)
-                lineTo(19.9998f, 17.9731f)
-                verticalLineTo(6.0251f)
-                lineTo(11.9998f, 11.7391f)
-                verticalLineTo(5.9051f)
-                lineTo(3.5508f, 11.5081f)
+                moveTo(3.551f, 11.509f)
+                arcToRelative(0.268f, 0.268f, 0.0f, false, false, -0.1f, 0.217f)
+                arcToRelative(0.271f, 0.271f, 0.0f, false, false, 0.116f, 0.226f)
+                lineTo(12.0f, 17.975f)
+                verticalLineTo(12.26f)
+                lineToRelative(8.0f, 5.714f)
+                verticalLineTo(6.026f)
+                lineTo(12.0f, 11.74f)
+                verticalLineTo(5.906f)
                 close()
             }
         }

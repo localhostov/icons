@@ -1,0 +1,74 @@
+package me.localx.icons.straight.bold
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
+import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.ImageVector.Builder
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+import me.localx.icons.straight.Icons
+
+public val Icons.Bold.CommentAltMusic: ImageVector
+    get() {
+        if (_commentAltMusic != null) {
+            return _commentAltMusic!!
+        }
+        _commentAltMusic = Builder(name = "CommentAltMusic", defaultWidth = 512.0.dp, defaultHeight
+                = 512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(18.0f, 13.495f)
+                reflectiveCurveToRelative(0.0f, 0.003f, 0.0f, 0.005f)
+                curveToRelative(0.0f, 1.381f, -1.119f, 2.5f, -2.5f, 2.5f)
+                reflectiveCurveToRelative(-2.5f, -1.119f, -2.5f, -2.5f)
+                curveToRelative(0.0f, -1.209f, 0.859f, -2.218f, 2.0f, -2.45f)
+                verticalLineToRelative(-2.55f)
+                curveToRelative(0.0f, -0.275f, -0.224f, -0.5f, -0.5f, -0.5f)
+                horizontalLineToRelative(-3.0f)
+                curveToRelative(-0.276f, 0.0f, -0.5f, 0.225f, -0.5f, 0.5f)
+                verticalLineToRelative(4.995f)
+                reflectiveCurveToRelative(0.0f, 0.003f, 0.0f, 0.005f)
+                curveToRelative(0.0f, 1.381f, -1.119f, 2.5f, -2.5f, 2.5f)
+                reflectiveCurveToRelative(-2.5f, -1.119f, -2.5f, -2.5f)
+                curveToRelative(0.0f, -1.209f, 0.859f, -2.218f, 2.0f, -2.45f)
+                verticalLineToRelative(-2.55f)
+                curveToRelative(0.0f, -1.93f, 1.57f, -3.5f, 3.5f, -3.5f)
+                horizontalLineToRelative(3.0f)
+                curveToRelative(1.93f, 0.0f, 3.5f, 1.57f, 3.5f, 3.5f)
+                verticalLineToRelative(4.995f)
+                close()
+                moveTo(24.0f, 3.5f)
+                verticalLineToRelative(16.5f)
+                horizontalLineToRelative(-6.672f)
+                lineToRelative(-3.708f, 3.065f)
+                curveToRelative(-0.448f, 0.399f, -1.024f, 0.601f, -1.606f, 0.601f)
+                curveToRelative(-0.595f, 0.0f, -1.196f, -0.21f, -1.675f, -0.636f)
+                lineToRelative(-3.598f, -3.03f)
+                lineTo(0.0f, 20.0f)
+                lineTo(0.0f, 3.5f)
+                curveTo(0.0f, 1.57f, 1.57f, 0.0f, 3.5f, 0.0f)
+                horizontalLineToRelative(17.0f)
+                curveToRelative(1.93f, 0.0f, 3.5f, 1.57f, 3.5f, 3.5f)
+                close()
+                moveTo(21.0f, 3.5f)
+                curveToRelative(0.0f, -0.275f, -0.224f, -0.5f, -0.5f, -0.5f)
+                lineTo(3.5f, 3.0f)
+                curveToRelative(-0.276f, 0.0f, -0.5f, 0.225f, -0.5f, 0.5f)
+                verticalLineToRelative(13.5f)
+                horizontalLineToRelative(4.836f)
+                lineToRelative(4.168f, 3.511f)
+                lineToRelative(4.245f, -3.511f)
+                horizontalLineToRelative(4.751f)
+                lineTo(21.0f, 3.5f)
+                close()
+            }
+        }
+        .build()
+        return _commentAltMusic!!
+    }
+
+private var _commentAltMusic: ImageVector? = null

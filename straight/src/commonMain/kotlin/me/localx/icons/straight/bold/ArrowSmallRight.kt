@@ -16,25 +16,22 @@ public val Icons.Bold.ArrowSmallRight: ImageVector
         if (_arrowSmallRight != null) {
             return _arrowSmallRight!!
         }
-        _arrowSmallRight = Builder(name = "ArrowSmallRight", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _arrowSmallRight = Builder(name = "ArrowSmallRight", defaultWidth = 512.0.dp, defaultHeight
+                = 512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(17.7679f, 10.2321f)
-                lineTo(13.4749f, 5.9391f)
-                lineTo(11.3539f, 8.0611f)
-                lineTo(13.7929f, 10.5001f)
-                horizontalLineTo(4.9999f)
-                verticalLineTo(13.5001f)
-                horizontalLineTo(13.7929f)
-                lineTo(11.3539f, 15.9391f)
-                lineTo(13.4749f, 18.0611f)
-                lineTo(17.7679f, 13.7681f)
-                curveTo(18.0002f, 13.5359f, 18.1844f, 13.2603f, 18.31f, 12.9569f)
-                curveTo(18.4357f, 12.6536f, 18.5004f, 12.3284f, 18.5004f, 12.0001f)
-                curveTo(18.5004f, 11.6717f, 18.4357f, 11.3466f, 18.31f, 11.0432f)
-                curveTo(18.1844f, 10.7399f, 18.0002f, 10.4642f, 17.7679f, 10.2321f)
+                moveTo(17.768f, 10.232f)
+                lineTo(13.475f, 5.939f)
+                lineTo(11.354f, 8.061f)
+                lineTo(13.793f, 10.5f)
+                horizontalLineTo(5.0f)
+                verticalLineToRelative(3.0f)
+                horizontalLineToRelative(8.793f)
+                lineToRelative(-2.439f, 2.439f)
+                lineToRelative(2.121f, 2.122f)
+                lineToRelative(4.293f, -4.293f)
+                arcTo(2.5f, 2.5f, 0.0f, false, false, 17.768f, 10.232f)
                 close()
             }
         }

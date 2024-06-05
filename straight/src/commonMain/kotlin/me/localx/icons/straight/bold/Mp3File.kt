@@ -1,0 +1,98 @@
+package me.localx.icons.straight.bold
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
+import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.ImageVector.Builder
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+import me.localx.icons.straight.Icons
+
+public val Icons.Bold.Mp3File: ImageVector
+    get() {
+        if (_mp3File != null) {
+            return _mp3File!!
+        }
+        _mp3File = Builder(name = "Mp3File", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(21.0f, 0.0f)
+                lineTo(3.0f, 0.0f)
+                curveTo(1.346f, 0.0f, 0.0f, 1.346f, 0.0f, 3.0f)
+                verticalLineToRelative(21.0f)
+                horizontalLineToRelative(17.496f)
+                lineToRelative(6.504f, -6.504f)
+                lineTo(24.0f, 3.0f)
+                curveToRelative(0.0f, -1.654f, -1.346f, -3.0f, -3.0f, -3.0f)
+                close()
+                moveTo(14.361f, 7.786f)
+                horizontalLineToRelative(2.028f)
+                curveToRelative(0.316f, 0.0f, 0.573f, -0.246f, 0.573f, -0.548f)
+                reflectiveCurveToRelative(-0.257f, -0.548f, -0.573f, -0.548f)
+                horizontalLineToRelative(-1.135f)
+                verticalLineToRelative(-1.297f)
+                horizontalLineToRelative(1.146f)
+                curveToRelative(0.316f, 0.001f, 0.573f, -0.244f, 0.573f, -0.546f)
+                reflectiveCurveToRelative(-0.257f, -0.548f, -0.573f, -0.548f)
+                horizontalLineToRelative(-2.018f)
+                verticalLineToRelative(-1.287f)
+                lineToRelative(2.018f, 0.002f)
+                curveToRelative(1.024f, 0.0f, 1.857f, 0.822f, 1.857f, 1.832f)
+                curveToRelative(0.0f, 0.458f, -0.177f, 0.872f, -0.46f, 1.194f)
+                curveToRelative(0.283f, 0.323f, 0.46f, 0.738f, 0.46f, 1.198f)
+                curveToRelative(0.0f, 1.016f, -0.838f, 1.843f, -1.868f, 1.843f)
+                horizontalLineToRelative(-2.028f)
+                verticalLineToRelative(-1.294f)
+                close()
+                moveTo(9.5f, 3.0f)
+                horizontalLineToRelative(1.967f)
+                curveToRelative(1.109f, 0.0f, 2.012f, 0.891f, 2.012f, 1.985f)
+                reflectiveCurveToRelative(-0.902f, 1.985f, -2.012f, 1.985f)
+                lineToRelative(-0.717f, 0.003f)
+                verticalLineToRelative(2.096f)
+                horizontalLineToRelative(-1.25f)
+                lineTo(9.5f, 3.0f)
+                close()
+                moveTo(3.385f, 3.759f)
+                curveToRelative(0.032f, -0.535f, 0.358f, -0.759f, 0.749f, -0.759f)
+                curveToRelative(0.26f, 0.0f, 0.501f, 0.184f, 0.638f, 0.486f)
+                lineToRelative(0.883f, 1.942f)
+                lineToRelative(0.883f, -1.942f)
+                curveToRelative(0.137f, -0.302f, 0.378f, -0.486f, 0.638f, -0.486f)
+                curveToRelative(0.391f, 0.0f, 0.717f, 0.224f, 0.749f, 0.759f)
+                lineToRelative(0.385f, 5.31f)
+                horizontalLineToRelative(-1.217f)
+                lineToRelative(-0.242f, -3.339f)
+                lineToRelative(-1.196f, 2.631f)
+                lineToRelative(-1.196f, -2.631f)
+                lineToRelative(-0.242f, 3.339f)
+                horizontalLineToRelative(-1.217f)
+                lineToRelative(0.385f, -5.31f)
+                close()
+                moveTo(21.0f, 15.0f)
+                horizontalLineToRelative(-6.0f)
+                verticalLineToRelative(6.0f)
+                lineTo(3.0f, 21.0f)
+                verticalLineToRelative(-10.0f)
+                horizontalLineToRelative(18.0f)
+                verticalLineToRelative(4.0f)
+                close()
+                moveTo(10.757f, 5.723f)
+                lineToRelative(-0.005f, -1.473f)
+                horizontalLineToRelative(0.715f)
+                curveToRelative(0.413f, 0.0f, 0.762f, 0.336f, 0.762f, 0.735f)
+                reflectiveCurveToRelative(-0.349f, 0.735f, -0.762f, 0.735f)
+                lineToRelative(-0.71f, 0.003f)
+                close()
+            }
+        }
+        .build()
+        return _mp3File!!
+    }
+
+private var _mp3File: ImageVector? = null

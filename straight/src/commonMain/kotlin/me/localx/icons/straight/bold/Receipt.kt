@@ -19,55 +19,52 @@ public val Icons.Bold.Receipt: ImageVector
         if (_receipt != null) {
             return _receipt!!
         }
-        _receipt = Builder(name = "Receipt", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _receipt = Builder(name = "Receipt", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(17.7626f, 0.0f)
-                horizontalLineTo(5.9525f)
-                curveTo(4.3219f, 0.0f, 3.0f, 1.3219f, 3.0f, 2.9525f)
-                verticalLineTo(23.9824f)
-                lineTo(6.9367f, 21.2454f)
-                lineTo(9.3971f, 22.9579f)
-                lineTo(11.8575f, 21.2464f)
-                lineTo(14.318f, 22.9579f)
-                lineTo(16.7784f, 21.2474f)
-                lineTo(20.7151f, 23.9883f)
-                verticalLineTo(2.9525f)
-                curveTo(20.7151f, 1.3219f, 19.3933f, 0.0f, 17.7626f, 0.0f)
+                moveTo(378.936f, 0.0f)
+                horizontalLineTo(126.987f)
+                curveTo(92.2f, 0.0f, 64.0f, 28.2f, 64.0f, 62.987f)
+                verticalLineToRelative(448.637f)
+                lineToRelative(83.983f, -58.389f)
+                lineToRelative(52.489f, 36.533f)
+                lineToRelative(52.489f, -36.512f)
+                lineToRelative(52.489f, 36.512f)
+                lineToRelative(52.489f, -36.491f)
+                lineToRelative(83.983f, 58.473f)
+                verticalLineTo(62.987f)
+                curveTo(441.923f, 28.2f, 413.723f, 0.0f, 378.936f, 0.0f)
                 close()
-                moveTo(17.7626f, 18.3312f)
-                lineTo(16.7784f, 17.6492f)
-                lineTo(14.318f, 19.3617f)
-                lineTo(11.8576f, 17.6502f)
-                lineTo(9.3972f, 19.3617f)
-                lineTo(6.9367f, 17.6512f)
-                lineTo(5.9526f, 18.3401f)
-                verticalLineTo(2.9525f)
-                horizontalLineTo(17.7627f)
-                verticalLineTo(18.3312f)
-                horizontalLineTo(17.7626f)
-                close()
-            }
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
-                moveTo(16.0f, 6.0f)
-                horizontalLineTo(8.0f)
-                verticalLineTo(9.0f)
-                horizontalLineTo(16.0f)
-                verticalLineTo(6.0f)
+                moveTo(378.936f, 391.066f)
+                lineToRelative(-20.996f, -14.55f)
+                lineToRelative(-52.489f, 36.533f)
+                lineToRelative(-52.489f, -36.512f)
+                lineToRelative(-52.489f, 36.512f)
+                lineToRelative(-52.489f, -36.491f)
+                lineToRelative(-20.996f, 14.697f)
+                verticalLineTo(62.987f)
+                horizontalLineToRelative(251.949f)
+                verticalLineTo(391.066f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(14.0f, 10.9991f)
-                horizontalLineTo(8.0f)
-                verticalLineTo(13.9991f)
-                horizontalLineTo(14.0f)
-                verticalLineTo(10.9991f)
+                moveTo(170.667f, 128.0f)
+                horizontalLineToRelative(170.667f)
+                verticalLineToRelative(64.0f)
+                horizontalLineToRelative(-170.667f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(170.667f, 234.667f)
+                horizontalLineToRelative(128.0f)
+                verticalLineToRelative(64.0f)
+                horizontalLineToRelative(-128.0f)
                 close()
             }
         }

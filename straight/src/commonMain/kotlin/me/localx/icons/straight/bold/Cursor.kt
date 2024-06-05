@@ -16,29 +16,24 @@ public val Icons.Bold.Cursor: ImageVector
         if (_cursor != null) {
             return _cursor!!
         }
-        _cursor = Builder(name = "Cursor", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _cursor = Builder(name = "Cursor", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(22.8111f, 13.2898f)
-                lineTo(8.0151f, 0.5128f)
-                curveTo(7.6446f, 0.2306f, 7.2027f, 0.0574f, 6.739f, 0.0129f)
-                curveTo(6.2754f, -0.0316f, 5.8086f, 0.0543f, 5.3912f, 0.2608f)
-                curveTo(4.9738f, 0.4674f, 4.6224f, 0.7865f, 4.3766f, 1.1821f)
-                curveTo(4.1308f, 1.5777f, 4.0004f, 2.0341f, 4.0001f, 2.4998f)
-                verticalLineTo(21.8068f)
-                lineTo(10.3061f, 16.2428f)
-                lineTo(14.1921f, 23.9998f)
-                lineTo(18.5421f, 21.8248f)
-                lineTo(14.7751f, 14.1818f)
-                lineTo(22.8111f, 13.2898f)
+                moveToRelative(22.811f, 13.29f)
+                lineToRelative(-14.796f, -12.777f)
+                arcToRelative(2.5f, 2.5f, 0.0f, false, false, -4.015f, 1.987f)
+                verticalLineToRelative(19.307f)
+                lineToRelative(6.306f, -5.564f)
+                lineToRelative(3.886f, 7.757f)
+                lineToRelative(4.35f, -2.175f)
+                lineToRelative(-3.767f, -7.643f)
                 close()
-                moveTo(7.0001f, 3.5998f)
-                lineTo(15.6471f, 11.0688f)
-                lineTo(10.7141f, 11.6138f)
-                lineTo(7.0001f, 15.1598f)
-                verticalLineTo(3.5998f)
+                moveTo(7.0f, 3.6f)
+                lineTo(15.647f, 11.069f)
+                lineTo(10.714f, 11.614f)
+                lineTo(7.0f, 15.16f)
                 close()
             }
         }

@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,56 +16,46 @@ public val Icons.Bold.PhonePause: ImageVector
         if (_phonePause != null) {
             return _phonePause!!
         }
-        _phonePause = Builder(name = "PhonePause", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(15.942f, 23.942f)
-                    curveTo(8.7909f, 23.942f, -0.0f, 15.152f, -0.0f, 8.0f)
-                    curveTo(-0.0065f, 7.1984f, 0.1463f, 6.4035f, 0.4494f, 5.6614f)
-                    curveTo(0.7526f, 4.9193f, 1.2001f, 4.2448f, 1.7659f, 3.677f)
-                    lineTo(5.4099f, 0.033f)
-                    lineTo(12.052f, 6.674f)
-                    lineTo(9.089f, 9.637f)
-                    curveTo(10.1503f, 11.9427f, 11.9975f, 13.7956f, 14.3f, 14.864f)
-                    lineTo(17.274f, 11.891f)
-                    lineTo(23.915f, 18.532f)
-                    lineTo(20.27f, 22.178f)
-                    curveTo(19.7012f, 22.7438f, 19.0258f, 23.1911f, 18.2828f, 23.4939f)
-                    curveTo(17.5399f, 23.7968f, 16.7442f, 23.949f, 15.942f, 23.942f)
-                    close()
-                    moveTo(5.4099f, 4.275f)
-                    lineTo(3.886f, 5.8f)
-                    curveTo(3.6f, 6.0898f, 3.3745f, 6.4335f, 3.2224f, 6.8112f)
-                    curveTo(3.0703f, 7.1888f, 2.9947f, 7.5929f, 2.9999f, 8.0f)
-                    curveTo(2.9999f, 13.875f, 10.949f, 20.942f, 15.942f, 20.942f)
-                    curveTo(16.349f, 20.9472f, 16.7529f, 20.8717f, 17.1306f, 20.7198f)
-                    curveTo(17.5082f, 20.5679f, 17.8519f, 20.3426f, 18.142f, 20.057f)
-                    lineTo(19.667f, 18.532f)
-                    lineTo(17.267f, 16.132f)
-                    lineTo(15.012f, 18.387f)
-                    lineTo(14.103f, 18.041f)
-                    curveTo(12.231f, 17.3442f, 10.5308f, 16.2532f, 9.1174f, 14.8419f)
-                    curveTo(7.704f, 13.4306f, 6.6105f, 11.7319f, 5.911f, 9.861f)
-                    lineTo(5.542f, 8.942f)
-                    lineTo(7.8099f, 6.674f)
-                    lineTo(5.4099f, 4.275f)
-                    close()
-                    moveTo(23.0f, 0.0f)
-                    horizontalLineTo(20.0f)
-                    verticalLineTo(8.0f)
-                    horizontalLineTo(23.0f)
-                    verticalLineTo(0.0f)
-                    close()
-                    moveTo(18.0f, 0.0f)
-                    horizontalLineTo(15.0f)
-                    verticalLineTo(8.0f)
-                    horizontalLineTo(18.0f)
-                    verticalLineTo(0.0f)
-                    close()
-                }
+        _phonePause = Builder(name = "PhonePause", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(15.942f, 23.942f)
+                curveTo(8.791f, 23.942f, 0.0f, 15.152f, 0.0f, 8.0f)
+                arcTo(6.055f, 6.055f, 0.0f, false, true, 1.766f, 3.677f)
+                lineTo(5.41f, 0.033f)
+                lineToRelative(6.642f, 6.641f)
+                lineTo(9.089f, 9.637f)
+                arcTo(10.69f, 10.69f, 0.0f, false, false, 14.3f, 14.864f)
+                lineToRelative(2.974f, -2.973f)
+                lineToRelative(6.641f, 6.641f)
+                lineToRelative(-3.645f, 3.646f)
+                arcTo(6.061f, 6.061f, 0.0f, false, true, 15.942f, 23.942f)
+                close()
+                moveTo(5.41f, 4.275f)
+                lineTo(3.886f, 5.8f)
+                arcTo(3.076f, 3.076f, 0.0f, false, false, 3.0f, 8.0f)
+                curveToRelative(0.0f, 5.875f, 7.949f, 12.942f, 12.942f, 12.942f)
+                arcToRelative(3.079f, 3.079f, 0.0f, false, false, 2.2f, -0.885f)
+                lineToRelative(1.525f, -1.525f)
+                lineToRelative(-2.4f, -2.4f)
+                lineToRelative(-2.255f, 2.255f)
+                lineToRelative(-0.909f, -0.346f)
+                arcTo(13.936f, 13.936f, 0.0f, false, true, 5.911f, 9.861f)
+                lineToRelative(-0.369f, -0.919f)
+                lineTo(7.81f, 6.674f)
+                close()
+                moveTo(23.0f, 0.0f)
+                horizontalLineTo(20.0f)
+                verticalLineTo(8.0f)
+                horizontalLineToRelative(3.0f)
+                close()
+                moveTo(18.0f, 0.0f)
+                horizontalLineTo(15.0f)
+                verticalLineTo(8.0f)
+                horizontalLineToRelative(3.0f)
+                close()
             }
         }
         .build()
