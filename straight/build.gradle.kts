@@ -1,6 +1,7 @@
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl
+import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
 plugins {
     alias(libs.plugins.androidLibrary)
@@ -46,9 +47,15 @@ kotlin {
     wasmJs {
         moduleName = "straight"
 
+        useEsModules()
         browser {
             commonWebpackConfig {
-                outputFileName = "icons.js"
+                outputFileName = "straight.js"
+                devServer = (devServer ?: KotlinWebpackConfig.DevServer()).apply {
+                    static = (static ?: mutableListOf()).apply {
+                        add(project.rootDir.path)
+                    }
+                }
             }
         }
 
@@ -64,6 +71,9 @@ kotlin {
     }
 
     sourceSets {
+        val wasmJsMain by getting
+        val desktopMain by getting
+
         commonMain.dependencies {
             api(compose.runtime)
             api(compose.foundation)

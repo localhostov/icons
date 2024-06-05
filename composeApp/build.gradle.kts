@@ -2,6 +2,7 @@ import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl
+import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -17,9 +18,15 @@ kotlin {
     wasmJs {
         moduleName = "composeApp"
 
+        useEsModules()
         browser {
             commonWebpackConfig {
                 outputFileName = "composeApp.js"
+                devServer = (devServer ?: KotlinWebpackConfig.DevServer()).apply {
+                    static = (static ?: mutableListOf()).apply {
+                        add(project.rootDir.path)
+                    }
+                }
             }
         }
 
@@ -34,6 +41,7 @@ kotlin {
     }
     
     sourceSets {
+        val wasmJsMain by getting
         val desktopMain by getting {
             dependencies {
                 implementation(compose.desktop.currentOs)
