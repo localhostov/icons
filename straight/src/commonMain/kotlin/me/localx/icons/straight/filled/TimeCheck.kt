@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -20,45 +19,42 @@ public val Icons.Filled.TimeCheck: ImageVector
         if (_timeCheck != null) {
             return _timeCheck!!
         }
-        _timeCheck = Builder(name = "TimeCheck", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _timeCheck = Builder(name = "TimeCheck", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(18.5001f, 23.0001f)
-                    horizontalLineTo(18.4671f)
-                    curveTo(17.9561f, 22.9921f, 17.4701f, 22.7751f, 17.1221f, 22.4001f)
-                    lineTo(14.9541f, 20.1381f)
-                    lineTo(16.4001f, 18.7561f)
-                    lineTo(18.5061f, 20.9561f)
-                    lineTo(22.5871f, 16.8741f)
-                    lineTo(24.0001f, 18.2851f)
-                    lineTo(19.8391f, 22.4471f)
-                    curveTo(19.4851f, 22.8031f, 19.0021f, 23.0031f, 18.5001f, 23.0001f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(12.0168f, 7.0E-4f)
-                    curveTo(5.3998f, -0.0193f, 0.0198f, 5.3367f, -2.0E-4f, 11.9637f)
-                    curveTo(-0.0202f, 18.5907f, 5.3268f, 23.9807f, 11.9428f, 24.0007f)
-                    curveTo(13.0398f, 24.0037f, 14.1328f, 23.8567f, 15.1898f, 23.5617f)
-                    curveTo(13.2218f, 20.9037f, 13.7788f, 17.1507f, 16.4328f, 15.1797f)
-                    curveTo(18.5488f, 13.6087f, 21.4418f, 13.6087f, 23.5578f, 15.1797f)
-                    curveTo(25.3288f, 8.8127f, 21.6118f, 2.2137f, 15.2558f, 0.4397f)
-                    curveTo(14.2018f, 0.1457f, 13.1118f, -0.0023f, 12.0168f, 7.0E-4f)
-                    close()
-                    moveTo(13.0168f, 11.4147f)
-                    lineTo(9.7238f, 14.7077f)
-                    lineTo(8.3098f, 13.2937f)
-                    lineTo(11.0168f, 10.5867f)
-                    verticalLineTo(6.0007f)
-                    horizontalLineTo(13.0168f)
-                    verticalLineTo(11.4147f)
-                    close()
-                }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(18.5f, 23.0f)
+                horizontalLineToRelative(-0.033f)
+                curveToRelative(-0.511f, -0.008f, -0.997f, -0.225f, -1.345f, -0.6f)
+                lineToRelative(-2.168f, -2.262f)
+                lineToRelative(1.446f, -1.382f)
+                lineToRelative(2.106f, 2.2f)
+                lineToRelative(4.081f, -4.082f)
+                lineToRelative(1.413f, 1.411f)
+                lineToRelative(-4.161f, 4.162f)
+                curveToRelative(-0.354f, 0.356f, -0.837f, 0.556f, -1.339f, 0.553f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(12.017f, 0.0f)
+                curveToRelative(-6.617f, -0.02f, -11.997f, 5.336f, -12.017f, 11.963f)
+                reflectiveCurveToRelative(5.327f, 12.017f, 11.943f, 12.037f)
+                curveToRelative(1.097f, 0.003f, 2.19f, -0.144f, 3.247f, -0.439f)
+                curveToRelative(-1.968f, -2.658f, -1.411f, -6.411f, 1.243f, -8.382f)
+                curveToRelative(2.116f, -1.571f, 5.009f, -1.571f, 7.125f, 0.0f)
+                curveToRelative(1.771f, -6.367f, -1.946f, -12.966f, -8.302f, -14.74f)
+                curveToRelative(-1.054f, -0.294f, -2.144f, -0.442f, -3.239f, -0.439f)
+                close()
+                moveTo(13.017f, 11.414f)
+                lineTo(9.724f, 14.707f)
+                lineTo(8.31f, 13.293f)
+                lineTo(11.017f, 10.586f)
+                verticalLineToRelative(-4.586f)
+                horizontalLineToRelative(2.0f)
+                close()
             }
         }
         .build()

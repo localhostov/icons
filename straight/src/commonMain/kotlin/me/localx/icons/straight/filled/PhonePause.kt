@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,39 +16,32 @@ public val Icons.Filled.PhonePause: ImageVector
         if (_phonePause != null) {
             return _phonePause!!
         }
-        _phonePause = Builder(name = "PhonePause", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(23.8779f, 19.113f)
-                    lineTo(20.7069f, 22.285f)
-                    curveTo(20.1541f, 22.835f, 19.4975f, 23.2698f, 18.7753f, 23.5642f)
-                    curveTo(18.0532f, 23.8586f, 17.2798f, 24.0067f, 16.4999f, 24.0f)
-                    curveTo(9.2519f, 24.0f, -1.0E-4f, 14.748f, -1.0E-4f, 7.5f)
-                    curveTo(-0.007f, 6.7198f, 0.1412f, 5.946f, 0.436f, 5.2236f)
-                    curveTo(0.7307f, 4.5012f, 1.1662f, 3.8446f, 1.7169f, 3.292f)
-                    lineTo(4.8869f, 0.122f)
-                    lineTo(11.1509f, 6.387f)
-                    lineTo(7.0269f, 10.512f)
-                    curveTo(8.2529f, 13.4267f, 10.5683f, 15.7478f, 13.4799f, 16.981f)
-                    lineTo(17.6129f, 12.848f)
-                    lineTo(23.8779f, 19.113f)
-                    close()
-                    moveTo(21.9999f, 0.0f)
-                    horizontalLineTo(19.9999f)
-                    verticalLineTo(8.0f)
-                    horizontalLineTo(21.9999f)
-                    verticalLineTo(0.0f)
-                    close()
-                    moveTo(17.9999f, 0.0f)
-                    horizontalLineTo(15.9999f)
-                    verticalLineTo(8.0f)
-                    horizontalLineTo(17.9999f)
-                    verticalLineTo(0.0f)
-                    close()
-                }
+        _phonePause = Builder(name = "PhonePause", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(23.878f, 19.113f)
+                lineToRelative(-3.171f, 3.172f)
+                arcTo(5.893f, 5.893f, 0.0f, false, true, 16.5f, 24.0f)
+                curveTo(9.252f, 24.0f, 0.0f, 14.748f, 0.0f, 7.5f)
+                arcTo(5.887f, 5.887f, 0.0f, false, true, 1.717f, 3.292f)
+                lineTo(4.887f, 0.122f)
+                lineToRelative(6.264f, 6.265f)
+                lineTo(7.027f, 10.512f)
+                arcToRelative(12.135f, 12.135f, 0.0f, false, false, 6.453f, 6.469f)
+                lineToRelative(4.133f, -4.133f)
+                close()
+                moveTo(22.0f, 0.0f)
+                horizontalLineTo(20.0f)
+                verticalLineTo(8.0f)
+                horizontalLineToRelative(2.0f)
+                close()
+                moveTo(18.0f, 0.0f)
+                horizontalLineTo(16.0f)
+                verticalLineTo(8.0f)
+                horizontalLineToRelative(2.0f)
+                close()
             }
         }
         .build()

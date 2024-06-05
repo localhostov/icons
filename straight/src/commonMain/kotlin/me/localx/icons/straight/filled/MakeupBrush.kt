@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,34 +16,28 @@ public val Icons.Filled.MakeupBrush: ImageVector
         if (_makeupBrush != null) {
             return _makeupBrush!!
         }
-        _makeupBrush = Builder(name = "MakeupBrush", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(10.427f, 9.841f)
-                    lineTo(8.307f, 11.665f)
-                    lineTo(12.355f, 15.712f)
-                    lineTo(14.176f, 13.59f)
-                    lineTo(10.427f, 9.841f)
-                    close()
-                    moveTo(15.482f, 12.068f)
-                    lineTo(23.942f, 2.211f)
-                    lineTo(21.789f, 0.058f)
-                    lineTo(11.946f, 8.532f)
-                    lineTo(15.482f, 12.068f)
-                    close()
-                    moveTo(8.046f, 24.0f)
-                    horizontalLineTo(6.4f)
-                    curveTo(4.7032f, 23.9981f, 3.0764f, 23.3233f, 1.8766f, 22.1234f)
-                    curveTo(0.6767f, 20.9236f, 0.0019f, 19.2968f, 0.0f, 17.6f)
-                    lineTo(0.0f, 15.968f)
-                    lineTo(6.615f, 12.615f)
-                    lineTo(11.346f, 17.346f)
-                    lineTo(8.046f, 24.0f)
-                    close()
-                }
+        _makeupBrush = Builder(name = "MakeupBrush", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(10.427f, 9.841f)
+                lineToRelative(-2.12f, 1.824f)
+                lineToRelative(4.048f, 4.047f)
+                lineToRelative(1.821f, -2.122f)
+                close()
+                moveTo(15.482f, 12.068f)
+                lineTo(23.942f, 2.211f)
+                lineTo(21.789f, 0.058f)
+                lineTo(11.946f, 8.532f)
+                close()
+                moveTo(8.046f, 24.0f)
+                horizontalLineToRelative(-1.646f)
+                arcToRelative(6.407f, 6.407f, 0.0f, false, true, -6.4f, -6.4f)
+                verticalLineToRelative(-1.632f)
+                lineToRelative(6.615f, -3.353f)
+                lineToRelative(4.731f, 4.731f)
+                close()
             }
         }
         .build()

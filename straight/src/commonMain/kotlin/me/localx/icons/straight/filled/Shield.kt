@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,27 +16,23 @@ public val Icons.Filled.Shield: ImageVector
         if (_shield != null) {
             return _shield!!
         }
-        _shield = Builder(name = "Shield", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _shield = Builder(name = "Shield", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(19.9442f, 2.6426f)
-                    lineTo(12.0002f, 0.0096f)
-                    lineTo(4.0561f, 2.6436f)
-                    curveTo(3.4578f, 2.8419f, 2.9371f, 3.2238f, 2.568f, 3.7348f)
-                    curveTo(2.199f, 4.2459f, 2.0003f, 4.8602f, 2.0001f, 5.4906f)
-                    verticalLineTo(12.0006f)
-                    curveTo(2.0001f, 19.5246f, 11.2002f, 23.6796f, 11.5942f, 23.8526f)
-                    lineTo(11.9482f, 24.0096f)
-                    lineTo(12.3162f, 23.8876f)
-                    curveTo(12.7112f, 23.7556f, 22.0002f, 20.5776f, 22.0002f, 12.0006f)
-                    verticalLineTo(5.4906f)
-                    curveTo(22.0002f, 4.86f, 21.8016f, 4.2455f, 21.4326f, 3.7342f)
-                    curveTo(21.0635f, 3.223f, 20.5427f, 2.841f, 19.9442f, 2.6426f)
-                    close()
-                }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(19.944f, 2.642f)
+                lineTo(12.0f, 0.009f)
+                lineTo(4.056f, 2.643f)
+                arcTo(3.0f, 3.0f, 0.0f, false, false, 2.0f, 5.49f)
+                verticalLineTo(12.0f)
+                curveToRelative(0.0f, 7.524f, 9.2f, 11.679f, 9.594f, 11.852f)
+                lineToRelative(0.354f, 0.157f)
+                lineToRelative(0.368f, -0.122f)
+                curveTo(12.711f, 23.755f, 22.0f, 20.577f, 22.0f, 12.0f)
+                verticalLineTo(5.49f)
+                arcTo(3.0f, 3.0f, 0.0f, false, false, 19.944f, 2.642f)
+                close()
             }
         }
         .build()

@@ -16,23 +16,19 @@ public val Icons.Filled.Cursor: ImageVector
         if (_cursor != null) {
             return _cursor!!
         }
-        _cursor = Builder(name = "Cursor", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _cursor = Builder(name = "Cursor", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(13.2778f, 23.979f)
-                lineTo(9.0779f, 15.739f)
-                lineTo(3.9999f, 20.216f)
-                verticalLineTo(2.019f)
-                curveTo(3.9998f, 1.6463f, 4.104f, 1.281f, 4.3005f, 0.9643f)
-                curveTo(4.497f, 0.6476f, 4.7781f, 0.3922f, 5.1121f, 0.2267f)
-                curveTo(5.4461f, 0.0613f, 5.8197f, -0.0075f, 6.1907f, 0.028f)
-                curveTo(6.5617f, 0.0636f, 6.9154f, 0.2021f, 7.2119f, 0.428f)
-                lineTo(21.1168f, 12.436f)
-                lineTo(14.4998f, 13.17f)
-                lineTo(18.6448f, 21.3f)
-                lineTo(13.2778f, 23.979f)
+                moveToRelative(13.278f, 23.979f)
+                lineToRelative(-4.2f, -8.24f)
+                lineToRelative(-5.078f, 4.477f)
+                verticalLineToRelative(-18.197f)
+                arcToRelative(2.0f, 2.0f, 0.0f, false, true, 3.212f, -1.591f)
+                lineToRelative(13.905f, 12.008f)
+                lineToRelative(-6.617f, 0.734f)
+                lineToRelative(4.145f, 8.13f)
                 close()
             }
         }

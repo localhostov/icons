@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,38 +16,31 @@ public val Icons.Filled.Dart: ImageVector
         if (_dart != null) {
             return _dart!!
         }
-        _dart = Builder(name = "Dart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _dart = Builder(name = "Dart", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(13.414f, 12.0f)
-                    curveTo(11.12f, 15.115f, 7.785f, 20.457f, 7.121f, 21.121f)
-                    curveTo(6.6849f, 21.5615f, 6.1217f, 21.8543f, 5.5106f, 21.9582f)
-                    curveTo(4.8994f, 22.062f, 4.2712f, 21.9718f, 3.714f, 21.7f)
-                    lineTo(1.414f, 24.0f)
-                    lineTo(0.0f, 22.586f)
-                    lineTo(2.3f, 20.286f)
-                    curveTo(2.0338f, 19.729f, 1.9463f, 19.1032f, 2.0496f, 18.4945f)
-                    curveTo(2.1529f, 17.8859f, 2.4419f, 17.324f, 2.877f, 16.886f)
-                    curveTo(3.541f, 16.222f, 8.883f, 12.886f, 11.998f, 10.593f)
-                    lineTo(13.414f, 12.0f)
-                    close()
-                    moveTo(12.0f, 4.586f)
-                    verticalLineTo(10.586f)
-                    lineTo(19.293f, 3.293f)
-                    lineTo(20.707f, 4.707f)
-                    lineTo(13.414f, 12.0f)
-                    horizontalLineTo(19.414f)
-                    lineTo(24.0f, 7.414f)
-                    verticalLineTo(3.0f)
-                    curveTo(24.0f, 2.2043f, 23.6839f, 1.4413f, 23.1213f, 0.8787f)
-                    curveTo(22.5587f, 0.3161f, 21.7956f, 0.0f, 21.0f, 0.0f)
-                    lineTo(16.586f, 0.0f)
-                    lineTo(12.0f, 4.586f)
-                    close()
-                }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(13.414f, 12.0f)
+                curveToRelative(-2.294f, 3.115f, -5.629f, 8.457f, -6.293f, 9.121f)
+                arcToRelative(2.965f, 2.965f, 0.0f, false, true, -3.407f, 0.579f)
+                lineToRelative(-2.3f, 2.3f)
+                lineToRelative(-1.414f, -1.414f)
+                lineToRelative(2.3f, -2.3f)
+                arcToRelative(2.993f, 2.993f, 0.0f, false, true, 0.577f, -3.4f)
+                curveToRelative(0.664f, -0.664f, 6.006f, -4.0f, 9.121f, -6.293f)
+                close()
+                moveTo(12.0f, 4.586f)
+                verticalLineToRelative(6.0f)
+                lineToRelative(7.293f, -7.293f)
+                lineToRelative(1.414f, 1.414f)
+                lineToRelative(-7.293f, 7.293f)
+                horizontalLineToRelative(6.0f)
+                lineToRelative(4.586f, -4.586f)
+                verticalLineToRelative(-4.414f)
+                arcToRelative(3.0f, 3.0f, 0.0f, false, false, -3.0f, -3.0f)
+                horizontalLineToRelative(-4.414f)
+                close()
             }
         }
         .build()

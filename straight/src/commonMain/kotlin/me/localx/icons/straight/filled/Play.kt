@@ -16,19 +16,16 @@ public val Icons.Filled.Play: ImageVector
         if (_play != null) {
             return _play!!
         }
-        _play = Builder(name = "Play", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _play = Builder(name = "Play", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(19.7491f, 9.4645f)
-                lineTo(5.0001f, 0.0485f)
-                verticalLineTo(23.9895f)
-                lineTo(19.7431f, 14.5405f)
-                curveTo(20.1723f, 14.2708f, 20.5261f, 13.8966f, 20.7715f, 13.4531f)
-                curveTo(21.0169f, 13.0096f, 21.146f, 12.5111f, 21.1466f, 12.0042f)
-                curveTo(21.1472f, 11.4973f, 21.0193f, 10.9985f, 20.7749f, 10.5544f)
-                curveTo(20.5306f, 10.1103f, 20.1776f, 9.7353f, 19.7491f, 9.4645f)
+                moveTo(19.749f, 9.464f)
+                lineTo(5.0f, 0.048f)
+                verticalLineTo(23.989f)
+                lineTo(19.743f, 14.54f)
+                arcToRelative(3.0f, 3.0f, 0.0f, false, false, 0.006f, -5.076f)
                 close()
             }
         }

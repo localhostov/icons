@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -20,29 +19,25 @@ public val Icons.Filled.Pause: ImageVector
         if (_pause != null) {
             return _pause!!
         }
-        _pause = Builder(name = "Pause", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _pause = Builder(name = "Pause", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(10.0f, 0.0f)
-                    horizontalLineTo(3.0f)
-                    verticalLineTo(24.0f)
-                    horizontalLineTo(10.0f)
-                    verticalLineTo(0.0f)
-                    close()
-                }
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(21.0001f, 0.0f)
-                    horizontalLineTo(14.0001f)
-                    verticalLineTo(24.0f)
-                    horizontalLineTo(21.0001f)
-                    verticalLineTo(0.0f)
-                    close()
-                }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(3.0f, 0.0f)
+                horizontalLineToRelative(7.0f)
+                verticalLineToRelative(24.0f)
+                horizontalLineToRelative(-7.0f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(14.0f, 0.0f)
+                horizontalLineToRelative(7.0f)
+                verticalLineToRelative(24.0f)
+                horizontalLineToRelative(-7.0f)
+                close()
             }
         }
         .build()

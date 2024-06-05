@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,46 +16,44 @@ public val Icons.Filled.MarsDouble: ImageVector
         if (_marsDouble != null) {
             return _marsDouble!!
         }
-        _marsDouble = Builder(name = "MarsDouble", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(18.0024f, 2.0375f)
-                    verticalLineTo(6.0219f)
-                    horizontalLineTo(16.0103f)
-                    verticalLineTo(3.446f)
-                    lineTo(12.6235f, 6.8328f)
-                    curveTo(14.9425f, 9.9264f, 14.3145f, 14.3143f, 11.2209f, 16.6333f)
-                    curveTo(8.1273f, 18.9523f, 3.7394f, 18.3243f, 1.4204f, 15.2307f)
-                    curveTo(-0.8985f, 12.137f, -0.2707f, 7.7492f, 2.823f, 5.4302f)
-                    curveTo(5.3086f, 3.567f, 8.7248f, 3.5645f, 11.213f, 5.4242f)
-                    lineTo(14.5998f, 2.0375f)
-                    horizontalLineTo(12.0259f)
-                    verticalLineTo(0.0453f)
-                    horizontalLineTo(16.0103f)
-                    curveTo(17.1105f, 0.0453f, 18.0024f, 0.9373f, 18.0024f, 2.0375f)
-                    close()
-                    moveTo(21.9869f, 6.0219f)
-                    horizontalLineTo(18.0024f)
-                    verticalLineTo(8.0141f)
-                    horizontalLineTo(20.5784f)
-                    lineTo(17.1787f, 11.4138f)
-                    curveTo(16.8094f, 11.1304f, 16.4126f, 10.8848f, 15.9943f, 10.6807f)
-                    curveTo(15.9943f, 10.7883f, 16.0103f, 10.8939f, 16.0103f, 11.0025f)
-                    curveTo(16.0048f, 15.9514f, 11.9942f, 19.9619f, 7.0453f, 19.9674f)
-                    curveTo(6.9367f, 19.9674f, 6.8311f, 19.9545f, 6.7236f, 19.9515f)
-                    curveTo(8.361f, 23.4332f, 12.511f, 24.9284f, 15.9928f, 23.2909f)
-                    curveTo(18.4379f, 22.141f, 19.9975f, 19.681f, 19.9946f, 16.9791f)
-                    curveTo(19.9916f, 15.4768f, 19.4981f, 14.0165f, 18.5891f, 12.8204f)
-                    lineTo(21.9868f, 9.4227f)
-                    verticalLineTo(11.9986f)
-                    horizontalLineTo(23.979f)
-                    verticalLineTo(8.0142f)
-                    curveTo(23.979f, 6.9139f, 23.0871f, 6.0219f, 21.9869f, 6.0219f)
-                    close()
-                }
+        _marsDouble = Builder(name = "MarsDouble", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(384.052f, 43.465f)
+                verticalLineToRelative(85.001f)
+                horizontalLineToRelative(-42.5f)
+                verticalLineTo(73.513f)
+                lineToRelative(-72.251f, 72.251f)
+                curveToRelative(49.473f, 65.998f, 36.076f, 159.605f, -29.921f, 209.077f)
+                reflectiveCurveTo(79.775f, 390.917f, 30.303f, 324.919f)
+                reflectiveCurveTo(-5.774f, 165.315f, 60.224f, 115.842f)
+                curveToRelative(53.026f, -39.749f, 125.905f, -39.801f, 178.987f, -0.127f)
+                lineToRelative(72.251f, -72.251f)
+                horizontalLineToRelative(-54.91f)
+                verticalLineToRelative(-42.5f)
+                horizontalLineToRelative(85.001f)
+                curveTo(365.024f, 0.965f, 384.052f, 19.993f, 384.052f, 43.465f)
+                close()
+                moveTo(469.053f, 128.466f)
+                horizontalLineToRelative(-85.001f)
+                verticalLineToRelative(42.5f)
+                horizontalLineToRelative(54.953f)
+                lineToRelative(-72.527f, 72.527f)
+                curveToRelative(-7.877f, -6.047f, -16.342f, -11.286f, -25.266f, -15.64f)
+                curveToRelative(0.0f, 2.295f, 0.34f, 4.548f, 0.34f, 6.864f)
+                curveToRelative(-0.117f, 105.577f, -85.675f, 191.134f, -191.252f, 191.252f)
+                curveToRelative(-2.316f, 0.0f, -4.569f, -0.276f, -6.864f, -0.34f)
+                curveToRelative(34.933f, 74.278f, 123.466f, 106.174f, 197.744f, 71.241f)
+                curveToRelative(52.161f, -24.531f, 85.433f, -77.01f, 85.372f, -134.651f)
+                curveToRelative(-0.064f, -32.05f, -10.592f, -63.202f, -29.984f, -88.72f)
+                lineToRelative(72.484f, -72.484f)
+                verticalLineToRelative(54.953f)
+                horizontalLineToRelative(42.5f)
+                verticalLineToRelative(-85.001f)
+                curveTo(511.553f, 147.494f, 492.525f, 128.466f, 469.053f, 128.466f)
+                close()
             }
         }
         .build()

@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,54 +16,47 @@ public val Icons.Filled.DocumentSigned: ImageVector
         if (_documentSigned != null) {
             return _documentSigned!!
         }
-        _documentSigned = Builder(name = "DocumentSigned", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(14.0f, 7.0f)
-                    verticalLineTo(0.0f)
-                    horizontalLineTo(6.0f)
-                    curveTo(5.2043f, 0.0f, 4.4413f, 0.3161f, 3.8787f, 0.8787f)
-                    curveTo(3.3161f, 1.4413f, 3.0f, 2.2043f, 3.0f, 3.0f)
-                    verticalLineTo(24.0f)
-                    horizontalLineTo(21.0f)
-                    verticalLineTo(7.0f)
-                    horizontalLineTo(14.0f)
-                    close()
-                    moveTo(7.0f, 10.0f)
-                    horizontalLineTo(17.0f)
-                    verticalLineTo(12.0f)
-                    horizontalLineTo(7.0f)
-                    verticalLineTo(10.0f)
-                    close()
-                    moveTo(7.0f, 14.0f)
-                    horizontalLineTo(17.0f)
-                    verticalLineTo(16.0f)
-                    horizontalLineTo(7.0f)
-                    verticalLineTo(14.0f)
-                    close()
-                    moveTo(13.135f, 21.0f)
-                    curveTo(12.4116f, 20.9994f, 11.7105f, 20.7501f, 11.149f, 20.294f)
-                    curveTo(10.835f, 20.071f, 10.725f, 20.0f, 10.487f, 20.0f)
-                    curveTo(9.8269f, 20.0227f, 9.1953f, 20.2749f, 8.701f, 20.713f)
-                    lineTo(7.293f, 19.293f)
-                    curveTo(8.159f, 18.4785f, 9.2983f, 18.0173f, 10.487f, 18.0f)
-                    curveTo(11.1518f, 18.0079f, 11.7941f, 18.2421f, 12.308f, 18.664f)
-                    curveTo(12.5321f, 18.8752f, 12.8271f, 18.995f, 13.135f, 19.0f)
-                    curveTo(13.86f, 19.0f, 14.823f, 17.945f, 15.176f, 17.434f)
-                    lineTo(16.826f, 18.564f)
-                    curveTo(16.655f, 18.813f, 15.106f, 21.0f, 13.135f, 21.0f)
-                    close()
-                    moveTo(16.0f, 0.219f)
-                    curveTo(16.5959f, 0.4083f, 17.1391f, 0.7347f, 17.586f, 1.172f)
-                    lineTo(19.828f, 3.414f)
-                    curveTo(20.2676f, 3.8598f, 20.5956f, 4.4033f, 20.785f, 5.0f)
-                    horizontalLineTo(16.0f)
-                    verticalLineTo(0.219f)
-                    close()
-                }
+        _documentSigned = Builder(name = "DocumentSigned", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(14.0f, 7.0f)
+                verticalLineToRelative(-7.0f)
+                horizontalLineToRelative(-8.0f)
+                arcToRelative(3.0f, 3.0f, 0.0f, false, false, -3.0f, 3.0f)
+                verticalLineToRelative(21.0f)
+                horizontalLineToRelative(18.0f)
+                verticalLineToRelative(-17.0f)
+                close()
+                moveTo(7.0f, 10.0f)
+                horizontalLineToRelative(10.0f)
+                verticalLineToRelative(2.0f)
+                horizontalLineToRelative(-10.0f)
+                close()
+                moveTo(7.0f, 14.0f)
+                horizontalLineToRelative(10.0f)
+                verticalLineToRelative(2.0f)
+                horizontalLineToRelative(-10.0f)
+                close()
+                moveTo(13.135f, 21.0f)
+                arcToRelative(3.154f, 3.154f, 0.0f, false, true, -1.986f, -0.706f)
+                curveToRelative(-0.314f, -0.223f, -0.424f, -0.294f, -0.662f, -0.294f)
+                arcToRelative(2.84f, 2.84f, 0.0f, false, false, -1.786f, 0.713f)
+                lineToRelative(-1.408f, -1.42f)
+                arcToRelative(4.763f, 4.763f, 0.0f, false, true, 3.194f, -1.293f)
+                arcToRelative(2.925f, 2.925f, 0.0f, false, true, 1.821f, 0.664f)
+                arcToRelative(1.235f, 1.235f, 0.0f, false, false, 0.827f, 0.336f)
+                curveToRelative(0.725f, 0.0f, 1.688f, -1.055f, 2.041f, -1.566f)
+                lineToRelative(1.65f, 1.13f)
+                curveToRelative(-0.171f, 0.249f, -1.72f, 2.436f, -3.691f, 2.436f)
+                close()
+                moveTo(16.0f, 0.219f)
+                arcToRelative(4.0f, 4.0f, 0.0f, false, true, 1.586f, 0.953f)
+                lineToRelative(2.242f, 2.242f)
+                arcToRelative(3.969f, 3.969f, 0.0f, false, true, 0.957f, 1.586f)
+                horizontalLineToRelative(-4.785f)
+                close()
             }
         }
         .build()

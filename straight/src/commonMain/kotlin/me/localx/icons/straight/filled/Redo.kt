@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.straight.Icons
@@ -17,29 +16,24 @@ public val Icons.Filled.Redo: ImageVector
         if (_redo != null) {
             return _redo!!
         }
-        _redo = Builder(name = "Redo", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+        _redo = Builder(name = "Redo", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
                 viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(2.0069f, 23.9992f)
-                    horizontalLineTo(0.0069f)
-                    verticalLineTo(15.9992f)
-                    curveTo(0.0087f, 13.614f, 0.9566f, 11.327f, 2.6425f, 9.6398f)
-                    curveTo(4.3284f, 7.9525f, 6.6147f, 7.0029f, 8.9999f, 6.9992f)
-                    lineTo(13.8429f, 6.8452f)
-                    verticalLineTo(0.4312f)
-                    lineTo(23.1299f, 9.7242f)
-                    curveTo(23.6923f, 10.2868f, 24.0083f, 11.0497f, 24.0083f, 11.8452f)
-                    curveTo(24.0083f, 12.6407f, 23.6923f, 13.4036f, 23.1299f, 13.9662f)
-                    lineTo(13.8449f, 23.2592f)
-                    verticalLineTo(16.8452f)
-                    lineTo(8.9999f, 16.9992f)
-                    curveTo(7.1451f, 17.0026f, 5.3673f, 17.7415f, 4.0564f, 19.0537f)
-                    curveTo(2.7455f, 20.3659f, 2.0085f, 22.1444f, 2.0069f, 23.9992f)
-                    close()
-                }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(2.007f, 24.0f)
+                horizontalLineToRelative(-2.0f)
+                verticalLineTo(16.0f)
+                arcTo(9.007f, 9.007f, 0.0f, false, true, 9.0f, 7.0f)
+                lineToRelative(4.843f, -0.154f)
+                verticalLineTo(0.432f)
+                lineToRelative(9.287f, 9.293f)
+                arcToRelative(3.0f, 3.0f, 0.0f, false, true, 0.0f, 4.242f)
+                lineTo(13.845f, 23.26f)
+                verticalLineTo(16.846f)
+                lineTo(9.0f, 17.0f)
+                arcTo(7.006f, 7.006f, 0.0f, false, false, 2.007f, 24.0f)
+                close()
             }
         }
         .build()
