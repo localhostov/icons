@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,56 +16,38 @@ public val Icons.Outline.PaintBrush: ImageVector
         if (_paintBrush != null) {
             return _paintBrush!!
         }
-        _paintBrush = Builder(name = "PaintBrush", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(23.0999f, 0.8997f)
-                    curveTo(22.5162f, 0.3437f, 21.741f, 0.0336f, 20.9349f, 0.0336f)
-                    curveTo(20.1288f, 0.0336f, 19.3536f, 0.3437f, 18.7699f, 0.8997f)
-                    lineTo(7.5629f, 12.0997f)
-                    curveTo(7.2143f, 12.0325f, 6.86f, 11.9991f, 6.5049f, 11.9997f)
-                    curveTo(5.7831f, 11.9976f, 5.0681f, 12.1387f, 4.4012f, 12.4149f)
-                    curveTo(3.7343f, 12.6911f, 3.1289f, 13.0968f, 2.6199f, 13.6086f)
-                    curveTo(1.2679f, 14.9616f, 0.3139f, 18.5916f, 0.0309f, 20.5626f)
-                    curveTo(-0.0319f, 20.989f, -0.0021f, 21.4239f, 0.1184f, 21.8378f)
-                    curveTo(0.2388f, 22.2516f, 0.4469f, 22.6346f, 0.7287f, 22.9608f)
-                    curveTo(1.0104f, 23.2869f, 1.3591f, 23.5485f, 1.751f, 23.7278f)
-                    curveTo(2.143f, 23.9071f, 2.5689f, 23.9998f, 2.9999f, 23.9996f)
-                    curveTo(3.1468f, 23.9997f, 3.2935f, 23.9894f, 3.4389f, 23.9686f)
-                    curveTo(5.4099f, 23.6856f, 9.0389f, 22.7316f, 10.3929f, 21.3796f)
-                    curveTo(11.0287f, 20.742f, 11.498f, 19.9579f, 11.7596f, 19.0963f)
-                    curveTo(12.0211f, 18.2348f, 12.0669f, 17.3221f, 11.8929f, 16.4386f)
-                    lineTo(23.0999f, 5.2297f)
-                    curveTo(23.6726f, 4.6547f, 23.9941f, 3.8762f, 23.9941f, 3.0647f)
-                    curveTo(23.9941f, 2.2531f, 23.6726f, 1.4747f, 23.0999f, 0.8997f)
-                    close()
-                    moveTo(8.9769f, 19.9656f)
-                    curveTo(8.2519f, 20.6906f, 5.4769f, 21.6546f, 3.1529f, 21.9886f)
-                    curveTo(2.9976f, 22.0111f, 2.8392f, 21.9972f, 2.6901f, 21.9481f)
-                    curveTo(2.5411f, 21.899f, 2.4055f, 21.816f, 2.2939f, 21.7056f)
-                    curveTo(2.1827f, 21.5947f, 2.0993f, 21.4591f, 2.0503f, 21.3098f)
-                    curveTo(2.0013f, 21.1606f, 1.9881f, 21.0019f, 2.0119f, 20.8466f)
-                    curveTo(2.3449f, 18.5236f, 3.3119f, 15.7466f, 4.0339f, 15.0226f)
-                    curveTo(4.7001f, 14.4226f, 5.5713f, 14.1011f, 6.4676f, 14.1245f)
-                    curveTo(7.3639f, 14.1479f, 8.2171f, 14.5144f, 8.8511f, 15.1485f)
-                    curveTo(9.4851f, 15.7825f, 9.8516f, 16.6356f, 9.875f, 17.5319f)
-                    curveTo(9.8984f, 18.4283f, 9.577f, 19.2994f, 8.9769f, 19.9656f)
-                    close()
-                    moveTo(21.6879f, 3.8157f)
-                    lineTo(11.0669f, 14.4376f)
-                    curveTo(10.6723f, 13.8401f, 10.1623f, 13.3274f, 9.5669f, 12.9296f)
-                    lineTo(20.1839f, 2.3117f)
-                    curveTo(20.3859f, 2.1187f, 20.6545f, 2.0111f, 20.9339f, 2.0111f)
-                    curveTo(21.2133f, 2.0111f, 21.4819f, 2.1187f, 21.6839f, 2.3117f)
-                    curveTo(21.7831f, 2.41f, 21.8619f, 2.5271f, 21.9158f, 2.656f)
-                    curveTo(21.9697f, 2.7848f, 21.9976f, 2.9231f, 21.998f, 3.0628f)
-                    curveTo(21.9984f, 3.2025f, 21.9712f, 3.341f, 21.918f, 3.4701f)
-                    curveTo(21.8648f, 3.5993f, 21.7866f, 3.7167f, 21.6879f, 3.8157f)
-                    close()
-                }
+        _paintBrush = Builder(name = "PaintBrush", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(23.1f, 0.9f)
+                arcToRelative(3.139f, 3.139f, 0.0f, false, false, -4.33f, 0.0f)
+                lineToRelative(-11.207f, 11.2f)
+                arcToRelative(5.548f, 5.548f, 0.0f, false, false, -1.058f, -0.1f)
+                arcToRelative(5.457f, 5.457f, 0.0f, false, false, -3.885f, 1.609f)
+                curveToRelative(-1.352f, 1.353f, -2.306f, 4.983f, -2.589f, 6.954f)
+                arcToRelative(3.0f, 3.0f, 0.0f, false, false, 2.969f, 3.437f)
+                arcToRelative(3.1f, 3.1f, 0.0f, false, false, 0.439f, -0.031f)
+                curveToRelative(1.971f, -0.283f, 5.6f, -1.237f, 6.954f, -2.589f)
+                arcToRelative(5.494f, 5.494f, 0.0f, false, false, 1.5f, -4.941f)
+                lineToRelative(11.207f, -11.209f)
+                arcToRelative(3.068f, 3.068f, 0.0f, false, false, 0.0f, -4.33f)
+                close()
+                moveTo(8.977f, 19.966f)
+                curveToRelative(-0.725f, 0.725f, -3.5f, 1.689f, -5.824f, 2.023f)
+                arcToRelative(1.015f, 1.015f, 0.0f, false, true, -0.859f, -0.283f)
+                arcToRelative(1.0f, 1.0f, 0.0f, false, true, -0.282f, -0.859f)
+                curveToRelative(0.333f, -2.323f, 1.3f, -5.1f, 2.022f, -5.824f)
+                arcToRelative(3.5f, 3.5f, 0.0f, false, true, 4.943f, 4.943f)
+                close()
+                moveTo(21.688f, 3.816f)
+                lineTo(11.067f, 14.438f)
+                arcToRelative(5.378f, 5.378f, 0.0f, false, false, -1.5f, -1.508f)
+                lineToRelative(10.617f, -10.618f)
+                arcToRelative(1.086f, 1.086f, 0.0f, false, true, 1.5f, 0.0f)
+                arcToRelative(1.062f, 1.062f, 0.0f, false, true, 0.004f, 1.504f)
+                close()
             }
         }
         .build()

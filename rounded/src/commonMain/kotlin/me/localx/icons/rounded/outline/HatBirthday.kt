@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,54 +16,51 @@ public val Icons.Outline.HatBirthday: ImageVector
         if (_hatBirthday != null) {
             return _hatBirthday!!
         }
-        _hatBirthday = Builder(name = "HatBirthday", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(22.1389f, 17.7784f)
-                    lineTo(13.5919f, 5.5344f)
-                    curveTo(14.9962f, 4.6551f, 15.4219f, 2.8039f, 14.5427f, 1.3996f)
-                    curveTo(13.6634f, -0.0047f, 11.8123f, -0.4304f, 10.4079f, 0.4489f)
-                    curveTo(9.0036f, 1.3282f, 8.5779f, 3.1793f, 9.4572f, 4.5837f)
-                    curveTo(9.6981f, 4.9684f, 10.0232f, 5.2935f, 10.4079f, 5.5344f)
-                    lineTo(1.8609f, 17.7784f)
-                    curveTo(0.9307f, 18.9964f, 0.7532f, 20.6299f, 1.3999f, 22.0194f)
-                    curveTo(2.1625f, 23.3367f, 3.6083f, 24.1052f, 5.1269f, 24.0003f)
-                    horizontalLineTo(18.8729f)
-                    curveTo(20.3915f, 24.1052f, 21.8373f, 23.3367f, 22.5999f, 22.0194f)
-                    curveTo(23.2466f, 20.6299f, 23.069f, 18.9964f, 22.1389f, 17.7784f)
-                    close()
-                    moveTo(11.7309f, 22.0003f)
-                    lineTo(17.1889f, 14.1814f)
-                    lineTo(18.5999f, 16.2084f)
-                    lineTo(14.5609f, 22.0004f)
-                    horizontalLineTo(11.7309f)
-                    verticalLineTo(22.0003f)
-                    close()
-                    moveTo(6.5389f, 22.0003f)
-                    lineTo(14.5929f, 10.4623f)
-                    lineTo(15.9689f, 12.4343f)
-                    lineTo(9.2919f, 22.0003f)
-                    horizontalLineTo(6.5389f)
-                    close()
-                    moveTo(3.1699f, 21.0943f)
-                    curveTo(2.8733f, 20.3646f, 3.0f, 19.5311f, 3.4999f, 18.9223f)
-                    lineTo(11.9999f, 6.7474f)
-                    lineTo(13.3809f, 8.7253f)
-                    curveTo(13.3669f, 8.7433f, 13.3469f, 8.7523f, 13.3339f, 8.7703f)
-                    lineTo(4.1999f, 21.8593f)
-                    curveTo(3.7668f, 21.755f, 3.3949f, 21.4788f, 3.1699f, 21.0943f)
-                    close()
-                    moveTo(20.8299f, 21.0943f)
-                    curveTo(20.4013f, 21.7421f, 19.644f, 22.0926f, 18.8729f, 22.0003f)
-                    horizontalLineTo(16.9999f)
-                    lineTo(19.8219f, 17.9563f)
-                    lineTo(20.4969f, 18.9223f)
-                    curveTo(20.9978f, 19.5305f, 21.1257f, 20.3641f, 20.8299f, 21.0943f)
-                    close()
-                }
+        _hatBirthday = Builder(name = "HatBirthday", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(472.299f, 379.264f)
+                lineTo(289.963f, 118.059f)
+                curveToRelative(29.959f, -18.757f, 39.04f, -58.249f, 20.283f, -88.208f)
+                curveToRelative(-18.757f, -29.959f, -58.249f, -39.04f, -88.208f, -20.282f)
+                reflectiveCurveToRelative(-39.04f, 58.249f, -20.282f, 88.208f)
+                curveToRelative(5.139f, 8.208f, 12.074f, 15.143f, 20.282f, 20.282f)
+                lineTo(39.701f, 379.264f)
+                curveToRelative(-19.843f, 25.985f, -23.631f, 60.833f, -9.835f, 90.475f)
+                curveTo(46.136f, 497.842f, 76.98f, 514.237f, 109.376f, 512.0f)
+                horizontalLineToRelative(293.248f)
+                curveToRelative(32.396f, 2.237f, 63.24f, -14.158f, 79.509f, -42.261f)
+                curveTo(495.929f, 440.097f, 492.141f, 405.249f, 472.299f, 379.264f)
+                close()
+                moveTo(250.261f, 469.333f)
+                lineToRelative(116.437f, -166.805f)
+                lineToRelative(30.101f, 43.243f)
+                lineToRelative(-86.165f, 123.563f)
+                horizontalLineTo(250.261f)
+                close()
+                moveTo(139.499f, 469.333f)
+                lineToRelative(171.819f, -246.144f)
+                lineToRelative(29.355f, 42.069f)
+                lineTo(198.229f, 469.333f)
+                horizontalLineTo(139.499f)
+                close()
+                moveTo(67.627f, 450.005f)
+                curveToRelative(-6.327f, -15.568f, -3.625f, -33.35f, 7.04f, -46.336f)
+                lineTo(256.0f, 143.936f)
+                lineToRelative(29.461f, 42.197f)
+                curveToRelative(-0.299f, 0.384f, -0.725f, 0.576f, -1.003f, 0.96f)
+                lineTo(89.6f, 466.325f)
+                curveTo(80.361f, 464.1f, 72.427f, 458.207f, 67.627f, 450.005f)
+                close()
+                moveTo(444.373f, 450.005f)
+                curveToRelative(-9.143f, 13.818f, -25.298f, 21.297f, -41.749f, 19.328f)
+                horizontalLineToRelative(-39.957f)
+                lineToRelative(60.203f, -86.272f)
+                lineToRelative(14.4f, 20.608f)
+                curveTo(447.956f, 416.643f, 450.683f, 434.426f, 444.373f, 450.005f)
+                close()
             }
         }
         .build()

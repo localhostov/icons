@@ -16,18 +16,20 @@ public val Icons.Outline.MinusSmall: ImageVector
         if (_minusSmall != null) {
             return _minusSmall!!
         }
-        _minusSmall = Builder(name = "MinusSmall", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
+        _minusSmall = Builder(name = "MinusSmall", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(17.0f, 10.9997f)
-                horizontalLineTo(7.0f)
-                curveTo(6.4477f, 10.9997f, 6.0f, 11.4474f, 6.0f, 11.9997f)
-                curveTo(6.0f, 12.552f, 6.4477f, 12.9997f, 7.0f, 12.9997f)
-                horizontalLineTo(17.0f)
-                curveTo(17.5523f, 12.9997f, 18.0f, 12.552f, 18.0f, 11.9997f)
-                curveTo(18.0f, 11.4474f, 17.5523f, 10.9997f, 17.0f, 10.9997f)
+                moveTo(7.0f, 11.0f)
+                lineTo(17.0f, 11.0f)
+                arcTo(1.0f, 1.0f, 0.0f, false, true, 18.0f, 12.0f)
+                lineTo(18.0f, 12.0f)
+                arcTo(1.0f, 1.0f, 0.0f, false, true, 17.0f, 13.0f)
+                lineTo(7.0f, 13.0f)
+                arcTo(1.0f, 1.0f, 0.0f, false, true, 6.0f, 12.0f)
+                lineTo(6.0f, 12.0f)
+                arcTo(1.0f, 1.0f, 0.0f, false, true, 7.0f, 11.0f)
                 close()
             }
         }

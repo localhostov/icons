@@ -1,0 +1,60 @@
+package me.localx.icons.rounded.outline
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
+import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.ImageVector.Builder
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+import me.localx.icons.rounded.Icons
+
+public val Icons.Outline.CircleI: ImageVector
+    get() {
+        if (_circleI != null) {
+            return _circleI!!
+        }
+        _circleI = Builder(name = "CircleI", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(13.039f, 8.019f)
+                verticalLineToRelative(8.0f)
+                horizontalLineToRelative(1.999f)
+                curveToRelative(0.553f, 0.0f, 1.0f, 0.447f, 1.0f, 1.0f)
+                reflectiveCurveToRelative(-0.447f, 1.0f, -1.0f, 1.0f)
+                horizontalLineToRelative(-6.0f)
+                curveToRelative(-0.552f, 0.0f, -1.0f, -0.447f, -1.0f, -1.0f)
+                reflectiveCurveToRelative(0.448f, -1.0f, 1.0f, -1.0f)
+                horizontalLineToRelative(2.0f)
+                verticalLineToRelative(-8.0f)
+                horizontalLineToRelative(-2.0f)
+                curveToRelative(-0.552f, 0.0f, -1.0f, -0.448f, -1.0f, -1.0f)
+                reflectiveCurveToRelative(0.448f, -1.0f, 1.0f, -1.0f)
+                horizontalLineToRelative(6.0f)
+                curveToRelative(0.553f, 0.0f, 1.0f, 0.448f, 1.0f, 1.0f)
+                reflectiveCurveToRelative(-0.447f, 1.0f, -1.0f, 1.0f)
+                horizontalLineToRelative(-1.999f)
+                close()
+                moveTo(24.038f, 12.019f)
+                curveToRelative(0.0f, 6.617f, -5.383f, 12.0f, -12.0f, 12.0f)
+                reflectiveCurveTo(0.039f, 18.636f, 0.039f, 12.019f)
+                reflectiveCurveTo(5.422f, 0.019f, 12.039f, 0.019f)
+                reflectiveCurveToRelative(12.0f, 5.383f, 12.0f, 12.0f)
+                close()
+                moveTo(22.038f, 12.019f)
+                curveToRelative(0.0f, -5.514f, -4.485f, -10.0f, -10.0f, -10.0f)
+                reflectiveCurveTo(2.039f, 6.505f, 2.039f, 12.019f)
+                reflectiveCurveToRelative(4.486f, 10.0f, 10.0f, 10.0f)
+                reflectiveCurveToRelative(10.0f, -4.486f, 10.0f, -10.0f)
+                close()
+            }
+        }
+        .build()
+        return _circleI!!
+    }
+
+private var _circleI: ImageVector? = null

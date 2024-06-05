@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,54 +16,52 @@ public val Icons.Outline.VideoCamera: ImageVector
         if (_videoCamera != null) {
             return _videoCamera!!
         }
-        _videoCamera = Builder(name = "VideoCamera", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(22.9f, 8.9556f)
-                    curveTo(22.2246f, 8.6134f, 21.4133f, 8.6847f, 20.808f, 9.1396f)
-                    lineTo(18.975f, 10.5006f)
-                    curveTo(18.7151f, 7.9473f, 16.5666f, 6.0039f, 14.0f, 6.0006f)
-                    horizontalLineTo(13.915f)
-                    lineTo(9.793f, 1.8796f)
-                    curveTo(9.2321f, 1.3147f, 8.4682f, 0.9981f, 7.672f, 1.0006f)
-                    horizontalLineTo(1.0f)
-                    curveTo(0.4477f, 1.0006f, 0.0f, 1.4484f, 0.0f, 2.0007f)
-                    curveTo(0.0f, 2.5529f, 0.4477f, 3.0006f, 1.0f, 3.0006f)
-                    horizontalLineTo(7.672f)
-                    curveTo(7.9371f, 3.0013f, 8.1911f, 3.1066f, 8.379f, 3.2937f)
-                    lineTo(11.086f, 6.0006f)
-                    horizontalLineTo(5.0f)
-                    curveTo(2.24f, 6.004f, 0.0033f, 8.2406f, 0.0f, 11.0007f)
-                    verticalLineTo(19.0007f)
-                    curveTo(0.0033f, 21.7607f, 2.24f, 23.9974f, 5.0f, 24.0006f)
-                    horizontalLineTo(14.0f)
-                    curveTo(16.5666f, 23.9974f, 18.7151f, 22.054f, 18.975f, 19.5006f)
-                    lineTo(20.805f, 20.8647f)
-                    curveTo(21.6886f, 21.5274f, 22.9423f, 21.3483f, 23.605f, 20.4647f)
-                    curveTo(23.8646f, 20.1185f, 24.005f, 19.6974f, 24.005f, 19.2647f)
-                    verticalLineTo(10.7436f)
-                    curveTo(24.0076f, 9.9857f, 23.5791f, 9.2923f, 22.9f, 8.9556f)
-                    close()
-                    moveTo(17.0f, 19.0006f)
-                    curveTo(17.0f, 20.6575f, 15.6569f, 22.0006f, 14.0f, 22.0006f)
-                    horizontalLineTo(5.0f)
-                    curveTo(3.3432f, 22.0006f, 2.0f, 20.6575f, 2.0f, 19.0006f)
-                    verticalLineTo(11.0007f)
-                    curveTo(2.0f, 9.3438f, 3.3432f, 8.0007f, 5.0f, 8.0007f)
-                    horizontalLineTo(14.0f)
-                    curveTo(15.6569f, 8.0007f, 17.0f, 9.3438f, 17.0f, 11.0007f)
-                    verticalLineTo(19.0006f)
-                    close()
-                    moveTo(22.0f, 19.2576f)
-                    lineTo(19.0f, 17.0217f)
-                    verticalLineTo(12.9797f)
-                    lineTo(22.0f, 10.7437f)
-                    verticalLineTo(19.2576f)
-                    close()
-                }
+        _videoCamera = Builder(name = "VideoCamera", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(488.533f, 191.04f)
+                curveToRelative(-14.409f, -7.302f, -31.716f, -5.78f, -44.629f, 3.925f)
+                lineTo(404.8f, 224.0f)
+                curveToRelative(-5.544f, -54.472f, -51.38f, -95.931f, -106.133f, -96.0f)
+                horizontalLineToRelative(-1.813f)
+                lineToRelative(-87.936f, -87.915f)
+                curveToRelative(-11.967f, -12.051f, -28.264f, -18.805f, -45.248f, -18.752f)
+                horizontalLineTo(21.333f)
+                curveTo(9.551f, 21.333f, 0.0f, 30.885f, 0.0f, 42.667f)
+                reflectiveCurveTo(9.551f, 64.0f, 21.333f, 64.0f)
+                horizontalLineToRelative(142.336f)
+                curveToRelative(5.655f, 0.015f, 11.075f, 2.261f, 15.083f, 6.251f)
+                lineTo(236.501f, 128.0f)
+                horizontalLineTo(106.667f)
+                curveTo(47.786f, 128.071f, 0.071f, 175.786f, 0.0f, 234.667f)
+                verticalLineToRelative(170.667f)
+                curveTo(0.071f, 464.214f, 47.786f, 511.93f, 106.667f, 512.0f)
+                horizontalLineToRelative(192.0f)
+                curveToRelative(54.754f, -0.069f, 100.589f, -41.528f, 106.133f, -96.0f)
+                lineToRelative(39.04f, 29.099f)
+                curveToRelative(18.851f, 14.138f, 45.595f, 10.318f, 59.733f, -8.533f)
+                curveToRelative(5.539f, -7.385f, 8.533f, -16.368f, 8.533f, -25.6f)
+                verticalLineTo(229.184f)
+                curveTo(512.162f, 213.015f, 503.02f, 198.222f, 488.533f, 191.04f)
+                close()
+                moveTo(362.667f, 405.333f)
+                curveToRelative(0.0f, 35.346f, -28.654f, 64.0f, -64.0f, 64.0f)
+                horizontalLineToRelative(-192.0f)
+                curveToRelative(-35.346f, 0.0f, -64.0f, -28.654f, -64.0f, -64.0f)
+                verticalLineTo(234.667f)
+                curveToRelative(0.0f, -35.346f, 28.654f, -64.0f, 64.0f, -64.0f)
+                horizontalLineToRelative(192.0f)
+                curveToRelative(35.346f, 0.0f, 64.0f, 28.654f, 64.0f, 64.0f)
+                verticalLineTo(405.333f)
+                close()
+                moveTo(469.333f, 410.816f)
+                lineToRelative(-64.0f, -47.701f)
+                verticalLineToRelative(-86.229f)
+                lineToRelative(64.0f, -47.701f)
+                verticalLineTo(410.816f)
+                close()
             }
         }
         .build()

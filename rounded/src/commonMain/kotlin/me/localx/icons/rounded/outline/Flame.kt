@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,60 +16,61 @@ public val Icons.Outline.Flame: ImageVector
         if (_flame != null) {
             return _flame!!
         }
-        _flame = Builder(name = "Flame", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(16.6301f, 2.9002f)
-                    curveTo(15.8431f, 2.2332f, 15.0181f, 1.5322f, 14.1781f, 0.7681f)
-                    curveTo(13.5337f, 0.1821f, 12.6634f, -0.0895f, 11.8001f, 0.0261f)
-                    curveTo(10.9635f, 0.1367f, 10.2191f, 0.6129f, 9.7681f, 1.3261f)
-                    curveTo(8.5761f, 3.3181f, 7.7333f, 5.4992f, 7.2761f, 7.7751f)
-                    curveTo(7.0967f, 7.5161f, 6.9376f, 7.2437f, 6.8001f, 6.9601f)
-                    curveTo(6.3264f, 5.9623f, 5.1336f, 5.5372f, 4.1357f, 6.0109f)
-                    curveTo(3.8941f, 6.1255f, 3.678f, 6.2875f, 3.5001f, 6.4871f)
-                    curveTo(1.8227f, 8.2011f, 0.8929f, 10.51f, 0.9141f, 12.9081f)
-                    curveTo(0.8664f, 17.9487f, 4.2569f, 22.3742f, 9.1361f, 23.6401f)
-                    curveTo(10.0439f, 23.8686f, 10.976f, 23.9867f, 11.9121f, 23.9921f)
-                    curveTo(11.9421f, 23.9921f, 12.2611f, 23.9891f, 12.3901f, 23.9801f)
-                    curveTo(18.3601f, 23.7868f, 23.0975f, 18.8872f, 23.0901f, 12.9141f)
-                    curveTo(23.0861f, 8.3841f, 20.0941f, 5.8441f, 16.6301f, 2.9002f)
-                    close()
-                    moveTo(11.8871f, 21.9851f)
-                    curveTo(11.1429f, 21.9285f, 10.4074f, 21.627f, 9.8521f, 21.1791f)
-                    curveTo(8.9826f, 20.5638f, 8.4072f, 19.6616f, 8.2701f, 18.6221f)
-                    curveTo(8.1001f, 17.0001f, 9.1001f, 14.8791f, 11.1431f, 12.4831f)
-                    curveTo(11.3574f, 12.2329f, 11.6708f, 12.0895f, 12.0001f, 12.0911f)
-                    curveTo(12.3253f, 12.0888f, 12.6345f, 12.2318f, 12.8431f, 12.4811f)
-                    curveTo(14.7151f, 14.7031f, 15.7432f, 16.7531f, 15.7432f, 18.2541f)
-                    curveTo(15.7374f, 20.2261f, 14.196f, 21.7861f, 12.2332f, 21.9761f)
-                    curveTo(12.147f, 21.9845f, 12.0001f, 21.9971f, 11.8871f, 21.9851f)
-                    close()
-                    moveTo(17.5761f, 20.0831f)
-                    curveTo(17.5171f, 20.1291f, 17.4521f, 20.1661f, 17.3921f, 20.2101f)
-                    curveTo(17.6229f, 19.583f, 17.7417f, 18.9203f, 17.7431f, 18.2521f)
-                    curveTo(17.7431f, 15.7251f, 15.9081f, 13.0171f, 14.3701f, 11.1901f)
-                    curveTo(13.7817f, 10.4932f, 12.9162f, 10.0908f, 12.0041f, 10.0901f)
-                    horizontalLineTo(12.0001f)
-                    curveTo(11.0862f, 10.0884f, 10.2175f, 10.488f, 9.6241f, 11.1831f)
-                    curveTo(7.1791f, 14.0471f, 6.0561f, 16.62f, 6.2861f, 18.831f)
-                    curveTo(6.3407f, 19.3443f, 6.4718f, 19.8465f, 6.6751f, 20.3211f)
-                    curveTo(4.3005f, 18.6005f, 2.9013f, 15.8404f, 2.9171f, 12.9081f)
-                    curveTo(2.8978f, 11.0031f, 3.649f, 9.1711f, 5.0001f, 7.8281f)
-                    curveTo(5.2307f, 8.3076f, 5.5077f, 8.7634f, 5.8271f, 9.1891f)
-                    curveTo(6.2657f, 9.7821f, 7.015f, 10.0572f, 7.7331f, 9.8891f)
-                    curveTo(8.4652f, 9.7271f, 9.0337f, 9.1497f, 9.1841f, 8.4151f)
-                    curveTo(9.5858f, 6.2915f, 10.3536f, 4.2538f, 11.4531f, 2.3931f)
-                    curveTo(11.5884f, 2.1804f, 11.8118f, 2.0395f, 12.0621f, 2.0091f)
-                    curveTo(12.3418f, 1.9715f, 12.6237f, 2.0597f, 12.8321f, 2.2501f)
-                    curveTo(13.6901f, 3.0301f, 14.5321f, 3.7501f, 15.3321f, 4.4271f)
-                    curveTo(18.6701f, 7.2621f, 21.0831f, 9.3101f, 21.0831f, 12.9141f)
-                    curveTo(21.0917f, 15.7188f, 19.797f, 18.3684f, 17.5791f, 20.0851f)
-                    lineTo(17.5761f, 20.0831f)
-                    close()
-                }
+        _flame = Builder(name = "Flame", defaultWidth = 512.0.dp, defaultHeight = 512.0.dp,
+                viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(354.773f, 61.867f)
+                curveToRelative(-16.789f, -14.229f, -34.389f, -29.184f, -52.309f, -45.483f)
+                curveTo(288.717f, 3.882f, 270.151f, -1.912f, 251.733f, 0.555f)
+                curveToRelative(-17.848f, 2.358f, -33.728f, 12.517f, -43.349f, 27.733f)
+                curveToRelative(-25.43f, 42.496f, -43.41f, 89.025f, -53.163f, 137.579f)
+                curveToRelative(-3.827f, -5.526f, -7.222f, -11.338f, -10.155f, -17.387f)
+                curveToRelative(-10.104f, -21.288f, -35.552f, -30.355f, -56.84f, -20.251f)
+                curveToRelative(-5.154f, 2.446f, -9.765f, 5.901f, -13.56f, 10.16f)
+                curveToRelative(-35.783f, 36.566f, -55.62f, 85.821f, -55.168f, 136.981f)
+                curveToRelative(-1.017f, 107.532f, 71.314f, 201.943f, 175.403f, 228.95f)
+                curveToRelative(19.367f, 4.873f, 39.251f, 7.394f, 59.221f, 7.509f)
+                curveToRelative(0.64f, 0.0f, 7.445f, -0.064f, 10.197f, -0.256f)
+                curveToRelative(127.36f, -4.125f, 228.426f, -108.648f, 228.267f, -236.075f)
+                curveTo(492.501f, 178.859f, 428.672f, 124.672f, 354.773f, 61.867f)
+                close()
+                moveTo(253.589f, 469.013f)
+                curveToRelative(-15.877f, -1.208f, -31.567f, -7.639f, -43.413f, -17.195f)
+                curveToRelative(-18.55f, -13.126f, -30.825f, -32.374f, -33.749f, -54.549f)
+                curveToRelative(-3.627f, -34.603f, 17.707f, -79.851f, 61.291f, -130.965f)
+                lineToRelative(0.0f, 0.0f)
+                curveToRelative(4.57f, -5.338f, 11.256f, -8.397f, 18.283f, -8.363f)
+                lineToRelative(0.0f, 0.0f)
+                curveToRelative(6.936f, -0.05f, 13.532f, 3.001f, 17.984f, 8.32f)
+                curveToRelative(39.936f, 47.403f, 61.867f, 91.136f, 61.867f, 123.157f)
+                curveToRelative(-0.123f, 42.07f, -33.006f, 75.35f, -74.88f, 79.403f)
+                curveTo(259.133f, 468.999f, 256.0f, 469.269f, 253.589f, 469.013f)
+                close()
+                moveTo(374.955f, 428.437f)
+                curveToRelative(-1.259f, 0.981f, -2.645f, 1.771f, -3.925f, 2.709f)
+                curveToRelative(4.922f, -13.378f, 7.457f, -27.516f, 7.488f, -41.771f)
+                curveToRelative(0.0f, -53.909f, -39.147f, -111.68f, -71.957f, -150.656f)
+                curveToRelative(-12.553f, -14.867f, -31.017f, -23.451f, -50.475f, -23.467f)
+                horizontalLineTo(256.0f)
+                curveToRelative(-19.497f, -0.035f, -38.028f, 8.49f, -50.688f, 23.317f)
+                lineToRelative(0.0f, 0.0f)
+                curveToRelative(-52.16f, 61.099f, -76.117f, 115.989f, -71.211f, 163.157f)
+                curveToRelative(1.165f, 10.95f, 3.962f, 21.664f, 8.299f, 31.787f)
+                curveToRelative(-50.658f, -36.706f, -80.507f, -95.587f, -80.171f, -158.144f)
+                curveToRelative(-0.412f, -40.639f, 15.614f, -79.721f, 44.437f, -108.373f)
+                curveToRelative(4.921f, 10.23f, 10.83f, 19.954f, 17.643f, 29.035f)
+                curveToRelative(9.357f, 12.65f, 25.342f, 18.52f, 40.661f, 14.933f)
+                curveToRelative(15.619f, -3.455f, 27.746f, -15.774f, 30.955f, -31.445f)
+                curveToRelative(8.571f, -45.304f, 24.95f, -88.774f, 48.405f, -128.469f)
+                curveToRelative(2.886f, -4.538f, 7.653f, -7.544f, 12.992f, -8.192f)
+                curveToRelative(5.967f, -0.803f, 11.982f, 1.08f, 16.427f, 5.141f)
+                curveToRelative(18.304f, 16.64f, 36.267f, 32.0f, 53.333f, 46.443f)
+                curveToRelative(71.211f, 60.48f, 122.688f, 104.171f, 122.688f, 181.056f)
+                curveToRelative(0.184f, 59.833f, -27.436f, 116.358f, -74.752f, 152.981f)
+                lineTo(374.955f, 428.437f)
+                close()
             }
         }
         .build()

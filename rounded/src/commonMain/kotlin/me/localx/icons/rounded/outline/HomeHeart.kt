@@ -1,0 +1,76 @@
+package me.localx.icons.rounded.outline
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
+import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.ImageVector.Builder
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+import me.localx.icons.rounded.Icons
+
+public val Icons.Outline.HomeHeart: ImageVector
+    get() {
+        if (_homeHeart != null) {
+            return _homeHeart!!
+        }
+        _homeHeart = Builder(name = "HomeHeart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveToRelative(12.136f, 19.103f)
+                curveToRelative(-0.512f, 0.0f, -1.023f, -0.171f, -1.45f, -0.513f)
+                curveToRelative(-1.401f, -1.122f, -4.051f, -3.853f, -4.051f, -6.159f)
+                curveToRelative(0.0f, -1.892f, 1.458f, -3.43f, 3.25f, -3.43f)
+                curveToRelative(0.89f, 0.0f, 1.675f, 0.318f, 2.25f, 0.852f)
+                curveToRelative(0.575f, -0.533f, 1.36f, -0.852f, 2.25f, -0.852f)
+                curveToRelative(1.792f, 0.0f, 3.25f, 1.539f, 3.25f, 3.43f)
+                curveToRelative(0.0f, 2.307f, -2.649f, 5.038f, -4.05f, 6.16f)
+                curveToRelative(-0.427f, 0.342f, -0.938f, 0.513f, -1.449f, 0.513f)
+                close()
+                moveTo(9.885f, 11.0f)
+                curveToRelative(-0.689f, 0.0f, -1.25f, 0.642f, -1.25f, 1.43f)
+                curveToRelative(0.0f, 1.276f, 1.917f, 3.49f, 3.301f, 4.598f)
+                curveToRelative(0.118f, 0.097f, 0.279f, 0.097f, 0.399f, 0.0f)
+                curveToRelative(1.384f, -1.108f, 3.3f, -3.322f, 3.3f, -4.599f)
+                curveToRelative(0.0f, -0.789f, -0.561f, -1.43f, -1.25f, -1.43f)
+                curveToRelative(-0.622f, 0.0f, -1.25f, 0.374f, -1.25f, 1.209f)
+                curveToRelative(0.0f, 0.552f, -0.447f, 1.0f, -1.0f, 1.0f)
+                reflectiveCurveToRelative(-1.0f, -0.448f, -1.0f, -1.0f)
+                curveToRelative(0.0f, -0.893f, -0.674f, -1.209f, -1.25f, -1.209f)
+                close()
+                moveTo(19.0f, 24.0f)
+                lineTo(5.0f, 24.0f)
+                curveToRelative(-2.757f, 0.0f, -5.0f, -2.243f, -5.0f, -5.0f)
+                verticalLineToRelative(-9.276f)
+                curveToRelative(0.0f, -1.664f, 0.823f, -3.213f, 2.203f, -4.145f)
+                lineTo(9.203f, 0.855f)
+                curveToRelative(1.698f, -1.146f, 3.895f, -1.147f, 5.595f, 0.0f)
+                lineToRelative(7.0f, 4.723f)
+                curveToRelative(1.379f, 0.931f, 2.202f, 2.48f, 2.202f, 4.145f)
+                verticalLineToRelative(9.276f)
+                curveToRelative(0.0f, 2.757f, -2.243f, 5.0f, -5.0f, 5.0f)
+                close()
+                moveTo(12.001f, 1.998f)
+                curveToRelative(-0.585f, 0.0f, -1.169f, 0.172f, -1.679f, 0.516f)
+                lineTo(3.322f, 7.237f)
+                curveToRelative(-0.828f, 0.559f, -1.322f, 1.488f, -1.322f, 2.487f)
+                verticalLineToRelative(9.276f)
+                curveToRelative(0.0f, 1.654f, 1.346f, 3.0f, 3.0f, 3.0f)
+                horizontalLineToRelative(14.0f)
+                curveToRelative(1.654f, 0.0f, 3.0f, -1.346f, 3.0f, -3.0f)
+                verticalLineToRelative(-9.276f)
+                curveToRelative(0.0f, -0.999f, -0.494f, -1.929f, -1.321f, -2.487f)
+                lineToRelative(-7.0f, -4.723f)
+                curveToRelative(-0.51f, -0.344f, -1.094f, -0.516f, -1.678f, -0.516f)
+                close()
+            }
+        }
+        .build()
+        return _homeHeart!!
+    }
+
+private var _homeHeart: ImageVector? = null

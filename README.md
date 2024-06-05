@@ -21,7 +21,7 @@ icons = { module = "lol.hostov.icons:straight", version = "1.0.0" }
 ### Usage example:
 ```
 // import me.localx.icons.rounded.Icons
-// import me.localx.icons.rounded.outline.Check
+// import me.localx.icons.rounded.Icons.Check
 
 Icon(
     painter = rememberVectorPainter(Icons.Outline.Check) 

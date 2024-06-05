@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,56 +16,54 @@ public val Icons.Outline.Volleyball: ImageVector
         if (_volleyball != null) {
             return _volleyball!!
         }
-        _volleyball = Builder(name = "Volleyball", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(12.0034f, -0.0023f)
-                    curveTo(5.3658f, -0.0023f, -0.0151f, 5.3786f, -0.0151f, 12.0162f)
-                    curveTo(-0.0151f, 18.6539f, 5.3658f, 24.0348f, 12.0034f, 24.0348f)
-                    curveTo(18.6411f, 24.0348f, 24.0219f, 18.6539f, 24.0219f, 12.0162f)
-                    curveTo(24.0219f, 5.3786f, 18.6411f, -0.0023f, 12.0034f, -0.0023f)
-                    close()
-                    moveTo(21.8752f, 10.4999f)
-                    verticalLineTo(10.5029f)
-                    curveTo(20.968f, 11.0677f, 19.976f, 11.4834f, 18.9372f, 11.7339f)
-                    curveTo(18.7218f, 8.5308f, 17.663f, 5.4416f, 15.8682f, 2.7799f)
-                    curveTo(19.0762f, 4.1342f, 21.3508f, 7.0574f, 21.8752f, 10.4999f)
-                    close()
-                    moveTo(12.0001f, 1.9999f)
-                    curveTo(12.2531f, 1.9999f, 12.5002f, 2.0189f, 12.7492f, 2.0379f)
-                    curveTo(15.244f, 4.7775f, 16.7261f, 8.2883f, 16.9492f, 11.9869f)
-                    curveTo(15.5826f, 12.0336f, 14.2211f, 11.7988f, 12.9492f, 11.2969f)
-                    curveTo(12.7501f, 7.9155f, 11.1349f, 4.7747f, 8.5002f, 2.6459f)
-                    curveTo(9.6183f, 2.2213f, 10.8041f, 2.0025f, 12.0001f, 1.9999f)
-                    close()
-                    moveTo(6.4871f, 3.6649f)
-                    curveTo(7.4265f, 4.2775f, 8.2564f, 5.0435f, 8.9421f, 5.9309f)
-                    curveTo(5.9446f, 7.9409f, 3.6103f, 10.7945f, 2.2342f, 14.1309f)
-                    curveTo(1.344f, 10.0978f, 3.0361f, 5.9338f, 6.4871f, 3.6649f)
-                    close()
-                    moveTo(3.3562f, 17.0049f)
-                    curveTo(4.3544f, 13.1865f, 6.7073f, 9.8615f, 9.9762f, 7.6499f)
-                    curveTo(10.5681f, 8.866f, 10.9059f, 10.1899f, 10.9692f, 11.5409f)
-                    curveTo(8.2401f, 13.6147f, 6.525f, 16.754f, 6.2542f, 20.1709f)
-                    curveTo(5.0716f, 19.3364f, 4.083f, 18.2565f, 3.3562f, 17.0049f)
-                    close()
-                    moveTo(12.0001f, 21.9999f)
-                    curveTo(10.7064f, 21.9995f, 9.4251f, 21.7468f, 8.2282f, 21.2559f)
-                    curveTo(8.2061f, 19.9659f, 8.4343f, 18.684f, 8.9002f, 17.4809f)
-                    curveTo(12.1871f, 18.94f, 15.8373f, 19.3752f, 19.3752f, 18.7299f)
-                    curveTo(17.4878f, 20.8109f, 14.8096f, 21.9985f, 12.0001f, 21.9999f)
-                    close()
-                    moveTo(9.8002f, 15.6899f)
-                    curveTo(10.4341f, 14.7074f, 11.2359f, 13.8443f, 12.1692f, 13.1399f)
-                    curveTo(13.5827f, 13.7115f, 15.0924f, 14.0078f, 16.6172f, 14.0129f)
-                    curveTo(18.4722f, 14.0127f, 20.3023f, 13.585f, 21.9652f, 12.7629f)
-                    curveTo(21.8715f, 13.9851f, 21.5518f, 15.1793f, 21.0222f, 16.2849f)
-                    curveTo(17.3297f, 17.4269f, 13.3511f, 17.216f, 9.8002f, 15.6899f)
-                    close()
-                }
+        _volleyball = Builder(name = "Volleyball", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(256.07f, -0.047f)
+                curveTo(114.467f, -0.047f, -0.326f, 114.746f, -0.326f, 256.349f)
+                reflectiveCurveTo(114.467f, 512.744f, 256.07f, 512.744f)
+                reflectiveCurveToRelative(256.395f, -114.792f, 256.395f, -256.395f)
+                reflectiveCurveTo(397.673f, -0.047f, 256.07f, -0.047f)
+                close()
+                moveTo(466.667f, 224.0f)
+                verticalLineToRelative(0.064f)
+                curveToRelative(-19.353f, 12.05f, -40.515f, 20.917f, -62.677f, 26.261f)
+                curveToRelative(-4.595f, -68.333f, -27.183f, -134.234f, -65.472f, -191.019f)
+                curveTo(406.956f, 88.198f, 455.48f, 150.56f, 466.667f, 224.0f)
+                close()
+                moveTo(256.0f, 42.667f)
+                curveToRelative(5.397f, 0.0f, 10.667f, 0.405f, 15.979f, 0.811f)
+                curveToRelative(53.223f, 58.444f, 84.842f, 133.342f, 89.6f, 212.245f)
+                curveToRelative(-29.153f, 0.997f, -58.199f, -4.013f, -85.333f, -14.72f)
+                curveToRelative(-4.247f, -72.136f, -38.705f, -139.14f, -94.912f, -184.555f)
+                curveTo(205.188f, 47.391f, 230.484f, 42.722f, 256.0f, 42.667f)
+                close()
+                moveTo(138.389f, 78.187f)
+                curveToRelative(20.041f, 13.069f, 37.744f, 29.41f, 52.373f, 48.341f)
+                curveTo(126.816f, 169.409f, 77.017f, 230.285f, 47.659f, 301.461f)
+                curveTo(28.668f, 215.422f, 64.766f, 126.591f, 138.389f, 78.187f)
+                close()
+                moveTo(71.595f, 362.773f)
+                curveToRelative(21.296f, -81.459f, 71.492f, -152.392f, 141.227f, -199.573f)
+                curveToRelative(12.627f, 25.943f, 19.835f, 54.187f, 21.184f, 83.008f)
+                curveToRelative(-58.22f, 44.242f, -94.81f, 111.213f, -100.587f, 184.107f)
+                curveTo(108.191f, 412.512f, 87.102f, 389.474f, 71.595f, 362.773f)
+                close()
+                moveTo(256.0f, 469.333f)
+                curveToRelative(-27.6f, -0.008f, -54.934f, -5.399f, -80.469f, -15.872f)
+                curveToRelative(-0.47f, -27.519f, 4.398f, -54.867f, 14.336f, -80.533f)
+                curveToRelative(70.121f, 31.128f, 147.992f, 40.413f, 223.467f, 26.645f)
+                curveTo(373.07f, 443.969f, 315.934f, 469.303f, 256.0f, 469.333f)
+                close()
+                moveTo(209.067f, 334.72f)
+                curveToRelative(13.523f, -20.959f, 30.63f, -39.373f, 50.539f, -54.4f)
+                curveToRelative(30.156f, 12.194f, 62.363f, 18.515f, 94.891f, 18.624f)
+                curveToRelative(39.574f, -0.004f, 78.615f, -9.129f, 114.091f, -26.667f)
+                curveToRelative(-1.999f, 26.074f, -8.82f, 51.551f, -20.117f, 75.136f)
+                curveTo(369.697f, 371.777f, 284.821f, 367.277f, 209.067f, 334.72f)
+                close()
             }
         }
         .build()

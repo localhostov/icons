@@ -7,7 +7,6 @@ import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
-import androidx.compose.ui.graphics.vector.group
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import me.localx.icons.rounded.Icons
@@ -17,48 +16,47 @@ public val Icons.Outline.SearchHeart: ImageVector
         if (_searchHeart != null) {
             return _searchHeart!!
         }
-        _searchHeart = Builder(name = "SearchHeart", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            group {
-                path(fill = SolidColor(Color(0xFF374957)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
-                    moveTo(23.7197f, 22.3002f)
-                    lineTo(17.7593f, 16.3398f)
-                    curveTo(21.2557f, 12.0636f, 20.6236f, 5.7625f, 16.3473f, 2.2661f)
-                    curveTo(12.071f, -1.2303f, 5.7701f, -0.5982f, 2.2736f, 3.6781f)
-                    curveTo(-1.2228f, 7.9543f, -0.5907f, 14.2553f, 3.6856f, 17.7518f)
-                    curveTo(7.3689f, 20.7635f, 12.664f, 20.7635f, 16.3474f, 17.7518f)
-                    lineTo(22.3077f, 23.7122f)
-                    curveTo(22.7044f, 24.0953f, 23.3366f, 24.0843f, 23.7197f, 23.6876f)
-                    curveTo(24.0934f, 23.3007f, 24.0934f, 22.6872f, 23.7197f, 22.3002f)
-                    close()
-                    moveTo(2.0439f, 10.0249f)
-                    curveTo(2.0439f, 5.613f, 5.6205f, 2.0364f, 10.0324f, 2.0364f)
-                    curveTo(14.4443f, 2.0364f, 18.0209f, 5.613f, 18.0209f, 10.0249f)
-                    curveTo(18.0209f, 14.4368f, 14.4443f, 18.0134f, 10.0324f, 18.0134f)
-                    curveTo(5.6225f, 18.0084f, 2.0489f, 14.4348f, 2.0439f, 10.0249f)
-                    close()
-                    moveTo(12.0296f, 6.0307f)
-                    curveTo(11.2836f, 6.034f, 10.5679f, 6.326f, 10.0324f, 6.8455f)
-                    curveTo(9.497f, 6.3261f, 8.7813f, 6.034f, 8.0353f, 6.0307f)
-                    curveTo(6.3275f, 6.0898f, 4.9886f, 7.518f, 5.0396f, 9.226f)
-                    curveTo(5.0396f, 11.2231f, 7.0777f, 13.2832f, 8.7882f, 14.6582f)
-                    curveTo(9.5163f, 15.2381f, 10.5485f, 15.2381f, 11.2766f, 14.6582f)
-                    curveTo(12.9872f, 13.2832f, 15.0252f, 11.2231f, 15.0252f, 9.226f)
-                    curveTo(15.0762f, 7.518f, 13.7374f, 6.0898f, 12.0296f, 6.0307f)
-                    close()
-                    moveTo(10.0384f, 13.1005f)
-                    curveTo(8.1871f, 11.6126f, 7.0367f, 10.1248f, 7.0367f, 9.2261f)
-                    curveTo(6.9869f, 8.6211f, 7.4312f, 8.0879f, 8.0353f, 8.0278f)
-                    curveTo(8.6393f, 8.0879f, 9.0837f, 8.6211f, 9.0339f, 9.2261f)
-                    curveTo(9.0339f, 9.7776f, 9.4809f, 10.2247f, 10.0324f, 10.2247f)
-                    curveTo(10.5839f, 10.2247f, 11.031f, 9.7776f, 11.031f, 9.2261f)
-                    curveTo(10.9812f, 8.6211f, 11.4255f, 8.0879f, 12.0296f, 8.0278f)
-                    curveTo(12.6336f, 8.0879f, 13.078f, 8.6211f, 13.0282f, 9.2261f)
-                    curveTo(13.0281f, 10.1248f, 11.8778f, 11.6126f, 10.0384f, 13.1005f)
-                    close()
-                }
+        _searchHeart = Builder(name = "SearchHeart", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(506.02f, 475.743f)
+                lineTo(378.865f, 348.588f)
+                curveToRelative(74.591f, -91.227f, 61.105f, -225.649f, -30.122f, -300.239f)
+                reflectiveCurveTo(123.095f, -12.757f, 48.504f, 78.47f)
+                reflectiveCurveTo(-12.601f, 304.119f, 78.626f, 378.71f)
+                curveToRelative(78.578f, 64.249f, 191.54f, 64.249f, 270.118f, 0.0f)
+                lineToRelative(127.155f, 127.155f)
+                curveToRelative(8.463f, 8.173f, 21.949f, 7.939f, 30.122f, -0.524f)
+                curveTo(513.993f, 497.086f, 513.993f, 483.998f, 506.02f, 475.743f)
+                close()
+                moveTo(43.604f, 213.87f)
+                curveToRelative(0.0f, -94.121f, 76.3f, -170.421f, 170.421f, -170.421f)
+                reflectiveCurveToRelative(170.421f, 76.3f, 170.421f, 170.421f)
+                reflectiveCurveToRelative(-76.3f, 170.421f, -170.421f, 170.421f)
+                curveTo(119.948f, 384.185f, 43.71f, 307.947f, 43.604f, 213.87f)
+                close()
+                moveTo(256.631f, 128.659f)
+                curveToRelative(-15.914f, 0.072f, -31.183f, 6.301f, -42.605f, 17.383f)
+                curveToRelative(-11.422f, -11.081f, -26.691f, -17.311f, -42.605f, -17.383f)
+                curveToRelative(-36.433f, 1.262f, -64.997f, 31.73f, -63.908f, 68.168f)
+                curveToRelative(0.0f, 42.605f, 43.479f, 86.553f, 79.97f, 115.886f)
+                curveToRelative(15.533f, 12.371f, 37.553f, 12.371f, 53.086f, 0.0f)
+                curveToRelative(36.491f, -29.334f, 79.97f, -73.281f, 79.97f, -115.886f)
+                curveTo(321.627f, 160.389f, 293.064f, 129.921f, 256.631f, 128.659f)
+                close()
+                moveTo(214.153f, 279.482f)
+                curveToRelative(-39.495f, -31.741f, -64.036f, -63.482f, -64.036f, -82.654f)
+                curveToRelative(-1.063f, -12.906f, 8.416f, -24.282f, 21.303f, -25.563f)
+                curveToRelative(12.886f, 1.281f, 22.366f, 12.657f, 21.303f, 25.563f)
+                curveToRelative(0.0f, 11.765f, 9.537f, 21.303f, 21.303f, 21.303f)
+                curveToRelative(11.765f, 0.0f, 21.303f, -9.537f, 21.303f, -21.303f)
+                curveToRelative(-1.063f, -12.906f, 8.416f, -24.282f, 21.303f, -25.563f)
+                curveToRelative(12.886f, 1.281f, 22.366f, 12.657f, 21.303f, 25.563f)
+                curveTo(277.933f, 216.0f, 253.393f, 247.741f, 214.153f, 279.482f)
+                lineTo(214.153f, 279.482f)
+                close()
             }
         }
         .build()
