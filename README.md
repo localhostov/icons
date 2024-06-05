@@ -6,16 +6,16 @@
 ![Maven Central Version](https://img.shields.io/maven-central/v/lol.hostov.icons/rounded?style=flat-square&logoColor=634080&labelColor=%23542080&color=%2320802A)
 ![GitHub License](https://img.shields.io/github/license/localhostov/icons?style=flat-square)
 
-This is a Jetpack Multiplatform icons pack with 498 straight and rounded icons.
+This is a Jetpack Multiplatform icons pack with more than 3000 straight and rounded icons.
 
 ### Install:
 
 ```
 # for rounded icons pack
-icons = { module = "lol.hostov.icons:rounded", version = "1.0.0" }
+icons = { module = "lol.hostov.icons:rounded", version = "1.1.0" }
 
 # for straight icons pack
-icons = { module = "lol.hostov.icons:straight", version = "1.0.0" }
+icons = { module = "lol.hostov.icons:straight", version = "1.1.0" }
 ```
 
 ### Usage example:
@@ -36,4 +36,4 @@ For more icon examples see the <a href="https://localhostov.github.io/icons/">we
 ### Source
 Uicons by <a href="https://flaticon.com/uicons">Flaticon</a>
 
-Figma: https://www.figma.com/community/file/1269054621208767211/250-icon-pack
+Figma: https://www.figma.com/community/file/1380005566074048103
