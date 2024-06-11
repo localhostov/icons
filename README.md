@@ -6,7 +6,7 @@
 ![Maven Central Version](https://img.shields.io/maven-central/v/lol.hostov.icons/rounded?style=flat-square&logoColor=634080&labelColor=%23542080&color=%2320802A)
 ![GitHub License](https://img.shields.io/github/license/localhostov/icons?style=flat-square)
 
-This is a Jetpack Multiplatform icons pack with more than 3000 straight and rounded icons.
+This is a Compose Multiplatform icons pack with more than 3000 straight and rounded icons.
 
 ### Install:
 
